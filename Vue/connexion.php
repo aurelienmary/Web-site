@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Page d'accueil</title>
-        <link href="styles.css" rel="stylesheet">
+        <link href="styles1.css" rel="stylesheet">
         
     </head>
     
@@ -29,7 +29,7 @@
          
                 <nav>
                     <ul>
-                        <li><a href="#main-image">Accueil</a></li>
+                        <li><a href="index.html">Accueil</a></li>
                         <li><a href="#">A propos</a></li>
                         <li><a href="Guides">Produits</a></li>
                         <li><a href="Contact">Contact</a></li>
@@ -39,15 +39,37 @@
      </div>           
             
         </header>
+        <h1>Me connecter</h1>  
+     <div class="login-box">
+         
+       <div class="box">
+           <h2>J'ai déjà un compte</h2>
+            <div class="mat-div">
+                <label for="fullname" class="mat-label">Votre identifiant</label>
+                <input type="text" name="identifiant" class="mat-input">
+           
+           </div>
+           
+           <div class="mat-div">
+                <label for="fullname" class="mat-label">Mot de passe</label>
+                <input type="text" name="passWord" class="mat-input">
+           
+           </div>
+           
+           <div>
+               <button>Me Connecter </button>
+           </div>
+         </div>
         
-        
+        <div class="box2">
+           <h2>Je n'ai pas encore de compte</h2>
+               
+               <button>Créer mon compte</button>
+    
+        </div>
+         
+     </div>
 
-        <section id="main-image">
-            <div class="wrapper">
-                <h2>Piloter et sécuriser<br>votre maison<br>et tous vos objets connectés à distance</h2>
-            </div>
-            
-        </section>
       
 
 
