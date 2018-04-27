@@ -15,12 +15,12 @@
                 </div>
                 <div class="catalogues">  
                     <h3 class="gc"> <a href="#"> Les catalogues & Guides </a></h3>
-                    <p>Retrouver tous les catalogues et <br> guides pour réaliser tous vos projets</p>
+                    <p>Retrouver tous les catalogues et <br> guides pour rÃ©aliser tous vos projets</p>
                 </div>
                
             </div>
              <div class="ml">
-                    Mentions légales
+                    Mentions lÃ©gales
                 </div>
            
            
