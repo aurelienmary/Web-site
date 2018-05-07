@@ -24,3 +24,20 @@ function adduser(PDO $bdd, array $utilisateur)
     $donnees->bindParam(":admin", $utilisateur['admin']);
     return $donnees->execute();
 }
+
+/*
+ * fonction pour vérifié si l'utilisateur existe dans la base de données
+ */
+function login(PDO $bdd, array $user) :bool
+
+{
+    
+}
+
+/*
+ * récupère les information de l'utilisateur dans la base de données
+ */
+function searchuser(PDO $bdd,array $user)
+{
+    
+}
