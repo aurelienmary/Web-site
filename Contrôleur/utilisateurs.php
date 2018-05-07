@@ -1,4 +1,5 @@
 <?php
+include ('Modèle/requetes.utilisateurs.php');
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
     {
         $function ="accueil";
@@ -23,7 +24,17 @@ switch ($function)
              affichage de la vue de connexion
              */
             $vue="connexion";
+            $alerte=false;
             $title="Connexion";
+            break;
+            
+        case "inscription":
+            /*
+             affichage de la vue inscription
+             */
+            $vue="inscription";
+            $alerte=false;
+            $title="Inscription";
             break;
     }
  
