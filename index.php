@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 /**
  * MVC :
@@ -12,7 +13,7 @@
 ini_set('display_errors', 1);
 
 // Appel des fonctions du contrôleur
-include("Contr�leurs/fonctions.php");
+include("Controleur/fonctions.php");
 // Appel des fonctions liées à l'affichage
 include("Vue/fonctions.php");
 
@@ -29,4 +30,4 @@ else
     }
 
 // On appelle le contrôleur
-include('controleurs/' . $url . '.php');
+include('Controleur/' . $url . '.php');
