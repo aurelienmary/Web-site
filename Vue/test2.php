@@ -11,18 +11,20 @@ catch (Exception $e)
     die('Erreur : ' . $e->getMessage());
 }
 
-$user=[
-    'email'=> $_POST['email'],
-    'password' => ($_POST['passWord']),
-    'lastname'=>($_POST['nom']),
-    'name'=>($_POST['prénom']),
-    'birthdate'=>($_POST['birthdate']),
-    'adress'=>($_POST['adresse']),
-    'postalcode'=>($_POST['codepoastal']),
-    'phonenumber'=>($_POST['numTel'])];
+
+$email= $_POST['email'
+    
+];
+    $password =$_POST['passWord'];
+    $lastname=$_POST['nom'];
+    $name=$_POST['prénom'];
+    $birthdate=$_POST['birthdate'];
+    $adress=$_POST['adresse'];
+    $postalcode=$_POST['codepoastal'];
+    $phone=$_POST['numTel'];
     
 
-$donnees= $bdd->prepare('INSERT INTO users(email, password, lastname, name, birthdate, adress, postalcode,phone) VALUES (:email, :password, :lastname, :name, :birthdate, :adress, :postalcode, :phone)');
+$donnees= $bdd->prepare('INSERT INTO users(email, password, nom, prenom, birthdate, adress, codepostal, phone) VALUES (:email, :password, :nom, :name, :prenom, :adress, :codepostal, :phone)');
 /*
 $donnees->bindParam(":email", $user['email']);
 $donnees->bindParam(":password", $user['password']);
@@ -34,11 +36,11 @@ $donnees->bindParam(":postalcode", $user['postalcode']);
 $donnees->bindParam(":phonenumber", $user['phonenumber']);
 */
 $donnees->execute(array(
-    'email'=> $_POST['email'],
-    'password' => ($_POST['passWord']),
-    'lastname'=>($_POST['nom']),
-    'name'=>($_POST['prénom']),
-    'birthdate'=>($_POST['birthdate']),
-    'adress'=>($_POST['adresse']),
-    'postalcode'=>($_POST['codepoastal']),
-    'phone'=>($_POST['numTel'])));
+    'email'=> $email,
+    'password' => $passWord,
+    'lastname'=>$lastname,
+    'name'=>$name,
+    'birthdate'=>$birthdate,
+    'adress'=>$adress,
+    'postalcode'=>$postalcode,
+    'phone'=>$phone));
