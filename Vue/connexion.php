@@ -48,24 +48,23 @@
          
        <div class="box">
            <h2>J'ai déjà un compte</h2>
-           <form method="post" action="test.php>
-            <div class="mat-div">
+           
+           	<div class="mat-div">
+           	<form method="post" action="test.php">
                 <label for="fullname" class="mat-label">Votre identifiant</label>
                 <input type="text" name="identifiant" class="mat-input">
-           
-           </div>
-           
-           <div class="mat-div">
                 <label for="fullname" class="mat-label">Mot de passe</label>
                 <input type="password" name="passWord" class="mat-input">
-           
+                <input type="submit" value="Me Connecter" />
+           		</form>
            </div>
            
+         <!--  
            <div>
                <a href="fonction.php"> <button>Me Connecter </button> </a>
            </div>
          </div>
-        </form>
+     -->
         <div class="box2">
            <h2>Je n'ai pas encore de compte</h2>
         
