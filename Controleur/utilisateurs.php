@@ -5,7 +5,7 @@ include ('Modele/requetes.utilisateurs.php');
 
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
     {
-        $function ="acceuil";
+        $function ="accueil";
     }
 else 
     {
@@ -14,7 +14,7 @@ else
     
 switch ($function)
     {
-        case "acceuil":
+        case "accueil":
             /*
              affichage de la vue de l'acceuil
              */
@@ -45,7 +45,7 @@ switch ($function)
                 if (!empty($user))
                 {
                     
-                    $vue="profil";
+                    $vue="ajoutcapteur";
                     /*
                      * fonction qui récupère la table de l'utilisateur dans la base de donnée
                      */
