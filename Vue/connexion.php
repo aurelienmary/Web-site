@@ -44,27 +44,28 @@
             
         </header>
         <h1>Me connecter</h1>  
-     <div class="login-box">
+    
          
        <div class="box">
            <h2>J'ai déjà un compte</h2>
-           
-           	<div class="mat-div">
-           	<form method="post" action="test.php">
+           <form action =test.php method= Post >
+           	
                 <label for="fullname" class="mat-label">Votre identifiant</label>
                 <input type="text" name="identifiant" class="mat-input">
-                <label for="fullname" class="mat-label">Mot de passe</label>
-                <input type="password" name="passWord" class="mat-input">
-                <input type="submit" value="Me Connecter" />
-           		</form>
-           </div>
            
-         <!--  
-           <div>
-               <a href="fonction.php"> <button>Me Connecter </button> </a>
-           </div>
-         </div>
-     -->
+          
+          
+                <label for="fullname" class="mat-label">Mot de passe</label>
+                <input type="password" name="password" class="mat-input">
+                <input type=submit name=valider>
+           
+           </form>
+           
+         
+             
+          
+        
+     
         <div class="box2">
            <h2>Je n'ai pas encore de compte</h2>
         

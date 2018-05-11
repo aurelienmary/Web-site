@@ -1,18 +1,7 @@
 
 <?php
+
 session_start();
-
-function login(PDO $bdd, array $user) :array
-
-{
-    $query= 'SELECT id FROM Users WHERE email= :email AND password= :password';
-    $query -> bindParam (":email",$user['email']);
-    $query -> bindParam (":password",$user['password']);
-    $query->execute();
-    return  $query->fetchall();
-    
-}
-
 try
 {
 	$bdd = new PDO('mysql:host=localhost;dbname=basedonnee;charset=utf8', 'root', '');
@@ -25,16 +14,16 @@ try
 
 
 	$midentconnect=($_POST['identifiant']);
-	$mdpconnect=($_POST['passWord']);
+	$mdpconnect=($_POST['password']);
+	
 	
 	if(!empty($midentconnect) AND !empty($mdpconnect))
 	{
-	    $value=[
-	        'email'=> $midentconnect,
-	        'password' => $password];
-	    $id=login($bdd, $user);
+		$requete = $bdd->prepare('SELECT * FROM users WHERE email=? AND password=?');
 		
-		if (!empty($id))
+		$requete->execute(array($midentconnect, $mdpconnect));
+		$userexist= $requete->rowCount ();
+		if ($userexist==1)
 		{
 	        
 			include('ajoutcapteur.php');
