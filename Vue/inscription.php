@@ -105,13 +105,13 @@
            
            <div class="mat-div">
                 <label for="fullname" class="mat-label">Adresse</label>
-                <input type="text" name="identifiant" class="mat-input">
+                <input type="text" name="adresse" class="mat-input">
            
            </div>
            
            <div class="mat-div">
                 <label for="fullname" class="mat-label">Code postale</label>
-                <input type="text" name="identifiant" class="mat-input">
+                <input type="text" name="codepostal" class="mat-input">
            
            </div>
                
