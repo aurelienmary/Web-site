@@ -41,10 +41,7 @@ a
 ul li{
     width: 15%;
     text-align: center;
-    margin-top: 30px;
 }
-
-
 
 ul li:not(:last-child){
         border-right: 2px solid black;
@@ -57,33 +54,13 @@ ul{
 
 }
 
-h1
-{
-    
-    font-family: 'Lobster', cursive;
-    color: #92dd5a;
-    margin-left: 140px;
-    margin-top: 20px;
-    
-}
 
 
-header h2
+header h1
 {
     float:left;
     margin-top: 10px;
-    font-family: 'Poiret One', cursive;
 }
-
-
-
-.header-box .reglog p{
-    float: right;
-    color: black;
-    margin-right: 50px;
-    margin-top: 26px;
-}
-
 
 
 /*la barre de recherche*/
@@ -197,25 +174,42 @@ header .header-box{
 
 
 
-/* l'image principale*/
-
-#main-image
-{
-    height: 600px;
-    background: url(images/domotique.png) ;
-
-}
-h2
-{
-    text-transform: uppercase;
-    color: #009e0f;
-    text-align: center;
-    margin-right: 300px;
-}
 
 
 
-/*footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer
@@ -228,19 +222,7 @@ footer
 }
 
 
-ul
-{
-    
-}
 
-footer ul li 
-{
-    display: inline-block;
-    width: 300px;
-    float: left;
-
-    
-}
 
 footer .footer-box{
     display: flex;
@@ -248,6 +230,7 @@ footer .footer-box{
     justify-content: space-between;
     width: 90%;
     margin: auto;
+
 }
 
 .resauxSociaux, .renseignements, .catalogues{
@@ -259,16 +242,8 @@ footer .footer-box{
 .ml {
     text-align: center;
     color: white;
-    margin-top: 10px;
-    font-size: 15px;
-}
-
-.adress{
-    
-    color: white;
-    font-size: 15px;
-    margin-top: 0px;
-    margin-left: 120px;
+    margin-top: 50px;
+    font-size: 10px;
 }
 
 .resauxSociaux h3, .renseignements h3, .catalogues h3{
@@ -286,34 +261,6 @@ footer .footer-box{
 .resauxSociaux img, .renseignements img, .catalogues img{
     padding: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

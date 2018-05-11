@@ -6,10 +6,7 @@
     padding: 0;
 }
 
- body
-{
-    background-color: #92dd5a;
-}
+
 a
 {
     text-decoration: none;
@@ -31,6 +28,36 @@ a
     margin: auto;
 }
 
+
+.case{
+   margin-right: 50px;
+    margin-left: 50px;
+    background: rgba(0,0,0,0.2);
+    opacity: 20%;
+    margin-bottom: 20px;
+}
+
+.piece{
+    
+  font-size: 15px;
+  color: black;
+  border: none;
+
+  margin-right: 100px;
+    margin-left: 50px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.legende{
+    
+    color: black;
+    font-size: 25px;
+    font-family: fantasy;
+}
+
 .wrapper-bis ul
 {
     display: flex;
@@ -44,8 +71,6 @@ a
 ul li{
     width: 15%;
     text-align: center;
-    font-size: 20px;
-   
 }
 
 ul li:not(:last-child){
@@ -67,34 +92,6 @@ header h1
     margin-top: 10px;
 }
 
-h1
-{
-    
-    font-family: 'Lobster', cursive;
-    color: #92dd5a;
-    margin-left: 140px;
-    margin-top: 20px;
-    
-}
-
-
-header h2
-{
-    float:left;
-    margin-top: 10px;
-    font-family: 'Poiret One', cursive;
-}
-
-
-
-.header-box .reglog p{
-    float: right;
-    color: black;
-    margin-right: 50px;
-    margin-top: 40px;
-}
-
-
 
 /*la barre de recherche*/
 
@@ -110,9 +107,8 @@ header .header-box{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     margin: auto;
-    background: white;
 }
 
 .header-box .logo, .header-box .search-bar, .header-box .reglog{
@@ -210,119 +206,264 @@ header .header-box{
 
 
 /* l'image principale*/
+/*
+.checkbox input
+{
+    display: none;
+}
+
+.checkbox .rounded
+{
+    background-color: #fff;
+    border: 3px solid #bdc3c7;
+    width: 9px; height: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 8px;
+    position: relative;
+        
+}
+
+input:checked + .rounded{
+    border-color: #2ecc71;
+    
+}
+
+input:checked + .rounded:after{
+    content: '';
+    display: block;
+    width: 5px; height: 5px;
+    position: absolute;
+    top: 2px; left: 2px;
+    border-radius: 2px;
+    
+}
+
+.switch{
+    width: 130px;
+    display: inline-block;
+    vertical-align: middle;
+    .on, .off{
+        display: inline-block;
+        float: left;
+        background-color: #27ae60;
+        width: 50%;
+        height: 20px;
+        padding: 4px 0;
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .on{
+        @include border-left-radius(20px);
+    }
+    .off{
+        background-color: #c0392b;
+        @include border-right-radius(20px);
+        
+        
+    }
+    
+    .mid{
+        display: inline-block;
+        float: left;
+        width: 20px; height: 20px;
+        @include border-radius(20px);
+        background-color: #fff;
+        margin-left: -14px;
+        margin-right: -14px;
+        position: relative;
+        z-index: 2;
+        border: 4px solid #c0392b;
+        
+    }
+        
+    }
+        
+        
+        
+    }
+    
+    
+}
+*/
+
+.switch{
+    border: 1px solid white;
+}
+
+.switch input{
+    display: none;
+    margin-right: 50px;
+    
+    
+}
+
+.switch-btn{
+    width: 80px;
+    height: 40px;
+    background: #e5e5e5;
+   
+    position: relative;
+    
+    border-radius: 20px;
+    box-shadow: inset 0 10px 10px rgba(0,0,0,.3);
+   
+    
+}
+
+.switch-btn:before{
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: #FFF;
+    left: 2px;
+    top: 2px;
+    
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 250ms ease-out;
+  
+}
+
+input[type=checkbox]:checked + .switch-btn{
+    background: rgba(100,255,100);
+    
+}
+
+
+input[type=checkbox]:checked + .switch-btn:before{
+    left: 42px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 h1
 {
-    margin-top: 50px;
+    margin-top: 10px;
     position: absolute;
-    margin-left: 150px;
-    
-}
-
-.box h2
-{
-    margin-left: 85px;
-    
-}
-
-.box2 h2
-{
-    margin-left: 45px;
-    margin-top: 50px;
+    margin-left: 200px;
+    color: #92dd5a;
     
 }
 
 
 
-.login-box{
+
+
+.login-box, .login-box2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     margin: auto;
 
 }
 
-
-
-.box
-{
-    position: relative;
-    margin-top: 300px;
-    top: 50%;
-    left: 25%;
-    width: 400px;
-    height: 300px;
-    background: #ffffff;
-    box-sizing: border-box;
-    transform: translate(-50%,-50%);
-    border: 3px solid black;
+.lumunosité, .wifi {
+    width: 50%;
+    text-align: center;
+    margin-top: 15px;      
 }
 
-.box2
-{
-    position: relative;
-    margin-top: 300px;
-    top: 50%;
-    left 75%;
-    width: 400px;
-    height: 300px;
-    background: #fff;
-    box-sizing: border-box;
-    transform: translate(-50%,-50%);
-    border: 3px solid black;
+.notification, .bluetooth {
+    width: 50%;
+    text-align: center;
+    margin-top: 15px;      
 }
 
 
-.login-box button  {
+.box-bis{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.box-bis .left-right{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+     justify-content: space-around;
+    margin-top: 50px;
+}
+
+.box-bis .left-right div{
+    width: 47%;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+.box-bis .left-right div img{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.box button {
   background-color: #92dd5a;
   font-size: 18px;
   color: white;
   border: none;
   display: block;
-  margin: 70px auto;
+  margin: 30px auto;
   padding: 15px 30px;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.create-account{
-    
-    color: #92dd5a;
-    margin-left: 70px;
-    text-decoration: underline;
 }
 
 
 .mat-label {
   
     margin: 15px auto;
-  
-  font-size: 20px;
-    margin-left: 10px;
+    font-size: 20px;
+    margin-left: 35%;
 
-  
+}
+.mat-input
+{
+    color: black;
+
+    
 }
 
+.male
+{
+    margin-left: 35%;
+}
+
+.female
+{
+    margin-left: 45%;
+}
 
 .mat-div {
   padding: 30px 0 0 0;
   position: relative;
 }
 
-
-
 .mat-input
 {
     font-size: 20px;
-    border-radius: 5px;
-    color: black;
-    
-
     
 }
-
-
 
 
 
@@ -357,16 +498,8 @@ footer .footer-box{
 .ml {
     text-align: center;
     color: white;
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-.adress{
-    
-    color: white;
-    font-size: 15px;
-    margin-top: 0px;
-    margin-left: 120px;
+    margin-top: 50px;
+    font-size: 10px;
 }
 
 .resauxSociaux h3, .renseignements h3, .catalogues h3{
@@ -384,31 +517,6 @@ footer .footer-box{
 .resauxSociaux img, .renseignements img, .catalogues img{
     padding: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
