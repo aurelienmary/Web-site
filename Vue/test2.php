@@ -12,9 +12,7 @@ catch (Exception $e)
 }
 
 
-$email= $_POST['email'
-    
-];
+$email= $_POST['email'];
     $password =$_POST['passWord'];
     $lastname=$_POST['nom'];
     $name=$_POST['prénom'];
@@ -38,9 +36,9 @@ $donnees->bindParam(":phonenumber", $user['phonenumber']);
 $donnees->execute(array(
     'email'=> $email,
     'password' => $passWord,
-    'lastname'=>$lastname,
-    'name'=>$name,
+    'nom'=>$lastname,
+    'prenom'=>$name,
     'birthdate'=>$birthdate,
     'adress'=>$adress,
-    'postalcode'=>$postalcode,
+    'codepostal'=>$postalcode,
     'phone'=>$phone));
