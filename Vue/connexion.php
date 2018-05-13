@@ -95,7 +95,7 @@
                     <p>Une question? Un renseignement? <br> <p>Contacter-nous</p>
                 </div>
                 <div class="catalogues">  
-                    <h3 class="gc"> <a href="#"> Les catalogues & Guides </a></h3>
+                    <h3 class="gc"> <a href="index4"> Les catalogues & Guides </a></h3>
                     <p>Retrouver tous les catalogues et <br> guides pour réaliser tous vos projets</p>
                 </div>
                
