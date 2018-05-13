@@ -2,8 +2,8 @@
 -- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 10 mai 2018 à 13:02
+-- HÃ´te : 127.0.0.1:3306
+-- GÃ©nÃ©rÃ© le :  jeu. 10 mai 2018 Ã  13:02
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.1.9
 
@@ -13,13 +13,13 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `basedonnee`
+-- Base de donnÃ©es :  `basedonnee`
 --
 
 -- --------------------------------------------------------
@@ -135,11 +135,11 @@ CREATE TABLE `home`(
 
 -----------------
 
---Structure de la table Pi�ce
+--Structure de la table Pièce
 --
 DROP TABLE IF EXISTS `piece`;
 CREATE TABLE `piece`( 
--- Index pour la table `Pi�ce`
+-- Index pour la table `Pièce`
 	`id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1,
 -----
 	`name` varchar(255) NOT NULL,
@@ -240,7 +240,7 @@ CREATE TABLE `mentionlegale` (
 
 	
 	--
--- Déchargement des données de la table `users`
+-- DÃ©chargement des donnÃ©es de la table `users`
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `lastname`, `name`, `birthdate`, `phonenumber`, `adress`, `postalcode`, `admin`) VALUES
