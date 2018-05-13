@@ -69,7 +69,7 @@
                 </div>
                 <div class="catalogues">  
                     <h3 class="gc"> <a href="index4.html"> Les catalogues & Guides </a></h3>
-                    <p>Retrouver tous les catalogues et <br> guides pour réaliser tous vos projets</p>
+                    <p>Retrouver tous les catalogues et <br> guides pour réaliser vos projets</p>
                 </div>
                
             </div>

@@ -2,8 +2,13 @@
 -- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
+<<<<<<< HEAD
 -- Hôte : 127.0.0.1:3306
 -- Généré le :  Dim 13 mai 2018 à 23:09
+=======
+-- HÃ´te : 127.0.0.1:3306
+-- GÃ©nÃ©rÃ© le :  jeu. 10 mai 2018 Ã  13:02
+>>>>>>> 08a9e6dca5eee1e6121d64232de3e5f34763748a
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.1.9
 
@@ -19,7 +24,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `basedonnee`
+-- Base de donnÃ©es :  `basedonnee`
 --
 
 -- --------------------------------------------------------
@@ -265,6 +270,7 @@ INSERT INTO `users` (`id`, `email`, `password`, `lastname`, `name`, `birthdate`,
 ALTER TABLE `home`
   ADD CONSTRAINT `home_ibfk_1` FOREIGN KEY (`building_id`) REFERENCES `building` (`id`);
 
+<<<<<<< HEAD
 --
 -- Contraintes pour la table `panne`
 --
@@ -272,6 +278,21 @@ ALTER TABLE `panne`
   ADD CONSTRAINT `panne_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`),
   ADD CONSTRAINT `panne_ibfk_2` FOREIGN KEY (`pannetype_id`) REFERENCES `pannetype` (`id`),
   ADD CONSTRAINT `panne_ibfk_3` FOREIGN KEY (`sensor_id`) REFERENCES `sensors` (`id`);
+=======
+--Structure de la table Pièce
+--
+DROP TABLE IF EXISTS `piece`;
+CREATE TABLE `piece`( 
+-- Index pour la table `Pièce`
+	`id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1,
+-----
+	`name` varchar(255) NOT NULL,
+	`home` REFERENCES home(id,address),
+	PRIMARY KEY (`id`)
+	)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-------------
+>>>>>>> 08a9e6dca5eee1e6121d64232de3e5f34763748a
 
 --
 -- Contraintes pour la table `piece`
@@ -287,7 +308,22 @@ ALTER TABLE `repair`
   ADD CONSTRAINT `repair_ibfk_2` FOREIGN KEY (`technician_id`) REFERENCES `technician` (`id`);
 
 --
+<<<<<<< HEAD
 -- Contraintes pour la table `sensors`
+=======
+DROP TABLE IF EXISTS `mentionlegale`;
+CREATE TABLE `mentionlegale` (
+-- Index pour la table `MentionLegale`
+	`id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1,
+-----
+	`text` varchar(60000),
+	PRIMARY KEY (`id`)
+	)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+	
+	--
+-- DÃ©chargement des donnÃ©es de la table `users`
+>>>>>>> 08a9e6dca5eee1e6121d64232de3e5f34763748a
 --
 ALTER TABLE `sensors`
   ADD CONSTRAINT `sensors_ibfk_1` FOREIGN KEY (`sensortype_id`) REFERENCES `sensorstype` (`id`),
