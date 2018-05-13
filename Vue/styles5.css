@@ -65,11 +65,8 @@ header h1
 
 /*la barre de recherche*/
 
-*,*:after,*:before {
-  box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-}
+
+
 
 
 
@@ -104,21 +101,7 @@ header .header-box{
     clear:both;
 }
 
-.searchform {
-  background:#f4f4f4;
-  background:rgba(244,244,244,.79);
-  border: 1px solid #d3d3d3;
-  padding: 2px 5px;
-  width:339px;
-  box-shadow:0 4px 9px rgba(0,0,0,.37);
-  -moz-box-shadow:0 4px 9px rgba(0,0,0,.37);
-  -webkit-box-shadow:0 4px 9px rgba(0,0,0,.37);
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-    margin-top: 0;
-    text-align: center;
-}
+
 
 .searchform input, .searchform button {
 	float: left
