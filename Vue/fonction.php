@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Page d'accueil</title>
-        <link href="styles3.css" rel="stylesheet">
+        <link href="Vue/styles3.css" rel="stylesheet">
         
     </head>
     
@@ -13,7 +13,7 @@
  <header>
      <div class="header-box">
          <div class="logo">
-            <img id="img" src="images/notre-logo.png" alt="notre logo" />
+            <img id="img" src="Vue/images/notre-logo.png" alt="notre logo" />
         </div>
          <div class="search-bar"> 
              <form class="searchform cf">
@@ -22,14 +22,14 @@
              </form>
          </div>
          <div class="reglog">
-             <p><img src="images/man-user.png" alt='avatar'/><a href="connexion.php"> Connexion </a></p>
+             <p><img src="Vue/images/man-user.png" alt='avatar'/><a href="Vue/connexion.php"> Connexion </a></p>
          </div>
      </div>
      <div class="wrapper-bis"> 
          
                 <nav>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.php">Accueil</a></li>
                         <li><a href="#">A propos</a></li>
                         <li><a href="Guides">Produits</a></li>
                         <li><a href="Contact">Contact</a></li>
@@ -61,7 +61,7 @@
          <div class="left-right">
              <div>
                  <div class="wifi"> 
-                    <img src="images/wifi-signal.png" alt='img-wifi' />
+                    <img src="Vue/images/wifi-signal.png" alt='img-wifi' />
                     <h3>wifi</h3>
                    
                 </div>
@@ -75,7 +75,7 @@
         <div class="left-right">
             <div>
                  <div class="wifi"> 
-                    <img src="images/bluetoothIcon.png" alt='img-wifi' />
+                    <img src="Vue/images/bluetoothIcon.png" alt='img-wifi' />
                     <h3>bluetooth</h3>
                    
                 </div>
@@ -89,7 +89,7 @@
         <div class="left-right">
             <div>
                  <div class="wifi"> 
-                    <img src="images/notification.png" alt='img-wifi' />
+                    <img src="Vue/images/notification.png" alt='img-wifi' />
                     <h3>intrusion</h3>
                    
                 </div>
@@ -103,7 +103,7 @@
         <div class="left-right">
             <div>
                  <div class="wifi"> 
-                    <img src="images/fire-symbol.png" alt='img-wifi' />
+                    <img src="Vue/images/fire-symbol.png" alt='img-wifi' />
                     <h3>wifi</h3>
                    
                 </div>
@@ -132,14 +132,14 @@
       
            <div class="notification">
                     
-                     <img src="images/progressBar.png">
+                     <img src="Vue/images/progressBar.png">
                      <h3> Intrusion </h3>
             
         
                      
                 </div>
                 <div class="bluetooth"> 
-                    <img src="images/bluetoothIcon.png" alt='img-wifi' />
+                    <img src="Vue/images/bluetoothIcon.png" alt='img-wifi' />
                     <h3>wifi</h3>
                     
                     
@@ -173,12 +173,12 @@
             <div class="footer-box">
                 <div class="resauxSociaux">
                     <h3>Suivez-nous: </h3>
-                     <a href="#"><img src='images/facebook-logo.png'/></a> 
-                     <a href="#"><img src='images/instagram.png'/></a>
-                     <a href="#"><img src='images/twitter.png'/></a>
+                     <a href="#"><img src='Vue/images/facebook-logo.png'/></a> 
+                     <a href="#"><img src='Vue/images/instagram.png'/></a>
+                     <a href="#"><img src='Vue/images/twitter.png'/></a>
                 </div>
                 <div class="renseignements"> 
-                    <img src='images/question.png' alt='img-question' />
+                    <img src='Vue/images/question.png' alt='img-question' />
                     <h3>AIDE & CONTACT</h3>
                     <p>Une question? Un renseignement? <br> <p>Contacter-nous</p>
                 </div>

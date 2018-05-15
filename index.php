@@ -15,7 +15,11 @@ ini_set('display_errors', 1);
 // Appel des fonctions du contrôleur
 include("C:/wamp64/www/APP-INFO/Controleur/fonctions.php");
 // Appel des fonctions liées à l'affichage
+<<<<<<< HEAD
 //include("C:/wamp64/www/APP-INFO/Vue/fonctions.php");
+=======
+include("Vue/fonction.php");
+>>>>>>> d12ba78c75063c29bb3c9ee1e1904768d3db8aa5
 
 // On identifie le contrôleur à appeler dont le nom est contenu dans cible passé en GET
 if(isset($_GET['cible']) && !empty($_GET['cible'])) 
