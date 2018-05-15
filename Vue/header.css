@@ -2,6 +2,13 @@
 
 
 /*container invisible*/
+#img
+{
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+}
+
 
 .wrapper-bis{
     width: 90%;
