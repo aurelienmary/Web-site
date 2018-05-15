@@ -71,7 +71,7 @@
            </div>
         
            
-          <div class=box2> 
+          <div class=box3> 
           	<h2>Je n'ai pas encore de compte</h2>
            	<p><a href="index2.html" class="create-account">Cliquer ici pour créer votre compte</a></p>
           </div>

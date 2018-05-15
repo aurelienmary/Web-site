@@ -214,18 +214,31 @@ header .header-box{
 
 .box2 h1
 {
-    margin-left: 25%;
-    
-    
+    margin-left: 125px;
     
 }
 
 
 .box2 h2
 {
-    margin-left: 45px;
+    margin-left: 20px;
     margin-top: 50px;
     
+}
+
+.box3
+{
+	width: 400px;
+    height: 300px;
+    background: #ffffff;
+    border: 3px solid black;
+}
+
+.box3 h2
+{
+	margin-left: 52px;
+    margin-top: 50px;
+	
 }
 
 
@@ -235,7 +248,8 @@ header .header-box{
 	display: flex;
 	justify-content: space-around;
 	align-content: space-around;
-	margin-bottom: 130px;
+	margin-bottom: 110px;
+	margin-top: 50px;
 	
   
 }
@@ -262,20 +276,14 @@ header .header-box{
   cursor: pointer;
 }
 
-.create-account{
-    
-    color: #92dd5a;
-    margin-left: 70px;
-    text-decoration: underline;
-}
 
 
-.mat-label {
+.mat-label 
+{
   
-    margin: 15px auto;
-  
-  font-size: 20px;
-    margin-left: 10px;
+	margin: 20px;
+  	font-size: 20px;
+    margin-left: 20px;
 
   
 }
@@ -287,12 +295,12 @@ header .header-box{
 }
 
 
-
 .mat-input
 {
     font-size: 20px;
     border-radius: 5px;
     color: black;
+    margin-left: 20px;
     
 
     
@@ -326,7 +334,6 @@ footer .footer-box{
 }
 
 
-
 .renseignements img{
     margin: auto;
 }
@@ -336,28 +343,12 @@ footer .footer-box{
 }
 
 
-
-
-.login-box button 
- {
-  background-color: #92dd5a;
-  font-size: 18px;
-  color: white;
-  border: none;
-  display: block;
-  margin: 70px auto;
-  padding: 15px 30px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .create-account{
     
     color: #92dd5a;
-    margin-left: 70px;
+    margin-left: 90px;
     text-decoration: underline;
 }
-
 
 
 
