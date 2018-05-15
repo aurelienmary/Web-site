@@ -247,7 +247,9 @@ h1
 
 .box
 {
-    position: relative;
+	display: flex;
+	justify-content: center;
+   
     margin-top: 300px;
     top: 50%;
     left: 25%;
@@ -263,8 +265,8 @@ h1
 {
     position: relative;
     margin-top: 300px;
-    top: 50%;
-    left 75%;
+    top: 20%;
+    left: 75%;
     width: 400px;
     height: 300px;
     background: #fff;
