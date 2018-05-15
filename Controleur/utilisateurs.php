@@ -18,7 +18,7 @@ switch ($function)
             /*
              affichage de la vue de l'acceuil
              */
-            $vue="acceuil";
+            $vue="accueil";
             $title="Accueil";
             break;
             
@@ -71,6 +71,6 @@ switch ($function)
             break;
     }
  
-include ('C:/wamp64/www/APP-INFO/Vue/header.php');
+//include ('C:/wamp64/www/APP-INFO/Vue/header.php');
 include ('C:/wamp64/www/APP-INFO/Vue/' . $vue . '.php');
-include ('C:/wamp64/www/APP-INFO/Vue/footer.php');
+//include ('C:/wamp64/www/APP-INFO/Vue/footer.php');
