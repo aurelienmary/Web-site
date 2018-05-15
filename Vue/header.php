@@ -12,7 +12,7 @@
    		<header>
 		     <div class="header-box">
 		     	<div class="logo">
-		            <img id="img" src="images/notre-logo.png" alt="notre logo" />
+		            <a href='accueil.php'><img id="img" href='accueil.php' src="images/notre-logo.png" alt="notre logo" /></a>
 		        </div>
 		        	<div class="search-bar"> 
 		            	<h1>DOMISEP</h1>

@@ -6,9 +6,8 @@
         <link href="styles2.css" rel="stylesheet">
         <script type="text/javascript" language="javascript" src="script2.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
-        
-       
-        
+          
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
         
         
     </head>
@@ -16,8 +15,9 @@
     
     <body>
         
- <?php include 'header.php';?>
-        
+ 		<?php include 'header.php';?>
+     <section>   
+     
      <h1>Inscription</h1>
      <div class="login-box">
          
@@ -112,7 +112,7 @@
      </div>
 
       
-
+</section>
 
         <?php include 'footer.php';?>
         
