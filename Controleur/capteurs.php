@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ("Modele/requetes.capteurs.php");
+include ("C:/wamp64/www/APP-INFO/Modele/requetes.capteurs.php");
 
 
 if (!isset($_GET['fontion']) || empty([$_GET['fonction']]))
@@ -37,6 +37,6 @@ switch ($function)
 }
 
 
-include ('Vue/header.php');
-include ('Vue/' . $vue . '.php');
-include ('Vue/footer.php');
+include ('C:/wamp64/www/APP-INFO/Vue/header.php');
+include ('C:/wamp64/www/APP-INFO/Vue/' . $vue . '.php');
+include ('C:/wamp64/www/APP-INFO/Vue/footer.php');

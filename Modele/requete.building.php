@@ -1,5 +1,5 @@
 <?php
 session_start();
-include ("Modele/requetes.generiques.php");
+include ("C:/wamp64/www/APP-INFO/Modele/requetes.generiques.php");
 
 $table='Building';

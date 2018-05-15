@@ -13,9 +13,9 @@ session_start();
 ini_set('display_errors', 1);
 
 // Appel des fonctions du contrôleur
-include("Controleur/fonctions.php");
+include("C:/wamp64/www/APP-INFO/Controleur/fonctions.php");
 // Appel des fonctions liées à l'affichage
-include("Vue/fonctions.php");
+include("C:/wamp64/www/APP-INFO/Vue/fonction.php");
 
 // On identifie le contrôleur à appeler dont le nom est contenu dans cible passé en GET
 if(isset($_GET['cible']) && !empty($_GET['cible'])) 
@@ -30,5 +30,5 @@ else
     }
 
 // On appelle le contrôleur
-include("Controleur/" . $url . ".php");
+include("C:/wamp64/www/APP-INFO/Controleur/" . $url . ".php");
     

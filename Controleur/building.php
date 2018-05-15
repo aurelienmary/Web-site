@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ("Modele/requetes.building.php");
+include ("C:/wamp64/www/APP-INFO/Modele/requetes.building.php");
 
 
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
