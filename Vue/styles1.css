@@ -214,17 +214,12 @@ header .header-box{
 
 .box2 h1
 {
-    margin-top: 50px;
-    position: absolute;
-    margin-left: 150px;
+    margin-left: 25%;
+    
+    
     
 }
 
-/*.box h2
-{
-    margin-left: 85px;
-    
-}*/
 
 .box2 h2
 {
@@ -235,15 +230,12 @@ header .header-box{
 
 
 
-
-
-
-
 #box
 {
 	display: flex;
 	justify-content: space-around;
 	align-content: space-around;
+	margin-bottom: 130px;
 	
   
 }
@@ -346,13 +338,9 @@ footer .footer-box{
     
     color: white;
     font-size: 15px;
-    margin-top: 0px;
     margin-left: 120px;
 }
 
-.resauxSociaux h3, .renseignements h3, .catalogues h3{
-    margin-bottom: 10px;
-}
 
 .catalogues .gc a{
     color: #00ffff;
@@ -420,35 +408,6 @@ footer .footer-box{
 
 
 
-
-
-footer
-{
-    background-color: #666666;
-    height: 200px;
-    color: #fff;
-    
-   
-}
-
-
-
-
-footer .footer-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-
-}
-
-.resauxSociaux, .renseignements, .catalogues{
-    width: 25%;
-    text-align: center;
-    margin-top: 15px;      
-}
-
 .ml {
     text-align: center;
     color: white;
@@ -456,13 +415,7 @@ footer .footer-box{
     font-size: 20px;
 }
 
-.adress{
-    
-    color: white;
-    font-size: 15px;
-    margin-top: 0px;
-    margin-left: 120px;
-}
+
 
 .resauxSociaux h3, .renseignements h3, .catalogues h3{
     margin-bottom: 10px;
@@ -475,34 +428,6 @@ footer .footer-box{
 .renseignements img{
     margin: auto;
 }
-
-.resauxSociaux img, .renseignements img, .catalogues img{
-    padding: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

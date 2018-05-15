@@ -53,15 +53,17 @@
         	<div class=box2>
         		<h1>Me connecter</h1>  
 	        	<h2>J'ai déjà un compte</h2>
-	           	<form action =test.php method= Post >
+	           	<form action =test.php method="post" >
 	           	
-	            	<label for="fullname" class="mat-label">Votre identifiant</label>
-	                <input type="text" name="identifiant" class="mat-input">
+	            	<label for="identifiant" class="mat-label">Votre identifiant</label>
+	                <input type="text" id="identifiant" name="identifiant" class="mat-input">
+	                <br />
 	           
 	          
 	          
-	                <label for="fullname" class="mat-label">Mot de passe</label>
-	                <input type="password" name="password" class="mat-input">
+	                <label for="password" class="mat-label">Mot de passe</label>
+	                <br />
+	                <input type="password" id="password" name="password" class="mat-input">
 	                <input type=submit name=valider>
 	                
 	           
