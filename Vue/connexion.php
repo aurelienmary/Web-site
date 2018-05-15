@@ -46,14 +46,12 @@
      </header>
      
      <section> 
-      
-       
-     	<h1>Me connecter</h1>  
     
          
      	<div id="box">
            
         	<div class=box2>
+        		<h1>Me connecter</h1>  
 	        	<h2>J'ai déjà un compte</h2>
 	           	<form action =test.php method= Post >
 	           	
@@ -73,9 +71,6 @@
            
           <div class=box2> 
           	<h2>Je n'ai pas encore de compte</h2>
-        
-        
-               
            	<p><a href="index2.html" class="create-account">Cliquer ici pour créer votre compte</a></p>
           </div>
         
