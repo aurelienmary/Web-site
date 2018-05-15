@@ -15,13 +15,17 @@
 		            <img id="img" src="images/notre-logo.png" alt="notre logo" />
 		        </div>
 		        	<div class="search-bar"> 
-		            	
-		              
-		              		<h1>DOMISEP</h1>
+		            	<h1>DOMISEP</h1>
+            			<form class="searchform cf">
+                  			<input type="text" placeholder="Rechercher">
+                  			<button type="submit">Search</button>
+             			</form>
+         			</div>
+		             
 		         
 		         
 		        		
-		        	</div>
+		        
 		        <div class="reglog">
 		             <p><img src="images/man-user.png" alt='avatar'/><a href="connexion.php"> Connexion </a></p>
 		        </div>
@@ -33,7 +37,7 @@
 		                    <ul>
 		                        <li><a href="../index.php">Accueil</a></li>
 		                        <li><a href="#">A propos</a></li>
-		                        <li><a href="Guides">Produits</a></li>
+		                        <li><a href="catalogue.php">Produits</a></li>
 		                        <li><a href="Contact">Contact</a></li>
 		                    </ul>
 		                
