@@ -303,20 +303,18 @@ header .header-box{
 footer
 {
     background-color: #666666;
-    height: 200px;
+    height: 220px;
     color: #fff;
     
    
 }
 
 
-
-
 footer .footer-box{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin: auto;
 
 }
@@ -327,24 +325,7 @@ footer .footer-box{
     margin-top: 15px;      
 }
 
-.ml {
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-    font-size: 20px;
-}
 
-.adress{
-    
-    color: white;
-    font-size: 15px;
-    margin-left: 120px;
-}
-
-
-.catalogues .gc a{
-    color: #00ffff;
-}
 
 .renseignements img{
     margin: auto;
@@ -357,7 +338,8 @@ footer .footer-box{
 
 
 
-.login-box button  {
+.login-box button 
+ {
   background-color: #92dd5a;
   font-size: 18px;
   color: white;
@@ -377,42 +359,17 @@ footer .footer-box{
 }
 
 
-.mat-label {
-  
-    margin: 15px auto;
-  
-  font-size: 20px;
-    margin-left: 10px;
-
-  
-}
-
-
-.mat-div {
-  padding: 30px 0 0 0;
-  position: relative;
-}
-
-
-
-.mat-input
-{
-    font-size: 20px;
-    border-radius: 5px;
-    color: black;
-    
-
-    
-}
-
-
 
 
 .ml {
     text-align: center;
     color: white;
-    margin-top: 10px;
     font-size: 20px;
+}
+
+.ml a
+{
+	color: white;
 }
 
 
@@ -424,12 +381,6 @@ footer .footer-box{
 .catalogues .gc a{
     color: #00ffff;
 }
-
-.renseignements img{
-    margin: auto;
-}
-
-
 
 
 >>>>>>> d12ba78c75063c29bb3c9ee1e1904768d3db8aa5:Vue/styles1.css

@@ -90,11 +90,17 @@
                      <a href="#"><img src='images/facebook-logo.png'/></a> 
                      <a href="#"><img src='images/instagram.png'/></a>
                      <a href="#"><img src='images/twitter.png'/></a>
+                     <p>28, rue Notre-Dame-des-Champs<br>75006 Paris</p>
+                     
                 </div>
                 <div class="renseignements"> 
                     <img src='images/question.png' alt='img-question' />
                     <h3>AIDE & CONTACT</h3>
-                    <p>Une question? Un renseignement? <br> <p>Contacter-nous</p>
+                    <p>Une question? Un renseignement? <br> 
+                    <p>Contacter-nous</p>
+                    <div class="ml">
+                    	<p><a href="#">Mentions légales</a></p>
+                	</div>
                 </div>
                 <div class="catalogues">  
                     <h3 class="gc"> <a href="index4"> Les catalogues & Guides </a></h3>
@@ -103,14 +109,9 @@
                
             </div>
             
-            <div class="adress">
-                28, rue Notre-Dame-des-Champs<br>75006 Paris
             
-            </div>
             
-             <div class="ml">
-                    Mentions légales
-                </div>
+             
            
            
         </footer>
