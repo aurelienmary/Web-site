@@ -12,72 +12,77 @@
     
     <body>
         
- <header>
-     <div class="header-box">
-         <div class="logo">
-            <img id="img" src="images/notre-logo.png" alt="notre logo" />
-        </div>
-         <div class="search-bar"> 
-              <div class="search-bar">
-              
-              <h1>DOMISEP</h1>
-         
-         
-         </div>
-         </div>
-         <div class="reglog">
-             <p><img src="images/man-user.png" alt='avatar'/><a href="#"> Connexion </a></p>
-         </div>
-     </div>
-     <div class="wrapper-bis"> 
-         
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="#">A propos</a></li>
-                        <li><a href="Guides">Produits</a></li>
-                        <li><a href="Contact">Contact</a></li>
-                    </ul>
-                
-                </nav>            
-     </div>           
+        <header>
+		     <div class="header-box">
+		     	<div class="logo">
+		            <img id="img" src="images/notre-logo.png" alt="notre logo" />
+		        </div>
+		        	<div class="search-bar"> 
+		            	<div class="search-bar">
+		              
+		              <h1>DOMISEP</h1>
+		         
+		         
+		        		</div>
+		        	</div>
+		        <div class="reglog">
+		             <p><img src="images/man-user.png" alt='avatar'/><a href="#"> Connexion </a></p>
+		        </div>
+		     </div>
+		     
+		     <div class="wrapper-bis"> 
+		         
+		                <nav>
+		                    <ul>
+		                        <li><a href="index.html">Accueil</a></li>
+		                        <li><a href="#">A propos</a></li>
+		                        <li><a href="Guides">Produits</a></li>
+		                        <li><a href="Contact">Contact</a></li>
+		                    </ul>
+		                
+		                </nav>            
+		     </div>           
             
-        </header>
-        <h1>Me connecter</h1>  
+     </header>
+     
+     <section> 
+      
+       
+     	<h1>Me connecter</h1>  
     
          
-       <div class="box">
-           <h2>J'ai déjà un compte</h2>
-           <form action =test.php method= Post >
-           	
-                <label for="fullname" class="mat-label">Votre identifiant</label>
-                <input type="text" name="identifiant" class="mat-input">
+     	<div id="box">
            
-          
-          
-                <label for="fullname" class="mat-label">Mot de passe</label>
-                <input type="password" name="password" class="mat-input">
-                <input type=submit name=valider>
-           
-           </form>
-           
-         
-             
-          
+        	<div class=box2>
+	        	<h2>J'ai déjà un compte</h2>
+	           	<form action =test.php method= Post >
+	           	
+	            	<label for="fullname" class="mat-label">Votre identifiant</label>
+	                <input type="text" name="identifiant" class="mat-input">
+	           
+	          
+	          
+	                <label for="fullname" class="mat-label">Mot de passe</label>
+	                <input type="password" name="password" class="mat-input">
+	                <input type=submit name=valider>
+	                
+	           
+	           </form>
+           </div>
         
-     
-        <div class="box2">
-           <h2>Je n'ai pas encore de compte</h2>
+           
+          <div class=box2> 
+          	<h2>Je n'ai pas encore de compte</h2>
         
         
                
-               <p><a href="index2.html" class="create-account">Cliquer ici pour créer votre compte</a></p>
-            
-        </div>
+           	<p><a href="index2.html" class="create-account">Cliquer ici pour créer votre compte</a></p>
+          </div>
+        
          
-     </div>
+     	</div>
 
-      
+     </section>  
 
 
         <footer> 

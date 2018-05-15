@@ -1,6 +1,6 @@
 <?php
 
-include ('Modele/requetes.utilisateurs.php');
+include ('C:/wamp64/www/APP-INFO/Modele/requetes.utilisateurs.php');
 
 
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
@@ -18,7 +18,7 @@ switch ($function)
             /*
              affichage de la vue de l'acceuil
              */
-            $vue="acceuil";
+            $vue="accueil";
             $title="Accueil";
             break;
             
@@ -71,6 +71,6 @@ switch ($function)
             break;
     }
  
-include ('Vue/header.php');
-include ('Vue/' . $vue . '.php');
-include ('Vue/footer.php');
+//include ('C:/wamp64/www/APP-INFO/Vue/header.php');
+include ('C:/wamp64/www/APP-INFO/Vue/' . $vue . '.php');
+//include ('C:/wamp64/www/APP-INFO/Vue/footer.php');

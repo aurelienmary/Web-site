@@ -1,6 +1,6 @@
 <?php
 
-include ("Modele/connexion.php");
+include ("C:/wamp64/www/APP-INFO/Modele/connexion.php");
 
 function getall (PDO $bdd, string $table)
 {
