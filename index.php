@@ -34,5 +34,5 @@ else
     }
 
 // On appelle le contrôleur
-include("C:/wamp64/www/APP-INFO/Controleur/" . $url . ".php");
+include("Controleur/" . $url . ".php");
     

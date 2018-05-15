@@ -13,7 +13,7 @@
             <div class="footer-box">
                 <div class="resauxSociaux">
                     <h3>Suivez-nous: </h3>
-                     <a href="#"><img src='images/facebook-logo.png'/></a> 
+                     <a href="https://www.facebook.com"><img src='images/facebook-logo.png'/></a> 
                      <a href="#"><img src='images/instagram.png'/></a>
                      <a href="#"><img src='images/twitter.png'/></a>
                      <p>28, rue Notre-Dame-des-Champs<br>75006 Paris</p>

@@ -23,7 +23,7 @@
 		        		
 		        	</div>
 		        <div class="reglog">
-		             <p><img src="images/man-user.png" alt='avatar'/><a href="#"> Connexion </a></p>
+		             <p><img src="images/man-user.png" alt='avatar'/><a href="connexion.php"> Connexion </a></p>
 		        </div>
 		     </div>
 		     

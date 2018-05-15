@@ -1,6 +1,6 @@
 <?php
 
-include ('C:/wamp64/www/APP-INFO/Modele/requetes.utilisateurs.php');
+include ('Modele/requetes.utilisateurs.php');
 
 
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
@@ -30,7 +30,7 @@ switch ($function)
             $alerte=false;
             $title="Connexion";
             /*
-             * ce code est appelé sie le formulaire à été posté
+             * ce code est appelï¿½ sie le formulaire ï¿½ ï¿½tï¿½ postï¿½
              */
             if (isset($_POST['email']) and isset($_POST['password']))
             {
@@ -47,16 +47,16 @@ switch ($function)
                     
                     $vue="ajoutcapteur";
                     /*
-                     * fonction qui récupère la table de l'utilisateur dans la base de donnée
+                     * fonction qui rï¿½cupï¿½re la table de l'utilisateur dans la base de donnï¿½e
                      */
                     searchuser($bdd, $values);
                     /*
-                     * fontion searchuser à réaliser
+                     * fontion searchuser ï¿½ rï¿½aliser
                      */
                 }
                 else
                 {
-                    $alerte="l'identifiant ou le mot des passe sont éronnés";
+                    $alerte="l'identifiant ou le mot des passe sont ï¿½ronnï¿½s";
                 }
             }
             break;

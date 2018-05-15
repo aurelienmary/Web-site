@@ -42,7 +42,7 @@
            
           <div class=box3> 
           	<h2>Je n'ai pas encore de compte</h2><br />
-           	<p><a href="index2.html" class="create-account">Cliquer ici pour créer votre compte</a></p>
+           	<p><a href="inscription.php" class="create-account">Cliquer ici pour créer votre compte</a></p>
           </div>
         
          
