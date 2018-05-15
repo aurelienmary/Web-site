@@ -4,15 +4,15 @@
         <meta charset="utf-8">
         <title>Page d'accueil</title>
         <link href="styles1.css" rel="stylesheet">
-         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
         
     </head>
     
     
     <body>
-        
-        <header>
+        <?php include("header.php"); ?>
+        <!--  <header>
 		     <div class="header-box">
 		     	<div class="logo">
 		            <img id="img" src="images/notre-logo.png" alt="notre logo" />
@@ -43,7 +43,7 @@
 		                </nav>            
 		     </div>           
             
-     </header>
+     </header>-->
      
      <section> 
     

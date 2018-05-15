@@ -1,18 +1,7 @@
-*
-{
-    margin: 0;
-    padding: 0;
-}
-
-
-a
-{
-    text-decoration: none;
-    color: #444;
-}
 
 
 
+/*container invisible*/
 
 .wrapper-bis{
     width: 90%;
@@ -32,6 +21,8 @@ a
 ul li{
     width: 15%;
     text-align: center;
+    font-size: 20px;
+   
 }
 
 ul li:not(:last-child){
@@ -53,6 +44,34 @@ header h1
     margin-top: 10px;
 }
 
+h1
+{
+    
+    font-family: 'Lobster', cursive;
+    color: #92dd5a;
+    margin-left: 140px;
+    margin-top: 20px;
+    
+}
+
+
+header h2
+{
+    float:left;
+    margin-top: 10px;
+    font-family: 'Poiret One', cursive;
+}
+
+
+
+.header-box .reglog p{
+    float: right;
+    color: black;
+    margin-right: 50px;
+    margin-top: 40px;
+}
+
+
 
 /*la barre de recherche*/
 
@@ -68,8 +87,9 @@ header .header-box{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    background: white;
 }
 
 .header-box .logo, .header-box .search-bar, .header-box .reglog{
@@ -162,4 +182,3 @@ header .header-box{
 	.searchform button:hover {
 		opacity:.9;
 	}
-
