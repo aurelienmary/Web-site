@@ -31,7 +31,7 @@
 		         
 		                <nav>
 		                    <ul>
-		                        <li><a href="index.html">Accueil</a></li>
+		                        <li><a href="../index.php">Accueil</a></li>
 		                        <li><a href="#">A propos</a></li>
 		                        <li><a href="Guides">Produits</a></li>
 		                        <li><a href="Contact">Contact</a></li>

@@ -20,7 +20,7 @@ footer .footer-box{
 .resauxSociaux, .renseignements, .catalogues{
     width: 25%;
     text-align: center;
-    margin-top: 15px;      
+    margin-top: 40px;      
 }
 
 
@@ -41,6 +41,7 @@ footer .footer-box{
     text-align: center;
     color: white;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .ml a

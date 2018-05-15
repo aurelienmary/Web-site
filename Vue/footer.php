@@ -3,6 +3,8 @@
     <head>
     	<meta charset="utf-8">
 		<link href="footer.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
 		
 	</head>
 
