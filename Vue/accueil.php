@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Page d'accueil</title>
-        <link href="styles.css" rel="stylesheet">
+        <link href="Vue/styles.css" rel="stylesheet">
          <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
         
@@ -15,7 +15,7 @@
  <header>
      <div class="header-box">
          <div class="logo">
-            <img id="img" src="images/notre-logo.png" alt="notre logo" />
+            <img id="img" src="Vue/images/notre-logo.png" alt="notre logo" />
         </div>
           <div class="search-bar">
               
@@ -24,7 +24,7 @@
          
          </div>
          <div class="reglog">
-             <p><img src="images/man-user.png" alt='avatar'/><a href="connexion.php"> Connexion </a></p>
+             <p><img src="Vue/images/man-user.png" alt='avatar'/><a href="Vue/connexion.php"> Connexion </a></p>
          </div>
      </div>
      <div class="wrapper-bis"> 
@@ -58,12 +58,12 @@
             <div class="footer-box">
                 <div class="resauxSociaux">
                     <h3>Suivez-nous: </h3>
-                     <a href="#"><img src='images/facebook-logo.png'/></a> 
-                     <a href="#"><img src='images/instagram.png'/></a>
-                     <a href="#"><img src='images/twitter.png'/></a>
+                     <a href="#"><img src='Vue/images/facebook-logo.png'/></a> 
+                     <a href="#"><img src='Vue/images/instagram.png'/></a>
+                     <a href="#"><img src='Vue/images/twitter.png'/></a>
                 </div>
                 <div class="renseignements"> 
-                    <img src='images/question.png' alt='img-question' />
+                    <img src='Vue/images/question.png' alt='img-question' />
                     <h3>AIDE & CONTACT</h3>
                     <p>Une question? Un renseignement? <br> <p>Contacter-nous</p>
                 </div>
