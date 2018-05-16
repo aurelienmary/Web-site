@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link href="./public/css/header.css" rel="stylesheet">
+        <link href="../public/css/header.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
         
@@ -13,7 +13,7 @@
    		<header>
 		     <div class="header-box">
 		     	<div class="logo">
-		            <a href='accueil.php'><img id="img" href='accueil.php' src="./public/images/notre-logo.png" alt="notre logo" /></a>
+		            <a href='accueil.php'><img id="img" href='accueil.php' src="../public/images/notre-logo.png" alt="notre logo" /></a>
 		        </div>
 		        	<div class="search-bar"> 
 		            	<h1>DOMISEP</h1>
@@ -28,7 +28,11 @@
 		        		
 		        
 		        <div class="reglog">
+<<<<<<< HEAD
+		             <p><img src="../public/images/man-user.png" alt='avatar'/><a href="connexion.php"> Connexion </a></p>
+=======
 		             <p><img src="./public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&ampfonction=connexion"> Connexion </a></p>
+>>>>>>> 3fdf8ab7c01490ab4f8df45f38a6bffe5b24cc64
 		        </div>
 		     </div>
 		     
@@ -36,7 +40,7 @@
 		         
 		                <nav>
 		                    <ul>
-		                        <li><a href="./index.php">Accueil</a></li>
+		                        <li><a href="../index.php">Accueil</a></li>
 		                        <li><a href="#">A propos</a></li>
 		                        <li><a href="catalogue.php">Produits</a></li>
 		                        <li><a href="Contact">Contact</a></li>
