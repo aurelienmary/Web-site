@@ -13,7 +13,7 @@
  <header>
      <div class="header-box">
          <div class="logo">
-            <img id="img" src="Vue/images/notre-logo.png" alt="notre logo" />
+            <a href='Vue/accueil.php'><img id="img"  src="Vue/images/notre-logo.png" alt="notre logo" /></a>
         </div>
          <div class="search-bar"> 
              <form class="searchform cf">
@@ -31,7 +31,7 @@
                     <ul>
                         <li><a href="index.php">Accueil</a></li>
                         <li><a href="#">A propos</a></li>
-                        <li><a href="Guides">Produits</a></li>
+                        <li><a href="Vue/catalogue.php"> Produits</a></li>
                         <li><a href="Contact">Contact</a></li>
                     </ul>
                 

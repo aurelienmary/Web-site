@@ -1,12 +1,14 @@
 <?php
 
+
 require('requetes.generiques.php');
+
 
 $table='users';
 
 
 /*
- ajoute un nouvel utilisateur dans la base de données
+ ajoute un nouvel utilisateur dans la base de donnï¿½es
  .
  */
 function adduser(PDO $bdd, array $user)
@@ -26,7 +28,7 @@ function adduser(PDO $bdd, array $user)
 }
 
 /*
- * fonction pour vérifié si l'utilisateur existe dans la base de données
+ * fonction pour vï¿½rifiï¿½ si l'utilisateur existe dans la base de donnï¿½es
  */
 function login(PDO $bdd, array $user) :array
 
@@ -40,7 +42,7 @@ function login(PDO $bdd, array $user) :array
 }
 
 /*
- * récupère les information de l'utilisateur dans la base de données
+ * rï¿½cupï¿½re les information de l'utilisateur dans la base de donnï¿½es
  */
 function searchuser(PDO $bdd,array $user)
 {

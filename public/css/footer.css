@@ -1,7 +1,9 @@
 footer
 {
     background-color: #666666;
-    height: 200px;
+
+    height: 220px;
+
     color: #fff;
     
    
@@ -9,12 +11,13 @@ footer
 
 
 
-
 footer .footer-box{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+
+    width: 100%;
+
     margin: auto;
 
 }
@@ -22,15 +25,38 @@ footer .footer-box{
 .resauxSociaux, .renseignements, .catalogues{
     width: 25%;
     text-align: center;
-    margin-top: 15px;      
+
+    margin-top: 40px;      
 }
+
+
+.renseignements img{
+    margin: auto;
+}
+
+.resauxSociaux img, .renseignements img, .catalogues img{
+    padding: 10px;
+}
+
+
+
+
+
 
 .ml {
     text-align: center;
     color: white;
-    margin-top: 50px;
-    font-size: 10px;
+    font-size: 20px;
+    margin-top: 10px;
 }
+
+.ml a
+{
+	color: white;
+}
+
+
+
 
 .resauxSociaux h3, .renseignements h3, .catalogues h3{
     margin-bottom: 10px;
@@ -40,6 +66,7 @@ footer .footer-box{
     color: #00ffff;
 }
 
+
 .renseignements img{
     margin: auto;
 }
@@ -47,4 +74,5 @@ footer .footer-box{
 .resauxSociaux img, .renseignements img, .catalogues img{
     padding: 10px;
 }
+
 

@@ -12,35 +12,7 @@
     
     <body>
         
- <header>
-     <div class="header-box">
-         <div class="logo">
-            <img id="img" src="public/images/notre-logo.png" alt="notre logo" />
-        </div>
-          <div class="search-bar">
-              
-              <h1>DOMISEP</h1>
-         
-         
-         </div>
-         <div class="reglog">
-             <p><img src="public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&amp;fonction=connexion"> Connexion </a></p>
-         </div>
-     </div>
-     <div class="wrapper-bis"> 
-         
-                <nav>
-                    <ul>
-                        <li><a href="#main-image">Accueil</a></li>
-                        <li><a href="#">A propos</a></li>
-                        <li><a href="Guides">Produits</a></li>
-                        <li><a href="Contact">Contact</a></li>
-                    </ul>
-                
-                </nav>            
-     </div>           
-            
-        </header>
+
         
         
 
@@ -50,45 +22,6 @@
             </div>
             
         </section>
-      
-
-
-        <footer> 
-            
-            <div class="footer-box">
-                <div class="resauxSociaux">
-                    <h3>Suivez-nous: </h3>
-                     <a href="#"><img src='public/images/facebook-logo.png'/></a> 
-                     <a href="#"><img src='public/images/instagram.png'/></a>
-                     <a href="#"><img src='public/images/twitter.png'/></a>
-                </div>
-                <div class="renseignements"> 
-                    <img src='public/images/question.png' alt='img-question' />
-                    <h3>AIDE & CONTACT</h3>
-                    <p>Une question? Un renseignement? <br> <p>Contacter-nous</p>
-                </div>
-                <div class="catalogues">  
-                    <h3 class="gc"> <a href="index4.html"> Les catalogues & Guides </a></h3>
-                    <p>Retrouver tous les catalogues et <br> guides pour réaliser vos projets</p>
-                </div>
-               
-            </div>
-            
-            <div class="adress">
-                28, rue Notre-Dame-des-Champs<br>75006 Paris
-            
-            </div>
-            
-             <div class="ml">
-                    Mentions légales
-                </div>
-           
-           
-        </footer>
-        
-        
-        
-        
-        
+    
     </body>
 </html>

@@ -1,6 +1,8 @@
 <?php
 session_start();
+
 include ("./Modele/requetes.building.php");
+
 
 
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
