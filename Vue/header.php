@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link href="../public/css/header.css" rel="stylesheet">
+        <link href="./public/css/header.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
         
@@ -31,7 +31,7 @@
 
 		    
 
-		             <p><img src="./public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&ampfonction=connexion"> Connexion </a></p>
+		             <p><img src="./public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&fonction=connexion"> Connexion </a></p>
 
 		        </div>
 		     </div>

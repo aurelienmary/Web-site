@@ -1,6 +1,6 @@
 <?php
 
-require('./Modele/requetes.utilisateurs.php');
+include ('./Modele/requetes.utilisateurs.php');
 
 
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
