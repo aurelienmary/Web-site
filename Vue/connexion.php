@@ -13,8 +13,7 @@
     
     
     <body>
-        <?php include("header.php"); ?>
-        
+    
 		<section>
 			<div id=box>
 	           
@@ -49,12 +48,7 @@
 	     	</div>
 
      </section>  
-
-
-        <?php include 'footer.php';?>
-        
-        
-        
+               
         
     </body>
 </html>
