@@ -28,7 +28,11 @@
 		        		
 		        
 		        <div class="reglog">
+<<<<<<< HEAD
 		             <p><img src="../public/images/man-user.png" alt='avatar'/><a href="connexion.php"> Connexion </a></p>
+=======
+		             <p><img src="./public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&ampfonction=connexion"> Connexion </a></p>
+>>>>>>> 3fdf8ab7c01490ab4f8df45f38a6bffe5b24cc64
 		        </div>
 		     </div>
 		     
