@@ -28,7 +28,7 @@
 		        		
 		        
 		        <div class="reglog">
-		             <p><img src="./public/images/man-user.png" alt='avatar'/><a href="connexion.php"> Connexion </a></p>
+		             <p><img src="./public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&ampfonction=connexion"> Connexion </a></p>
 		        </div>
 		     </div>
 		     
