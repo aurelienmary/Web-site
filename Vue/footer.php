@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
     	<meta charset="utf-8">
-		<link href="../public/css/footer.css" rel="stylesheet">
+		<link href="./public/css/footer.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
 		
