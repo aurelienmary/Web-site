@@ -11,11 +11,7 @@
     
     
     <body>
-        <?php include 'header.php';?>
-
-        
-        
-
+ 
         <section id="main-image">
             <div class="wrapper">
                 <h2>Piloter et sécuriser<br>votre maison<br>et tous vos objets connectés à distance</h2>
@@ -23,6 +19,5 @@
             
         </section>
     
-    	<?php include 'footer.php';?>
     </body>
 </html>
