@@ -2,7 +2,7 @@
 
 require('requetes.generiques.php');
 
-$table='Users';
+$table='users';
 
 
 /*

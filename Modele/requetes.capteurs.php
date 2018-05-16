@@ -2,7 +2,8 @@
 session_start();
 include ('requetes.generiques.php');
 
-$table='Sensors';
+$table='sensors';
+$table2='users';
 
 function getusersensor(PDO $bdd, array $user)
 {
