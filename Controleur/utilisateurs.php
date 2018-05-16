@@ -1,6 +1,6 @@
 <?php
 
-include ('C:/wamp64/www/APP-INFO/Modele/requetes.utilisateurs.php');
+require('C:/wamp64/www/APP-INFO/Modele/requetes.utilisateurs.php');
 
 
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
@@ -9,7 +9,7 @@ if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
     }
 else 
     {
-        $function=$_GET['function'];
+        $function=$_GET['fonction'];
     }
     
 switch ($function)
@@ -72,5 +72,5 @@ switch ($function)
     }
  
 //include ('C:/wamp64/www/APP-INFO/Vue/header.php');
-include ('C:/wamp64/www/APP-INFO/Vue/' . $vue . '.php');
+require ('C:/wamp64/www/APP-INFO/Vue/' . $vue . '.php');
 //include ('C:/wamp64/www/APP-INFO/Vue/footer.php');

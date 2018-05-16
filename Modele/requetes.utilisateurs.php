@@ -1,6 +1,6 @@
 <?php
 
-include ('C:/wamp64/www/APP-INFO/Modele/requetes.generiques.php');
+require('C:/wamp64/www/APP-INFO/Modele/requetes.generiques.php');
 
 $table='Users';
 
