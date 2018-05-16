@@ -15,7 +15,7 @@
     <body>
         <?php include("header.php"); ?>
         
-
+		<div id=box>
            
         	<div class=box2>
         		<h1>Me connecter</h1>  
@@ -49,7 +49,7 @@
      </section>  
 
 
-        
+        <?php include 'footer.php';?>
         
         
         
