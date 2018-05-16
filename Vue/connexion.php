@@ -15,6 +15,7 @@
     <body>
         <?php include("header.php"); ?>
         
+		<section>
 		<div id=box>
            
         	<div class=box2>
