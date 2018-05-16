@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ("C:/wamp64/www/APP-INFO/Modele/requetes.capteurs.php");
+include ("./Modele/requetes.capteurs.php");
 
 
 if (!isset($_GET['fontion']) || empty([$_GET['fonction']]))
