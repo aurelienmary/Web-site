@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  Dim 13 mai 2018 à 23:14
+-- Généré le :  mer. 16 mai 2018 à 08:42
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.1.9
 
@@ -32,9 +32,19 @@ DROP TABLE IF EXISTS `building`;
 CREATE TABLE IF NOT EXISTS `building` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
+  `adress` varchar(255) NOT NULL,
   `consomax` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `gestionnaire_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `building_ibfk_1` (`gestionnaire_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `building`
+--
+
+INSERT INTO `building` (`id`, `name`, `adress`, `consomax`, `gestionnaire_id`) VALUES
+(1, 'Résidence Les Oiseaux du paradis', '16 rue ....', 500, 3);
 
 -- --------------------------------------------------------
 
@@ -87,9 +97,18 @@ CREATE TABLE IF NOT EXISTS `home` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `adress` varchar(255) NOT NULL,
   `building_id` int(11) DEFAULT NULL,
+  `owner_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `building_id` (`building_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  KEY `building_id` (`building_id`),
+  KEY `home_ibfk_2` (`owner_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `home`
+--
+
+INSERT INTO `home` (`id`, `adress`, `building_id`, `owner_id`) VALUES
+(1, '16 rue --- appartement 35', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -151,7 +170,18 @@ CREATE TABLE IF NOT EXISTS `piece` (
   `home_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `home_id` (`home_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `piece`
+--
+
+INSERT INTO `piece` (`id`, `name`, `home_id`) VALUES
+(1, 'chambre 1', 1),
+(2, 'salle de bain', 1),
+(3, 'salon', 1),
+(4, 'cuisine', 1),
+(5, 'chambre 2', 1);
 
 -- --------------------------------------------------------
 
@@ -243,27 +273,36 @@ CREATE TABLE IF NOT EXISTS `users` (
   `adress` varchar(255) NOT NULL,
   `postalcode` int(5) NOT NULL,
   `admin` tinyint(1) NOT NULL DEFAULT '0',
+  `gestionnaire` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `email`, `password`, `lastname`, `name`, `birthdate`, `phonenumber`, `adress`, `postalcode`, `admin`) VALUES
-(1, 'john.smith@gmail.com', '1475369', 'SMITH', 'John', '1992-05-22', 645856951, '28 rue albert dupond', 75015, 0),
-(2, 'pierre.numa@isep.fr', '1475369', 'NUMA', 'Pierre', '1997-03-22', 1025648595, '24 rue de la victoire', 75006, 1);
+INSERT INTO `users` (`id`, `email`, `password`, `lastname`, `name`, `birthdate`, `phonenumber`, `adress`, `postalcode`, `admin`, `gestionnaire`) VALUES
+(1, 'john.smith@gmail.com', '1475369', 'SMITH', 'John', '1992-05-22', 645856951, '28 rue albert dupond', 75015, 0, 0),
+(2, 'pierre.numa@isep.fr', '1475369', 'NUMA', 'Pierre', '1997-03-22', 1025648595, '24 rue de la victoire', 75006, 1, 0),
+(3, 'albert.dufourt@gmail.com', '1475369', 'Dufourt', 'Albert', '1986-08-12', 1547896256, '20 rue .....', 75012, 0, 1);
 
 --
 -- Contraintes pour les tables déchargées
 --
 
 --
+-- Contraintes pour la table `building`
+--
+ALTER TABLE `building`
+  ADD CONSTRAINT `building_ibfk_1` FOREIGN KEY (`gestionnaire_id`) REFERENCES `users` (`id`);
+
+--
 -- Contraintes pour la table `home`
 --
 ALTER TABLE `home`
-  ADD CONSTRAINT `home_ibfk_1` FOREIGN KEY (`building_id`) REFERENCES `building` (`id`);
+  ADD CONSTRAINT `home_ibfk_1` FOREIGN KEY (`building_id`) REFERENCES `building` (`id`),
+  ADD CONSTRAINT `home_ibfk_2` FOREIGN KEY (`owner_id`) REFERENCES `users` (`id`);
 
 --
 -- Contraintes pour la table `panne`
