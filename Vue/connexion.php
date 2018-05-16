@@ -17,6 +17,7 @@
          <div class="logo">
             <img id="img" src="public/images/notre-logo.png" alt="notre logo" />
         </div>
+         
          <div class="search-bar"> 
               <div class="search-bar">
               
