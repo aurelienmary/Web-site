@@ -71,8 +71,6 @@ switch ($function)
             break;
     }
  
-//include ('C:/wamp64/www/APP-INFO/Vue/header.php');
-
-require ('./Vue/'. $vue .'.php');
-
-//include ('C:/wamp64/www/APP-INFO/Vue/footer.php');
+include ('./Vue/header.php');
+include ('./Vue/'. $vue .'.php');
+include ('./Vue/footer.php');
