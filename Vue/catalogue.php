@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Page d'accueil</title>
-        <link href="styles4.css" rel="stylesheet">
+        <link href="catalogue.css" rel="stylesheet">
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
