@@ -15,12 +15,14 @@
          <div class="logo">
             <img id="img" src="images/notre-logo.png" alt="notre logo" />
         </div>
-         <div class="search-bar"> 
-             <form class="searchform cf">
-                  <input type="text" placeholder="Rechercher">
-                  <button type="submit">Search</button>
-             </form>
+	     
+         <div class="search-bar">
+              
+              <h1>DOMISEP </h1>
+         
+         
          </div>
+	     
          <div class="reglog">
              <p><img src="images/man-user.png" alt='avatar'/><a href="#"> Connexion </a></p>
          </div>
