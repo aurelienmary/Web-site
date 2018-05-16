@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link href="header.css" rel="stylesheet">
+        <link href="../public/css/header.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
         
@@ -13,7 +13,7 @@
    		<header>
 		     <div class="header-box">
 		     	<div class="logo">
-		            <a href='accueil.php'><img id="img" href='accueil.php' src="images/notre-logo.png" alt="notre logo" /></a>
+		            <a href='accueil.php'><img id="img" href='accueil.php' src="../public/images/notre-logo.png" alt="notre logo" /></a>
 		        </div>
 		        	<div class="search-bar"> 
 		            	<h1>DOMISEP</h1>
@@ -28,7 +28,7 @@
 		        		
 		        
 		        <div class="reglog">
-		             <p><img src="images/man-user.png" alt='avatar'/><a href="connexion.php"> Connexion </a></p>
+		             <p><img src="../public/images/man-user.png" alt='avatar'/><a href="connexion.php"> Connexion </a></p>
 		        </div>
 		     </div>
 		     

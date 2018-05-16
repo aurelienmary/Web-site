@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Page d'accueil</title>
-        <link href="inscription.css" rel="stylesheet">
+        <link href="../public/css/inscription.css" rel="stylesheet">
         <script type="text/javascript" language="javascript" src="script2.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
           
