@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
     	<meta charset="utf-8">
-		<link href="./public/css/footer.css" rel="stylesheet">
+		<link href="../public/css/footer.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
 		
@@ -14,13 +14,13 @@
                 <div class="resauxSociaux">
                     <h3>Suivez-nous: </h3>
                      <a href="https://www.facebook.com"><img src='../public/images/facebook-logo.png'/></a> 
-                     <a href="#"><img src='./public/images/instagram.png'/></a>
-                     <a href="#"><img src='./public/images/twitter.png'/></a>
+                     <a href="#"><img src='../public/images/instagram.png'/></a>
+                     <a href="#"><img src='../public/images/twitter.png'/></a>
                      <p>28, rue Notre-Dame-des-Champs<br>75006 Paris</p>
                      
                 </div>
                 <div class="renseignements"> 
-                    <img src='./public/images/question.png' alt='img-question' />
+                    <img src='../public/images/question.png' alt='img-question' />
                     <h3>AIDE & CONTACT</h3>
                     <p>Une question? Un renseignement? <br> 
                     <p>Contacter-nous</p>
