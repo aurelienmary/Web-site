@@ -19,21 +19,23 @@ a
 
 /* l'image principale*/
 
-h1
+
+
+.box2 form
 {
-    margin-top: 50px;
-    position: absolute;
-    margin-left: 150px;
-    
+	margin-left: 10px;
 }
-
-
 
 .box2 h2
 {
-    margin-left: 45px;
-    margin-top: 50px;
+    margin-left: 15px;
+    margin-top: 15px;
     
+}
+
+.box2 h1
+{
+	margin-left: 125px;
 }
 
 
@@ -44,7 +46,7 @@ h1
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin: auto;
+    margin-left: 10px;
 
 }
 
