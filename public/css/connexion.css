@@ -27,11 +27,7 @@ h1
     
 }
 
-.box h2
-{
-    margin-left: 85px;
-    
-}
+
 
 .box2 h2
 {
@@ -42,7 +38,8 @@ h1
 
 
 
-.login-box{
+.login-box
+{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -58,35 +55,38 @@ h1
     display: flex;
     justify-content: space-around;
     align-items: space-around;
-   
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .box2
 {
     
-    
-    
     width: 400px;
     height: 300px;
     background: #fff;
-    box-sizing: border-box;
-   
     border: 3px solid black;
 }
 
 .box3
 {
 	
-    
-    
     width: 400px;
     height: 300px;
     background: #fff;
-    box-sizing: border-box;
-    
     border: 3px solid black;
 }
 
+.box3 h2
+{
+	margin-left: 45px;
+    margin-top: 50px;
+}
+
+.box3 a
+{
+	margin-left: 80px;
+}
 
 .login-box button  {
   background-color: #92dd5a;
@@ -133,8 +133,6 @@ h1
     color: black;
     
 }
-
-
 
 
 >>>>>>> d12ba78c75063c29bb3c9ee1e1904768d3db8aa5:Vue/styles1.css
