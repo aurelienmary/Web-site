@@ -1,6 +1,8 @@
 <?php
 
+
 include ("connexion.php");
+
 
 function getall (PDO $bdd, string $table)
 {

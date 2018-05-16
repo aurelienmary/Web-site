@@ -1,6 +1,8 @@
 <?php
 session_start();
-include ("C:/wamp64/www/APP-INFO/Modele/requetes.capteurs.php");
+
+include ("./Modele/requetes.capteurs.php");
+
 
 
 if (!isset($_GET['fontion']) || empty([$_GET['fonction']]))
@@ -21,7 +23,7 @@ switch ($function)
         $liste = getusersensor($bdd, $user);
         if (empty($liste))
         {
-            $alerte="Aucun capteur n'est enregistré pour le moment";
+            $alerte="Aucun capteur n'est enregistrÃ© pour le moment";
         }
         break;
         

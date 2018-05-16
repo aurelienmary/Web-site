@@ -1,18 +1,23 @@
 footer
 {
     background-color: #666666;
+
     height: 220px;
+
     color: #fff;
     
    
 }
 
 
+
 footer .footer-box{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     width: 100%;
+
     margin: auto;
 
 }
@@ -20,6 +25,7 @@ footer .footer-box{
 .resauxSociaux, .renseignements, .catalogues{
     width: 25%;
     text-align: center;
+
     margin-top: 40px;      
 }
 
@@ -51,12 +57,22 @@ footer .footer-box{
 
 
 
+
 .resauxSociaux h3, .renseignements h3, .catalogues h3{
     margin-bottom: 10px;
 }
 
 .catalogues .gc a{
     color: #00ffff;
+}
+
+
+.renseignements img{
+    margin: auto;
+}
+
+.resauxSociaux img, .renseignements img, .catalogues img{
+    padding: 10px;
 }
 
 

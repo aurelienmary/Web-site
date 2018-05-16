@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Page d'accueil</title>
-        <link href="styles.css" rel="stylesheet">
+        <link href="public/css/styles.css" rel="stylesheet">
          <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
         
@@ -12,7 +12,7 @@
     
     <body>
         
- 		<?php include 'header.php';?>
+
         
         
 
@@ -22,14 +22,6 @@
             </div>
             
         </section>
-      
-
-
-        <?php include 'footer.php';?>
-        
-        
-        
-        
-        
+    
     </body>
 </html>

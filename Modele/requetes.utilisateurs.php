@@ -1,8 +1,10 @@
 <?php
 
-include ('requetes.generiques.php');
 
-$table='Users';
+require('requetes.generiques.php');
+
+
+$table='users';
 
 
 /*
