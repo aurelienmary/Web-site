@@ -202,7 +202,7 @@ header .header-box{
 #main-image
 {
     height: 600px;
-    background: url(images/domotique.png) ;
+    background: url(public/images/domotique.png) ;
 
 }
 h2

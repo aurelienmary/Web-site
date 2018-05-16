@@ -1,6 +1,6 @@
 <?php
 
-require("C:/wamp64/www/APP-INFO/Modele/connexion.php");
+require('connexion.php');
 
 function getall (PDO $bdd, string $table)
 {

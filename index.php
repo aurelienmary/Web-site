@@ -13,7 +13,7 @@ session_start();
 ini_set('display_errors', 1);
 
 // Appel des fonctions du contrôleur
-require 'Controleur/fonctions.php';
+include ('Controleur/fonctions.php');
 // Appel des fonctions liées à l'affichage
 //include("C:/wamp64/www/APP-INFO/Vue/fonctions.php");
 
@@ -30,5 +30,5 @@ else
     }
 
 // On appelle le contrôleur
-require 'Controleur/' . $url . '.php';
+include ("Controleur/". $url .".php");
     

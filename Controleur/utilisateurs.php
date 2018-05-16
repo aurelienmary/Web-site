@@ -1,6 +1,6 @@
 <?php
 
-require('C:/wamp64/www/APP-INFO/Modele/requetes.utilisateurs.php');
+require('./Modele/requetes.utilisateurs.php');
 
 
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
@@ -72,5 +72,5 @@ switch ($function)
     }
  
 //include ('C:/wamp64/www/APP-INFO/Vue/header.php');
-require ('C:/wamp64/www/APP-INFO/Vue/' . $vue . '.php');
+require ('./Vue/'. $vue .'.php');
 //include ('C:/wamp64/www/APP-INFO/Vue/footer.php');
