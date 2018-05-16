@@ -21,7 +21,7 @@
 	        		<h1>Me connecter</h1><br/>
 		        	<h2>J'ai déjà un compte</h2><br/>
 		           	
-		           	<form action =test.php method="post" >
+		           	<form action ='./Controleur/utilisateurs.php' method="post" >
 		           	
 		            	<label for="identifiant" class="mat-label">Votre identifiant</label>
 		                <input type="text" id="identifiant" name="identifiant" class="mat-input">
@@ -41,7 +41,7 @@
 	           
 	          <div class=box3> 
 	          	<h2>Je n'ai pas encore de compte</h2><br />
-	           	<p><a href="inscription.php" class="create-account">Cliquer ici pour créer votre compte</a></p>
+	           	<p><a href="./Vue/inscription.php" class="create-account">Cliquer ici pour créer votre compte</a></p>
 	          </div>
 	        
 	         
