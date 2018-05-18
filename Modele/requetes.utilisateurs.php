@@ -34,10 +34,11 @@ function login(PDO $bdd, array $user) :array
 
 {
     $query= 'SELECT id FROM Users WHERE email= :email AND password= :password';
-    $query -> bindParam (":email",$user['email']);
-    $query -> bindParam (":password",$user['password']);
-    $query->execute();
-    return  $query->fetchall();
+    $data = prepare($query);
+    $data -> bindParam (":email",$user['email']);
+    $data -> bindParam (":password",$user['password']);
+    return $data->execute();
+    
     
 }
 

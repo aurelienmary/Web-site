@@ -34,15 +34,15 @@ switch ($function)
              */
             if (isset($_POST['identifiant']) and isset($_POST['password']))
             {
-                $values=[
+                $user=[
                         'email'=> $_POST['identifiant'],
                         'password' => cryptpassword($_POST['password'])
                         ];
-                $user=login($bdd, $values);
+            
                 /*
                  * ce test verifie que les identifiant de l'utilisateur sont correcte
                  */
-                if (!empty($user))
+                if (login($bdd, $user)==true)
                 {
                     
                     $vue="ajoutcapteur";
