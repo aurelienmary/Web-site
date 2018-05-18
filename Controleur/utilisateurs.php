@@ -35,7 +35,7 @@ switch ($function)
             if (isset($_POST['identifiant']) and isset($_POST['password']))
             {
                 $values=[
-                        'identifiant'=> $_POST['email'],
+                        'email'=> $_POST['identifiant'],
                         'password' => cryptpassword($_POST['password'])
                         ];
                 $user=login($bdd, $values);
