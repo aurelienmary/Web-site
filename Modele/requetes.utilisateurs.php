@@ -30,14 +30,15 @@ function adduser(PDO $bdd, array $user)
 /*
  * fonction pour v�rifi� si l'utilisateur existe dans la base de donn�es
  */
-function login(PDO $bdd, array $user) :array
+function login(PDO $bdd, array $user) 
 
 {
-    $query= 'SELECT id FROM Users WHERE email= :email AND password= :password';
-    $data = prepare($query);
-    $data -> bindParam (":email",$user['email']);
+    $query= 'SELECT id FROM users WHERE email= :email AND password= :password';
+    $data = $bdd->prepare($query);
+    $data -> bindParam (":email",$user['email'],PDO::PARAM_STR);
     $data -> bindParam (":password",$user['password']);
-    return $data->execute();
+    $data->execute();
+    return $data->fetchAll();
     
     
 }

@@ -36,27 +36,27 @@ switch ($function)
             {
                 $user=[
                         'email'=> $_POST['identifiant'],
-                        'password' => cryptpassword($_POST['password'])
+                        'password' => $_POST['password']
                         ];
-            
+                $_SESSION['id']=login($bdd, $user);
                 /*
                  * ce test verifie que les identifiant de l'utilisateur sont correcte
                  */
-                if (login($bdd, $user)==true)
+                if (!empty($_SESSION['id']))
                 {
                     
                     $vue="ajoutcapteur";
                     /*
                      * fonction qui rï¿½cupï¿½re la table de l'utilisateur dans la base de donnï¿½e
                      */
-                    searchuser($bdd, $values);
+                 
                     /*
                      * fontion searchuser ï¿½ rï¿½aliser
                      */
                 }
                 else
                 {
-                    $alerte="l'identifiant ou le mot des passe sont éronnés";
+                    $alerte="l'identifiant ou le mot des passe sont Ã©ronnÃ©s";
                     echo($alerte);
                 }
             }
