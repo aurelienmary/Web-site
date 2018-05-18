@@ -32,10 +32,10 @@ switch ($function)
             /*
              * ce code est appel� sie le formulaire � �t� post�
              */
-            if (isset($_POST['email']) and isset($_POST['password']))
+            if (isset($_POST['identifiant']) and isset($_POST['password']))
             {
                 $values=[
-                        'email'=> $_POST['email'],
+                        'identifiant'=> $_POST['email'],
                         'password' => cryptpassword($_POST['password'])
                         ];
                 $user=login($bdd, $values);
