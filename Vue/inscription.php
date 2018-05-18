@@ -14,11 +14,15 @@
     
     
     <body>
-        
+        <div class="titre">
+     		<h1>Inscription</h1>
+     	</div>
  		
      <section>   
      
-     <h1>Inscription</h1>
+     
+     
+     
      <div class="login-box">
          
        <div class="box">
