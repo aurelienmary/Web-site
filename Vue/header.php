@@ -14,14 +14,11 @@
    		<header>
 		     <div class="header-box">
 		     	<div class="logo">
-		            <a href='accueil.php'><img id="img" href='accueil.php' src="../public/images/notre-logo.png" alt="notre logo" /></a>
+		            <a href='Vue/accueil.php'><img id="img"  src="public/images/notre-logo.png" alt="notre logo" /></a>
 		        </div>
 		        	<div class="search-bar"> 
 		            	<h1>DOMISEP</h1>
-            			<form class="searchform cf">
-                  			<input type="text" placeholder="Rechercher">
-                  			<button type="submit">Search</button>
-             			</form>
+            			
          			</div>
 		             
 		         
@@ -32,7 +29,7 @@
 
 		    
 
-		             <p><img src="../public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&fonction=connexion"> Connexion </a></p>
+		             <p><img src="public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&fonction=connexion"> Connexion </a></p>
 
 		        </div>
 		     </div>
