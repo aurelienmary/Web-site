@@ -68,6 +68,22 @@ switch ($function)
              */
             $vue="inscription";
             $alerte=false;
+            if (isset($_POST['nom']) and isset($_POST['prenom']) and isset($_POST['email']) and isset($_POST['passWord']) and isset($_POST['birthdate']) and isset($_POST['numTel']) and isset($_POST['adresse']) and isset($_POST['codepostal']))
+            {
+                $user =[
+                        'email'=> $_POST['email'],
+                        'password'=>$_POST['passWord'],
+                        'lastname' => $_POST['nom'],
+                        'name'=> $_POST['prenom'],
+                        'birthdate'=> $_POST['birthdate'],
+                        'phonenumber'=>$_POST['numTel'],
+                        'adress'=>$_POST['adresse'],
+                        'postalcode'=>$_POST['codepostal'],
+                    
+                        ];
+                adduser($bdd,$user);
+                
+            }
             $title="Inscription";
             break;
             

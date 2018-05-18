@@ -13,17 +13,16 @@ $table='users';
  */
 function adduser(PDO $bdd, array $user)
 {
-    $query= 'INSERT INTO Users(email, password, lastname, name, birthdate, phonenumber, adress, postalcode, admin) VALUES (:email, :password, :lastname, :name, :birthdate, :phonenumber, :adress, :postalcode, :admin)';
+    $query= 'INSERT INTO users(email, password, lastname, name, birthdate, phonenumber, adress, postalcode) VALUES (:email, :password, :lastname, :name, :birthdate, :phonenumber, :adress, :postalcode)';
     $donnees= $bdd->prepare($query);
-    $donnees->bindParam(":username", $user['username']);
+    $donnees->bindParam(":email", $user['email']);
     $donnees->bindParam(":password", $user['password']);
     $donnees->bindParam(":lastname", $user['lastname']);
     $donnees->bindParam(":name", $user['name']);
     $donnees->bindParam(":birthdate", $user['birthdate']);
     $donnees->bindParam(":phonenumber", $user['phonenumber']);
     $donnees->bindParam(":adress", $user['adress']);
-    $donnees->bindParam(":postalcode", $user['postalcode']);
-    $donnees->bindParam(":admin", $user['admin']);
+    $donnees->bindParam(":postalcode", $user['postalcode']); 
     return $donnees->execute();
 }
 

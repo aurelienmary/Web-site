@@ -31,7 +31,7 @@
            
            
             
- <form id="contact-form" action="" method="POST" role="form">
+ <form id="contact-form" action="index.php?cible=utiisateurs&fonction=inscription" method="POST" role="form">
                
                
         <div class="messages"></div>
@@ -52,7 +52,7 @@
      
      <div class="mat-div">
                 <label for="fullname" class="mat-label">Prénom</label>
-                <input type="text" name="prénom" class="mat-input" required="required" data-error="Firstname is required." >
+                <input type="text" name="prenom" class="mat-input" required="required" data-error="Firstname is required." >
            
            </div>
            
