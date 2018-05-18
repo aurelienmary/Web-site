@@ -57,6 +57,7 @@ switch ($function)
                 else
                 {
                     $alerte="l'identifiant ou le mot des passe sont éronnés";
+                    echo($alerte);
                 }
             }
             break;
