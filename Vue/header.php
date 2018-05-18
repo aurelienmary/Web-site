@@ -14,7 +14,7 @@
    		<header>
 		     <div class="header-box">
 		     	<div class="logo">
-		            <a href='Vue/accueil.php'><img id="img"  src="public/images/notre-logo.png" alt="notre logo" /></a>
+		            <a href='index.php?cible=utilisateurs&fonction=accueil'><img id="img"  src="public/images/notre-logo.png" alt="notre logo" /></a>
 		        </div>
 		        	<div class="search-bar"> 
 		            	<h1>DOMISEP</h1>
@@ -38,9 +38,9 @@
 		         
 		                <nav>
 		                    <ul>
-		                        <li><a href="../index.php">Accueil</a></li>
+		                        <li><a href="index.php?cible=utilisateurs&fonction=accueil">Accueil</a></li>
 		                        <li><a href="#">A propos</a></li>
-		                        <li><a href="Vue/catalogue.php">Produits</a></li>
+		                        <li><a href="index.php?cible=utilisateurs&fonction=catalogue">Produits</a></li>
 		                        <li><a href="Contact">Contact</a></li>
 		                    </ul>
 		                

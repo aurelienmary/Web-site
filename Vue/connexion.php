@@ -5,6 +5,7 @@
         <title>Page d'accueil</title>
 
         <link href="./public/css/connexion.css" rel="stylesheet">
+        <link href="../public/css/connexion.css" rel="stylesheet">
          <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
@@ -41,7 +42,7 @@
 	           
 	          <div class=box3> 
 	          	<h2>Je n'ai pas encore de compte</h2><br />
-	           	<p><a href="index?cible=utilisateurs&fonction=inscription" class="create-account">Cliquer ici pour créer votre compte</a></p>
+	           	<p><a href="index.php?cible=utilisateurs&fonction=inscription" class="create-account" ?>Cliquer ici pour créer votre compte</a></p>
 	          </div>
 	        
 	         
