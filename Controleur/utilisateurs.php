@@ -70,6 +70,15 @@ switch ($function)
             $alerte=false;
             $title="Inscription";
             break;
+            
+        case "catalogue":
+        	/*
+        	 affichage de la vue catalogue
+        	 */
+        	$vue="catalogue";
+        	$alerte=false;
+        	$title="Catalogue";
+        	break;
     }
  
 include ('./Vue/header.php');
