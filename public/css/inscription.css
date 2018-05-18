@@ -106,6 +106,8 @@ h2
 }
 
 
+
+
 .mat-div 
 {
   padding: 30px 0 0 0;
@@ -129,9 +131,11 @@ form
   border-radius: 1em;
 }
 
-h1
+
+.inscription h1
 {
 	text-align: center;
 	margin-top: 0px;
+	margin-left: 300px;
 }
 
