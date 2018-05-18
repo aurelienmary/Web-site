@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Page d'accueil</title>
-        <link href="../public/css/catalogue.css" rel="stylesheet">
+        <link href="public/css/catalogue.css" rel="stylesheet">
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
@@ -16,7 +16,7 @@
     
     <body>
         
- 		<?php include 'header.php';?>
+ 		
         
         
         
@@ -25,7 +25,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="../public/images/capt-temperature.jpg" alt="...">
+                                <img src="public/images/capt-temperature.jpg" alt="...">
                                 <div class="price">100 €</div>
                                 <div class="caption">
                                     <h4>Capteur de température</h4>
@@ -42,7 +42,7 @@
                         
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="../public/images/camera-surveillance.jpg" alt="...">
+                                <img src="public/images/camera-surveillance.jpg" alt="...">
                                 <div class="price">400 €</div>
                                 <div class="caption">
                                     <h4>Camera de surveillance interieur</h4>
@@ -57,7 +57,7 @@
                         
                          <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="../public/images/detecteur-fum.png" alt="...">
+                                <img src="public/images/detecteur-fum.png" alt="...">
                                 <div class="price">50 €</div>
                                 <div class="caption">
                                     <h4>Detecteur de fumée</h4>
@@ -72,7 +72,7 @@
                         
                          <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="../public/images/capt-mouvement.jpg" alt="...">
+                                <img src="public/images/capt-mouvement.jpg" alt="...">
                                 <div class="price">80 €</div>
                                 <div class="caption">
                                     <h4>Capteur de mouvement</h4>
@@ -87,7 +87,7 @@
                         
                          <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="../public/images/capteur-de-lumunosit%C3%A9.jpg" alt="...">
+                                <img src="public/images/capteur-de-lumunosit%C3%A9.jpg" alt="...">
                                 <div class="price">70 €</div>
                                 <div class="caption">
                                     <h4>Capteur de lumunosite</h4>
@@ -102,7 +102,7 @@
                         
                          <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="../public/images/cam%C3%A9ra-surveillance2.jpg" alt="...">
+                                <img src="public/images/cam%C3%A9ra-surveillance2.jpg" alt="...">
                                 <div class="price">30 €</div>
                                 <div class="caption">
                                     <h4>Camera de surveillance exterieur </h4>
@@ -118,10 +118,7 @@
                 
                 </div>
             </div>
-              
-        
-        
-        <?php include 'footer.php';?>
+       
         
         
     </body>
