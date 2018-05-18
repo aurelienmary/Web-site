@@ -31,7 +31,7 @@
            
            
             
- <form id="contact-form" action="index.php?cible=utiisateurs&fonction=inscription" method="POST" role="form">
+ <form id="contact-form" action="index.php?cible=utilisateurs&fonction=inscription" method="POST" role="form">
                
                
         <div class="messages"></div>
