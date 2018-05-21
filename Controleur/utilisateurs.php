@@ -95,7 +95,29 @@ switch ($function)
         	$alerte=false;
         	$title="Catalogue";
         	break;
-    }
+   		
+        case "chat" :
+        	
+        	$vue="chat";
+        	$alerte=false;
+        	$title="Catalogue";
+        	if (isset($_POST['pseudo']) and isset($_POST['message']))
+        	{
+        		$echange =[
+        				'pseudo'=> $_POST['pseudo'],
+        				'message'=>$_POST['message'],
+        				
+        				
+        		];
+        		chat($bdd,$echange);
+        		
+        	}
+        	break;
+
+
+}
+    	
+    
  
 include ('./Vue/header.php');
 include ('./Vue/'. $vue .'.php');

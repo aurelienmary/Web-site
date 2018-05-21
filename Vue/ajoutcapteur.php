@@ -26,7 +26,7 @@
       </li>
       
       <li>
-        <a href="javascript:void(0);" data-title="message">Messagerie</a>
+        <a href="index.php?cible=utilisateurs&fonction=chat" data-title="message">Messagerie</a>
       </li>
       <li>
         <a href="javascript:void(0);" data-title="Timeline">Historique</a>

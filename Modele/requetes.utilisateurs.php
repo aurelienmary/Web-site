@@ -49,3 +49,13 @@ function searchuser(PDO $bdd,array $user)
 {
     
 }
+
+function chat(PDO $bdd, array $echange)
+{
+	$req= $bdd->prepare( 'INSERT INTO chat(pseudo, message) VALUES (:pseudo, :message)');
+	$req->execute(array(
+			"pseudo" =>$echange['pseudo'],
+			"message" => $echange['message'],
+	));
+	
+}
