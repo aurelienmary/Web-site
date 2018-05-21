@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.conversation
+{
+	width: 500px;
+	height: 600px;
+	overflow: auto;
+	border: 2px solid black;
+	text-align: justify;
+	padding: 12px;
+	margin: 50px; /* Marge extérieure de 50px */
+	margin-left: 10px;
+}

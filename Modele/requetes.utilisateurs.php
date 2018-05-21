@@ -52,10 +52,12 @@ function searchuser(PDO $bdd,array $user)
 
 function chat(PDO $bdd, array $echange)
 {
-	$req= $bdd->prepare( 'INSERT INTO chat(pseudo, message) VALUES (:pseudo, :message)');
+	$req= $bdd->prepare( 'INSERT INTO chat(pseudo, message, date_message) VALUES (:pseudo, :message, NOW())');
 	$req->execute(array(
 			"pseudo" =>$echange['pseudo'],
 			"message" => $echange['message'],
+			
 	));
+	//$bdd->exec('INSERT INTO chat (date-message) VALUES ( NOW() )');
 	
 }
