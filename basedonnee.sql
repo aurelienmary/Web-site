@@ -71,6 +71,54 @@ CREATE TABLE IF NOT EXISTS `cgu` (
   `text` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `chat`
+--
+
+CREATE TABLE `chat` (
+  `id` int(11) NOT NULL,
+  `pseudo` varchar(100) NOT NULL,
+  `message` text NOT NULL,
+  `date_message` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `chat`
+--
+
+INSERT INTO `chat` (`id`, `pseudo`, `message`, `date_message`) VALUES
+(13, 'aurelien', 'bkj klnm,', '0000-00-00 00:00:00'),
+(14, 'aurelien', 'non', '0000-00-00 00:00:00'),
+(15, 'aurelien', 'jnkjf', '0000-00-00 00:00:00'),
+(16, 'aurelien', 'adieu', '0000-00-00 00:00:00'),
+(17, 'aurelien', 'adieu', '0000-00-00 00:00:00'),
+(18, 'aurelien', 'adddddieu', '0000-00-00 00:00:00'),
+(19, 'aurelien', 'adddddieu', '0000-00-00 00:00:00'),
+(20, 'aurelien', ';kllk', '0000-00-00 00:00:00'),
+(21, 'aurelien', ';kllk', '0000-00-00 00:00:00'),
+(22, 'aurelien', ';kllk', '0000-00-00 00:00:00'),
+(23, 'aurelien', 'l,,kjnlk', '0000-00-00 00:00:00'),
+(24, 'aurelien', 'l,,kjnlk', '0000-00-00 00:00:00'),
+(25, 'aurelien', 'kjvbkjbk', '0000-00-00 00:00:00'),
+(26, 'aurelien', 'kjvbkjbk', '0000-00-00 00:00:00'),
+(27, 'aurelien', 'kjvbkjbk', '2018-05-21 16:55:26'),
+(28, 'aurelien', 'salut', '2018-05-21 16:55:29'),
+(29, 'aurelien', 'salut', '2018-05-21 17:01:12'),
+(30, 'aurelien', 'salut', '2018-05-21 17:02:21'),
+(31, 'aurelien', 'coucou', '2018-05-21 17:02:34'),
+(32, 'aurelien', 'coucou', '2018-05-21 17:02:41'),
+(33, 'aurelien', 'coucou', '2018-05-21 17:03:23'),
+(34, 'aurelien', 'jknkj', '2018-05-21 17:03:27'),
+(35, 'aurelien', 'coucou', '2018-05-21 17:03:35'),
+(36, 'aurelien', 'coucou', '2018-05-21 17:04:14'),
+(37, 'aurelien', 'coucou', '2018-05-21 17:10:36'),
+(38, 'aurelien', 'coucou', '2018-05-21 17:11:44'),
+(39, 'aurelien', 'coucou', '2018-05-21 17:13:19'),
+(40, 'aurelien', 'coucou', '2018-05-21 17:17:23'),
+(41, 'aurelien', 'coucou', '2018-05-21 17:18:24'),
+(42, 'aurelien', 'coucou', '2018-05-21 17:20:14');
 
 -- --------------------------------------------------------
 
