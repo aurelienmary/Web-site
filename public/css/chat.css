@@ -11,3 +11,9 @@
 	margin: 50px; /* Marge extérieure de 50px */
 	margin-left: 10px;
 }
+
+textarea
+{
+	width: 200px;
+	height: 100px;
+}
