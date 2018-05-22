@@ -126,10 +126,10 @@ switch ($function)
         	$vue="chat";
         	$alerte=false;
         	$title="Catalogue";
-        	if (isset($_POST['pseudo']) and isset($_POST['message'] ))
+        	if (isset($_POST['message'] ))
         	{
         		$echange =[
-        				'pseudo'=> $_POST['pseudo'],
+        				'pseudo'=> $_SESSION['prenom'],
         				'message'=>$_POST['message'],
         				
         				
