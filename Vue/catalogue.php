@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Page d'accueil</title>
+        <title>Page capteurs</title>
         <link href="public/css/catalogue.css" rel="stylesheet">
         
         
