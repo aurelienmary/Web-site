@@ -23,6 +23,12 @@ switch ($function)
             $title="Accueil";
             break;
             
+        case "ajoutcapteur":
+        	$vue="ajoutcapteur";
+        	$title="ajoutcapteur";
+        	break;
+            
+        
         case "connexion":
             /*
              affichage de la vue de connexion
@@ -40,8 +46,8 @@ switch ($function)
                         'password' => $_POST['password']
                         ];
                 $_SESSION['id']=login($bdd, $user);
-                //$_SESSION['prenom'] = $_SESSION['id']['name'];
-               	//$_SESSION['nom'] = $_SESSION['id']['lastname'];
+                $_SESSION['prenom'] = $_SESSION['id']['name'];
+               	$_SESSION['nom'] = $_SESSION['id']['lastname'];
                 /*
                  * ce test verifie que les identifiant de l'utilisateur sont correcte
                  */
@@ -139,7 +145,7 @@ switch ($function)
     
  
 include ('./Vue/header.php');
-if (!empty($_SESSION['id']) && $_COOKIE['d'] != 1)
+if (!empty($_SESSION['id']) && $_COOKIE['d'] != 1 && $vue != "catalogue")
 {
 	include ('./Vue/navigation.php');
 }
