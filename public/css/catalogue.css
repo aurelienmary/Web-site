@@ -12,7 +12,7 @@ a
     color: #444;
 }
 
-/*logo*/
+
 #img
 {
     height: 150px;
@@ -20,14 +20,14 @@ a
     margin-left: 50px;
 }
 
-/*container invisible*/
+
 
 
 
 
 .thumbnail img
 {
-    background: #ffd301;
+    background-color: #ffd301;
 }
 
 .price
@@ -58,7 +58,7 @@ a
 {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     background-color: #e7480f;
     text-decoration: none;
