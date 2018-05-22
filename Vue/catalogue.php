@@ -26,7 +26,7 @@
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="public/images/capt-temperature.jpg" alt="...">
-                                <div class="price">100 €</div>
+                                <div class="price">Prix</div>
                                 <div class="caption">
                                     <h4>Capteur de température</h4>
                                     <p>Capteur detempérature ultras connecté</p>
@@ -43,7 +43,7 @@
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="public/images/camera-surveillance.jpg" alt="...">
-                                <div class="price">400 €</div>
+                                <div class="price">Prix</div>
                                 <div class="caption">
                                     <h4>Camera de surveillance interieur</h4>
                                     <p>Camera de surveillance ultras connecté</p>
@@ -58,7 +58,7 @@
                          <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="public/images/detecteur-fum.png" alt="...">
-                                <div class="price">50 €</div>
+                                <div class="price">Prix</div>
                                 <div class="caption">
                                     <h4>Detecteur de fumée</h4>
                                     <p>.........</p>
@@ -73,7 +73,7 @@
                          <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="public/images/capt-mouvement.jpg" alt="...">
-                                <div class="price">80 €</div>
+                                <div class="price">Prix</div>
                                 <div class="caption">
                                     <h4>Capteur de mouvement</h4>
                                     <p>..........</p>
@@ -88,7 +88,7 @@
                          <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="public/images/capteur-de-lumunosit%C3%A9.jpg" alt="...">
-                                <div class="price">70 €</div>
+                                <div class="price">Prix</div>
                                 <div class="caption">
                                     <h4>Capteur de lumunosite</h4>
                                     <p>............</p>
@@ -103,7 +103,7 @@
                          <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="public/images/cam%C3%A9ra-surveillance2.jpg" alt="...">
-                                <div class="price">30 €</div>
+                                <div class="price">Prix</div>
                                 <div class="caption">
                                     <h4>Camera de surveillance exterieur </h4>
                                     <p>..............</p>
