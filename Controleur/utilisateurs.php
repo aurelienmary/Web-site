@@ -39,6 +39,8 @@ switch ($function)
                         'password' => $_POST['password']
                         ];
                 $_SESSION['id']=login($bdd, $user);
+                $_SESSION['prenom'] = $_SESSION['id']['name'];
+                $_SESSION['nom'] = $_SESSION['id']['lastname'];
                 /*
                  * ce test verifie que les identifiant de l'utilisateur sont correcte
                  */
@@ -46,6 +48,7 @@ switch ($function)
                 {
                     
                     $vue="ajoutcapteur";
+                    
                     /*
                      * fonction qui r�cup�re la table de l'utilisateur dans la base de donn�e
                      */
@@ -123,7 +126,7 @@ switch ($function)
     
  
 include ('./Vue/header.php');
-if ($h == 1)
+if (!empty($_SESSION['id']))
 {
 	include ('./Vue/navigation.php');
 }
