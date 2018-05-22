@@ -23,7 +23,7 @@
 		             
 		         
 		         <?php 
-			    	if (!empty($_SESSION['id']))
+			    	if (!empty($_SESSION['id']) && $_COOKIE['d'] != 1)
 			    	{
 			    		?>
 			    		<div class="reglog">

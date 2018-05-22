@@ -3,6 +3,7 @@
 include ('./Modele/requetes.utilisateurs.php');
 
 $h = 0;
+$_COOKIE['d']=0;
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
     {
         $function ="accueil";
@@ -72,7 +73,10 @@ switch ($function)
         	$vue="deconnexion";
         	$alerte=false;
         	$title="deconnexion";
+        	$_COOKIE['d'] = 1;
         	session_destroy();
+        	
+        	break;
         		
        
         
@@ -135,7 +139,7 @@ switch ($function)
     
  
 include ('./Vue/header.php');
-if (!empty($_SESSION['id']))
+if (!empty($_SESSION['id']) && $_COOKIE['d'] != 1)
 {
 	include ('./Vue/navigation.php');
 }
