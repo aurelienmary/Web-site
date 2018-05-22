@@ -16,7 +16,7 @@
    
         
         <span class="bckg"></span>
-        <div class="dashboard">
+       <!-- <div class="dashboard">
   <h1>Tableau de bord</h1>
         
   <nav>
@@ -39,7 +39,7 @@
       </li>
     </ul>
   </nav>
-            </div>
+            </div> -->
 
 <main>
   <div class="title">

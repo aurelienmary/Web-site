@@ -2,7 +2,7 @@
 
 include ('./Modele/requetes.utilisateurs.php');
 
-
+$h = 0;
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
     {
         $function ="accueil";
@@ -52,7 +52,10 @@ switch ($function)
                  
                     /*
                      * fontion searchuser � r�aliser
+                     * 
                      */
+                    
+                    $h = 1;
                 }
                 else
                 {
@@ -120,5 +123,10 @@ switch ($function)
     
  
 include ('./Vue/header.php');
+if ($h == 1)
+{
+	include ('./Vue/navigation.php');
+}
+
 include ('./Vue/'. $vue .'.php');
 include ('./Vue/footer.php');
