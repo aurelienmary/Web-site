@@ -22,7 +22,23 @@
          			</div>
 		             
 		         
-		         
+		         <?php 
+			    	if (!empty($_SESSION['id']))
+			    	{
+			    		?>
+			    		<div class="reglog">
+			    		
+			    		
+			    		
+			    		<p><img src="public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&fonction=deconnexion"> Deconnexion </a></p>
+			    		
+			    		</div>
+    		
+    	
+			    <?php }
+			    	else {
+			    	
+			    ?>
 		        		
 		        
 		        <div class="reglog">
@@ -32,6 +48,8 @@
 		             <p><img src="public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&fonction=connexion"> Connexion </a></p>
 
 		        </div>
+		        
+		        <?php } ?>
 		     </div>
 		     
 		     <div class="wrapper-bis"> 

@@ -39,8 +39,8 @@ switch ($function)
                         'password' => $_POST['password']
                         ];
                 $_SESSION['id']=login($bdd, $user);
-                $_SESSION['prenom'] = $_SESSION['id']['name'];
-                $_SESSION['nom'] = $_SESSION['id']['lastname'];
+                //$_SESSION['prenom'] = $_SESSION['id']['name'];
+               	//$_SESSION['nom'] = $_SESSION['id']['lastname'];
                 /*
                  * ce test verifie que les identifiant de l'utilisateur sont correcte
                  */
@@ -67,7 +67,16 @@ switch ($function)
                 }
             }
             break;
-            
+        
+        case "deconnexion":
+        	$vue="deconnexion";
+        	$alerte=false;
+        	$title="deconnexion";
+        	session_destroy();
+        		
+       
+        
+        
         case "inscription":
             /*
              affichage de la vue inscription
