@@ -32,11 +32,7 @@ function adduser(PDO $bdd, array $user)
 function login(PDO $bdd, array $user) 
 
 {
-   // $query= 'SELECT id FROM users WHERE email= :email AND password= :password';
-   // $data = $bdd->prepare($query);
-   // $data -> bindParam (":email",$user['email'],PDO::PARAM_STR);
-   // $data -> bindParam (":password",$user['password']);
-  //  $data->execute();
+   
     $req = $bdd->prepare('SELECT id, name, lastname FROM users WHERE email= :email AND password= :password');
     $req->execute(array('email'=> $user['email'], 'password'=> $user['password'] ));
     

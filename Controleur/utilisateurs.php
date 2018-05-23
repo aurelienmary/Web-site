@@ -3,7 +3,7 @@
 include ('./Modele/requetes.utilisateurs.php');
 
 $h = 0;
-$_COOKIE['d']=0;
+$_SESSION['d']=0;
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
     {
         $function ="accueil";
@@ -23,10 +23,18 @@ switch ($function)
             $title="Accueil";
             break;
             
-        case "ajoutcapteur":
-        	$vue="ajoutcapteur";
-        	$title="ajoutcapteur";
-        	break;
+        case "ajoutcapteur" :
+        	if (!empty($_SESSION['id']))
+        	{
+	        	$vue="ajoutcapteur";
+	        	$title="ajoutcapteur";
+	        	break;
+        	}
+        	
+        	else {
+        		$vue="accueil";
+        	}
+	        
             
         
         case "connexion":
@@ -95,9 +103,11 @@ switch ($function)
             $alerte=false;
             if (isset($_POST['nom']) and isset($_POST['prenom']) and isset($_POST['email']) and isset($_POST['passWord']) and isset($_POST['birthdate']) and isset($_POST['numTel']) and isset($_POST['adresse']) and isset($_POST['codepostal']))
             {
-                $user =[
+                
+            	$hash_password = password_hash($_POST['passWord'], PASSWORD_DEFAULT);
+            	$user =[
                         'email'=> $_POST['email'],
-                        'password'=>$_POST['passWord'],
+            			'password'=>$hash_password,
                         'lastname' => $_POST['nom'],
                         'name'=> $_POST['prenom'],
                         'birthdate'=> $_POST['birthdate'],
@@ -106,6 +116,7 @@ switch ($function)
                         'postalcode'=>$_POST['codepostal'],
                     
                         ];
+                
                 adduser($bdd,$user);
                 
             }
@@ -145,7 +156,7 @@ switch ($function)
     
  
 include ('./Vue/header.php');
-if (!empty($_SESSION['id']) && $_COOKIE['d'] != 1 && $vue != "catalogue")
+if (!empty($_SESSION['id']) && $_SESSION['d'] != 1 && $vue != "catalogue")
 {
 	include ('./Vue/navigation.php');
 }
