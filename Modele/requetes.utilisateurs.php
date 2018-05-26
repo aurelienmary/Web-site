@@ -38,9 +38,6 @@ function login(PDO $bdd, array $user)
     
     return $donnees = $req->fetch();
    
-    //return $data->fetchAll();
-    
-    
     
 }
 
