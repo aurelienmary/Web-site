@@ -87,7 +87,7 @@ switch ($function)
         	$vue="deconnexion";
         	$alerte=false;
         	$title="deconnexion";
-        	$_COOKIE['d'] = 1;
+        	$_SESSION['d'] = 1;
         	session_destroy();
         	
         	break;

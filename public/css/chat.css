@@ -2,8 +2,8 @@
 
 .conversation
 {
-	width: 500px;
-	height: 600px;
+	width: 400px;
+	height: 300px;
 	overflow: auto;
 	border: 2px solid black;
 	text-align: justify;
@@ -16,6 +16,6 @@ textarea
 {
 	width: 200px;
 	height: 100px;
-	margin-left: 400px;
+	margin-left: 300px;
 }
 
