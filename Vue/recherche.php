@@ -24,8 +24,8 @@
     </form>
     
     <?php 
-    	$req = $bdd->prepare('SELECT name, lastname FROM users WHERE email= :email OR name= :name OR lastname= :lastname');
-    	$req->execute(array('email'=> $_POST['recherche'], 'email'=> $_POST['recherche'] ,'name'=> $_POST['recherche'], 'lastname'=> $_POST['recherche'] ));
+    	$req = $bdd->prepare('SELECT name, lastname, email FROM users WHERE email= :email OR name= :name OR lastname= :lastname');
+    	$req->execute(array('email'=> $_POST['recherche'],'name'=> $_POST['recherche'], 'lastname'=> $_POST['recherche'] ));
 		
 		while ($donnees = $req->fetch())
 		{
