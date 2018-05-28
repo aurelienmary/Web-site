@@ -149,6 +149,11 @@ switch ($function)
         		
         	}
         	break;
+        	
+        case "profil":
+        	$vue="profil";
+        	$alerte=false;
+        	$title="profil";
 
 
 }

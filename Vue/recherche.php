@@ -41,7 +41,7 @@
     
     
     
-    <div class="utilisateur">
+    
     
     <?php 
     if (isset($_POST['recherche']))
@@ -51,12 +51,15 @@
 		
 		while ($donnees = $req->fetch())
 		{
+		?> <div class="utilisateur"> <?php 
 			
 			echo ' <div> ' . $donnees['name']. '</div> <div>' . htmlspecialchars($donnees['lastname']) . '</div> <div> ' . htmlspecialchars($donnees['email']) . '</div>';
-		}
+		?> 
+		</div>
+		<?php }
+		
     }
 ?>
-</div>
 
 
 </div>
