@@ -21,6 +21,28 @@
     </form>
     </div>
     
+    <div class="classification" >
+    	<div class="rangement">
+    	<div>
+    		Nom
+    	
+    	</div>
+    	
+    	<div>
+    		Prenom
+    	
+    	</div>
+    	
+    	<div>
+    		Mail
+    	
+    	</div>
+    	</div>
+    
+    
+    
+    <div class="utilisateur">
+    
     <?php 
     if (isset($_POST['recherche']))
     {
@@ -30,7 +52,11 @@
 		while ($donnees = $req->fetch())
 		{
 			
-			echo ' <p> ' . $donnees['name']. ':<strong> ' . htmlspecialchars($donnees['lastname']) . '</strong> : ' . htmlspecialchars($donnees['email']) . '</center></p>';
+			echo ' <div> ' . $donnees['name']. '</div> <div>' . htmlspecialchars($donnees['lastname']) . '</div> <div> ' . htmlspecialchars($donnees['email']) . '</div>';
 		}
     }
 ?>
+</div>
+
+
+</div>
