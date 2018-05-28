@@ -56,6 +56,7 @@ switch ($function)
                 $_SESSION['id']=login($bdd, $user);
                 $_SESSION['prenom'] = $_SESSION['id']['name'];
                	$_SESSION['nom'] = $_SESSION['id']['lastname'];
+               	$_SESSION['email'] = $_SESSION['id']['email'];
                 /*
                  * ce test verifie que les identifiant de l'utilisateur sont correcte
                  */

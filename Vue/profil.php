@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Page d'accueil</title>
+        <title>Profil</title>
         <link href="./public/css/profil.css" rel="stylesheet">
          <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
@@ -15,8 +15,8 @@
     
     <div class="card">
   <img src="./public/images/silhouettepng.png" alt="John" style="width:100%">
-  <h1><?php echo $_SESSION['prenom']?></h1>
-  <p class="title">CEO & Founder, Example</p>
+  <h1><?php echo $_SESSION['prenom'] . ' ' . $_SESSION['nom']?></h1>
+  <p class="title"><?php echo $_SESSION['email']?></p>
   <p>Harvard University</p>
   <a href="#"><i class="fa fa-dribbble"></i></a> 
   <a href="#"><i class="fa fa-twitter"></i></a> 
