@@ -75,7 +75,7 @@
            </div>
                
                <div class="mat-div">
-                <label for="fullname" class="mat-label">numéro de téléphone</label>
+                <label for="fullname" class="mat-label">Numéro de téléphone</label>
                 <input type="tel" name="numTel" class="mat-input" required="required" data-error="Valid tel is required">
            
            </div>
