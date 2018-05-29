@@ -34,6 +34,7 @@ switch ($function)
         	else {
         		$vue="accueil";
         	}
+        	break;
 	        
             
         
@@ -47,40 +48,46 @@ switch ($function)
             /*
              * ce code est appel� sie le formulaire � �t� post�
              */
-            if (isset($_POST['identifiant']) and isset($_POST['password']))
+            if (isset($_POST['identifiant']) and isset($_POST['password'])) 
+            	
+            
             {
-                $user=[
-                        'email'=> $_POST['identifiant'],
-                        'password' => $_POST['password']
+                $user=['email'=> $_POST['identifiant'],
                         ];
+                
                 $_SESSION['id']=login($bdd, $user);
-                $_SESSION['prenom'] = $_SESSION['id']['name'];
-               	$_SESSION['nom'] = $_SESSION['id']['lastname'];
-               	$_SESSION['email'] = $_SESSION['id']['email'];
-                /*
-                 * ce test verifie que les identifiant de l'utilisateur sont correcte
-                 */
-                if (!empty($_SESSION['id']))
+               
+                $passwordBdd = $_SESSION['id']['password'];
+                
+                if (password_verify($_POST['password'], $passwordBdd ))
                 {
-                    
-                    $vue="ajoutcapteur";
-                    
-                    /*
-                     * fonction qui r�cup�re la table de l'utilisateur dans la base de donn�e
-                     */
-                 
-                    /*
-                     * fontion searchuser � r�aliser
-                     * 
-                     */
-                    
-                    $h = 1;
-                }
-                else
-                {
-                    $alerte="l'identifiant ou le mot des passe sont éronnés";
-                    echo($alerte);
-                }
+	                $_SESSION['prenom'] = $_SESSION['id']['name'];
+	               	$_SESSION['nom'] = $_SESSION['id']['lastname'];
+	               	$_SESSION['email'] = $_SESSION['id']['email'];
+	                /*
+	                 * ce test verifie que les identifiant de l'utilisateur sont correcte
+	                 */
+	                
+	                    
+	                    $vue="ajoutcapteur";
+	                    
+	                    /*
+	                     * fonction qui r�cup�re la table de l'utilisateur dans la base de donn�e
+	                     */
+	                 
+	                    /*
+	                     * fontion searchuser � r�aliser
+	                     * 
+	                     */
+	                    
+	                    $h = 1;
+	                }
+	                else
+	                {
+	                    $alerte="l'identifiant ou le mot des passe sont éronnés";
+	                    echo($alerte);
+	                }
+                
             }
             break;
         
@@ -155,6 +162,7 @@ switch ($function)
         	$vue="profil";
         	$alerte=false;
         	$title="profil";
+        	break;
 
 
 }

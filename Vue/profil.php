@@ -17,8 +17,8 @@
   <img src="./public/images/silhouettepng.png" alt="John" style="width:100%">
   <h1><?php echo $_SESSION['prenom'] . ' ' . $_SESSION['nom']?></h1>
   <p class="title"><?php echo $_SESSION['email']?></p>
-  <p>Harvard University</p>
-  <a href="#"><i class="fa fa-dribbble"></i></a> 
+  <p>ISEP</p>
+  
   <a href="#"><i class="fa fa-twitter"></i></a> 
   <a href="#"><i class="fa fa-linkedin"></i></a> 
   <a href="#"><i class="fa fa-facebook"></i></a> 
