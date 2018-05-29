@@ -309,34 +309,34 @@ CREATE TABLE IF NOT EXISTS `technician` (
 -- Structure de la table `users`
 --
 
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `lastname` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(200) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
   `birthdate` date NOT NULL,
   `phonenumber` int(10) NOT NULL,
-  `adress` varchar(255) NOT NULL,
+  `adress` varchar(100) NOT NULL,
   `postalcode` int(5) NOT NULL,
   `admin` tinyint(1) NOT NULL DEFAULT '0',
-  `gestionnaire` tinyint(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+  `gestionnaire` tinyint(1) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `users`
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `lastname`, `name`, `birthdate`, `phonenumber`, `adress`, `postalcode`, `admin`, `gestionnaire`) VALUES
-(1, 'john.smith@gmail.com', '1475369', 'SMITH', 'John', '1992-05-22', 645856951, '28 rue albert dupond', 75015, 0, 0),
-(2, 'pierre.numa@isep.fr', '1475369', 'NUMA', 'Pierre', '1997-03-22', 1025648595, '24 rue de la victoire', 75006, 1, 0),
-(3, 'albert.dufourt@gmail.com', '1475369', 'Dufourt', 'Albert', '1986-08-12', 1547896256, '20 rue .....', 75012, 0, 1);
+(1, 'aurelienmary.fr@gmail.com', 'lol41', 'mary', 'aurelien', '0000-00-00', 604676519, 'rue de la poste', 41260, 0, 0),
+(2, 'lalal@gmail.com', '1234', 'jean', 'dupont', '0000-00-00', 604676519, '', 41000, 0, 0),
+(3, 'jiji@gmail.com', '$2y$10$bbSZxCiX1F2wXkAzJ6MJwezFRpFnNwHjkf8BMnA.1V4pzO1ji8eOy', 'dfbvkn', 'dskjvbndkfjnv', '0000-00-00', 604676519, '', 0, 0, 0),
+(4, 'boloss@gmail.com', '$2y$10$i7X7Q847PLazCWVj9LlwM.GuIF5I6gdQRs/FDYPMkiA58F3EqfqVK', 'dupont', 'thomas', '0000-00-00', 604676519, 'la poste', 75000, 0, 0),
+(5, 'admin@gmail.com', '$2y$10$egM6yal0OxKfDLVJAZc4T.xoTIs2gPfXRmA2S9UZueqbSUA71B6SW', 'G9E', 'Admin', '0000-00-00', 606070609, '', 0, 1, 0),
+(6, 'toto@gmail.com', '$2y$10$rrOjeToGPiWtHsrCGHSG2eJ.TZQilca2WCHigAYIGOiu6ahWh22tC', 'bibi', 'toto', '0000-00-00', 123456765, '', 0, 0, 0);
 
 --
--- Contraintes pour les tables déchargées
+-- Index pour les tables déchargées
 --
 
 --
