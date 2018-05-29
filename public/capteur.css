@@ -1,0 +1,71 @@
+body
+{
+    /*background: url(../images/bg.png)*/;
+    background: #92dd5a;
+}
+
+.site
+{
+    font-family: "Holtwood One SC", sans-serif;
+}
+.text-logo
+{
+    color: #e7480f;
+    text-shadow: 2px 2px #ffd301;
+    font-size: 50px;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.nav
+{
+    margin-bottom: 40px;
+}
+
+.thumbnail img
+{
+    background: #ffd301;
+}
+
+.price
+{
+    
+}
+
+.caption > h4
+{
+    color: #e7480f;
+    font-size: 18px;
+}
+
+
+/*text input*/
+.btn-order
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e7480f;
+    text-decoration: none;
+    text-shadow: 2px 2px #333;
+}
+
+
+/*admin*/
+.admin
+{
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
