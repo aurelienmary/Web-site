@@ -31,7 +31,7 @@ else
     // Si aucun contrôleur défini en GET, on bascule sur utilisateurs
     $url = 'utilisateurs';
     }
-
+//
 // On appelle le contrôleur
 include ("./Controleur/". $url .".php");
     
