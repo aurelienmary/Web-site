@@ -32,17 +32,27 @@ function adduser(PDO $bdd, array $user)
 function login(PDO $bdd, array $user) 
 
 {
-    $query= 'SELECT id FROM users WHERE email= :email AND password= :password';
-    $data = $bdd->prepare($query);
-    $data -> bindParam (":email",$user['email'],PDO::PARAM_STR);
-    $data -> bindParam (":password",$user['password']);
-    $data->execute();
-    return $data->fetchAll();
+   
+    $req = $bdd->prepare('SELECT id, name, lastname, email FROM users WHERE email= :email AND password= :password');
+    $req->execute(array('email'=> $user['email'], 'password'=> $user['password'] ));
     
+    return $donnees = $req->fetch();
+   
     
 }
 
+<<<<<<< HEAD
 
+=======
+/*
+ * r�cup�re les information de l'utilisateur dans la base de donn�es
+ */
+function searchuser(PDO $bdd,array $user)
+{
+	
+    
+}
+>>>>>>> 248bcba1fa9fe3428f1b4fac0565261d53ab6d19
 
 function chat(PDO $bdd, array $echange)
 {

@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Page d'accueil</title>
+        <title>Page d'inscription</title>
         <link href="public/css/inscription.css" rel="stylesheet">
         <script type="text/javascript" language="javascript" src="script2.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
@@ -75,7 +75,7 @@
            </div>
                
                <div class="mat-div">
-                <label for="fullname" class="mat-label">numéro de téléphone</label>
+                <label for="fullname" class="mat-label">Numéro de téléphone</label>
                 <input type="tel" name="numTel" class="mat-input" required="required" data-error="Valid tel is required">
            
            </div>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
     <head>
         <meta charset="utf-8">
         <link href="../public/css/header.css" rel="stylesheet">
         <link href="./public/css/header.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
+        <script type="text/javascript" language="javascript" src="header.js"></script>
         
     </head>
     
@@ -22,7 +23,24 @@
          			</div>
 		             
 		         
-		         
+		         <?php 
+			    	if (!empty($_SESSION['id']) && $_SESSION['d'] != 1)
+			    	{
+			    		?>
+			    		<div class="reglog">
+			    		
+			    		
+			    		
+			    		<p><img src="public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&fonction=deconnexion"> Deconnexion </a></p>
+			    		<p> <?php echo $_SESSION['prenom'] . '  ' . $_SESSION['nom']?> </p>
+			    		
+			    		</div>
+    		
+    	
+			    <?php }
+			    	else {
+			    	
+			    ?>
 		        		
 		        
 		        <div class="reglog">
@@ -32,7 +50,11 @@
 		             <p><img src="public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&fonction=connexion"> Connexion </a></p>
 
 		        </div>
+		        
+		        <?php } ?>
 		     </div>
+		     
+		     
 		     
 		     <div class="wrapper-bis"> 
 		         

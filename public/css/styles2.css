@@ -20,10 +20,6 @@ a
     color: #444;
 }
 
-/*logo*/
-
-
-
 
 h2
 {
@@ -39,7 +35,7 @@ h2
 
 
 
-/* l'image principale*/
+
 
 
 
@@ -57,10 +53,6 @@ h2
 }
 
 
-.formulaire
-{
-    
-}
 
 .box
 {
@@ -70,7 +62,7 @@ h2
     left: 50%;
     width: 1000px;
     height: 890px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
      box-sizing: border-box;
     transform: translate(-50%,-30%);
     opacity: 5%;
@@ -119,14 +111,14 @@ h2
 }
 
 label {
-  /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+ 
   width: 90px;
   text-align: right;
 }
 
 section form {
-  /* Uniquement centrer le formulaire sur la page */
+  
   margin: 0 auto;
-  width: 270px;
+  width: 280px;
   border-radius: 1em;
 }

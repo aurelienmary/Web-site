@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
     <head>
     	<meta charset="utf-8">
 		<link href="public/css/footer.css" rel="stylesheet">
@@ -29,7 +29,7 @@
                 	</div>
                 </div>
                 <div class="catalogues">  
-                    <h3 class="gc"> <a href="index4"> Les catalogues & Guides </a></h3>
+                    <h3 class="gc"> <a href="index.php?cible=utilisateurs&fonction=catalogue"> Les catalogues & Guides </a></h3>
                     <p>Retrouver tous les catalogues et <br> guides pour réaliser tous vos projets</p>
                 </div>
                

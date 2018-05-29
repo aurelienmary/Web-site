@@ -1,7 +1,7 @@
 <?php
-session_start();
 
-include ('./Modele/requetes.admin.php.');
+
+include ('./Modele/requetes.admin.php');
 
 
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
@@ -10,11 +10,32 @@ if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
 }
 else
 {
-    $function=$_GET['function'];
+    $function=$_GET['fonction'];
 }
 
 switch ($function)
 {
-    case "acceuiladmin":
+    case "recherche":
+    	$vue="recherche";
+    	$title="recherche";
+    	/*if (isset($_POST['recherche']))
+    	{
+    		$recherche=search($bdd, $mot);
+    		
+    	}*/
+    	
+    	
+    	break;
+    	
         
 }
+
+
+include ('./Vue/header.php');
+if (!empty($_SESSION['id']) && $_SESSION['d'] != 1 && $vue != "catalogue")
+{
+	include ('./Vue/navigation.php');
+}
+
+include ('./Vue/'. $vue .'.php');
+include ('./Vue/footer.php');

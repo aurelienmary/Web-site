@@ -13,33 +13,8 @@
     
     <body>
         
-   
-        
-        <span class="bckg"></span>
-        <div class="dashboard">
-  <h1>Tableau de bord</h1>
-        
-  <nav>
-    <ul>
-      <li>
-        <a href="javascript:void(0);" data-title="Projects">Menu</a>
-      </li>
-      
-      <li>
-        <a href="index.php?cible=utilisateurs&fonction=chat" data-title="message">Messagerie</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Timeline">Historique</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Settings">Reglages</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="alert">Notifications</a>
-      </li>
-    </ul>
-  </nav>
-            </div>
+ 
+       
 
 <main>
   <div class="title">

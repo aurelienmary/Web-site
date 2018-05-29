@@ -2,7 +2,8 @@
 
 include ('./Modele/requetes.utilisateurs.php');
 
-
+$h = 0;
+$_SESSION['d']=0;
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
     {
         $function ="accueil";
@@ -22,6 +23,20 @@ switch ($function)
             $title="Accueil";
             break;
             
+        case "ajoutcapteur" :
+        	if (!empty($_SESSION['id']))
+        	{
+	        	$vue="ajoutcapteur";
+	        	$title="ajoutcapteur";
+	        	break;
+        	}
+        	
+        	else {
+        		$vue="accueil";
+        	}
+	        
+            
+        
         case "connexion":
             /*
              affichage de la vue de connexion
@@ -39,6 +54,9 @@ switch ($function)
                         'password' => $_POST['password']
                         ];
                 $_SESSION['id']=login($bdd, $user);
+                $_SESSION['prenom'] = $_SESSION['id']['name'];
+               	$_SESSION['nom'] = $_SESSION['id']['lastname'];
+               	$_SESSION['email'] = $_SESSION['id']['email'];
                 /*
                  * ce test verifie que les identifiant de l'utilisateur sont correcte
                  */
@@ -46,13 +64,17 @@ switch ($function)
                 {
                     
                     $vue="ajoutcapteur";
+                    
                     /*
                      * fonction qui r�cup�re la table de l'utilisateur dans la base de donn�e
                      */
                  
                     /*
                      * fontion searchuser � r�aliser
+                     * 
                      */
+                    
+                    $h = 1;
                 }
                 else
                 {
@@ -61,7 +83,19 @@ switch ($function)
                 }
             }
             break;
-            
+        
+        case "deconnexion":
+        	$vue="deconnexion";
+        	$alerte=false;
+        	$title="deconnexion";
+        	$_SESSION['d'] = 1;
+        	session_destroy();
+        	
+        	break;
+        		
+       
+        
+        
         case "inscription":
             /*
              affichage de la vue inscription
@@ -70,9 +104,11 @@ switch ($function)
             $alerte=false;
             if (isset($_POST['nom']) and isset($_POST['prenom']) and isset($_POST['email']) and isset($_POST['passWord']) and isset($_POST['birthdate']) and isset($_POST['numTel']) and isset($_POST['adresse']) and isset($_POST['codepostal']))
             {
-                $user =[
+                
+            	$hash_password = password_hash($_POST['passWord'], PASSWORD_DEFAULT);
+            	$user =[
                         'email'=> $_POST['email'],
-                        'password'=>$_POST['passWord'],
+            			'password'=>$hash_password,
                         'lastname' => $_POST['nom'],
                         'name'=> $_POST['prenom'],
                         'birthdate'=> $_POST['birthdate'],
@@ -81,6 +117,7 @@ switch ($function)
                         'postalcode'=>$_POST['codepostal'],
                     
                         ];
+                
                 adduser($bdd,$user);
                 
             }
@@ -101,10 +138,10 @@ switch ($function)
         	$vue="chat";
         	$alerte=false;
         	$title="Catalogue";
-        	if (isset($_POST['pseudo']) and isset($_POST['message'] ))
+        	if (isset($_POST['message'] ))
         	{
         		$echange =[
-        				'pseudo'=> $_POST['pseudo'],
+        				'pseudo'=> $_SESSION['prenom'],
         				'message'=>$_POST['message'],
         				
         				
@@ -113,6 +150,11 @@ switch ($function)
         		
         	}
         	break;
+        	
+        case "profil":
+        	$vue="profil";
+        	$alerte=false;
+        	$title="profil";
 
 
 }
@@ -120,5 +162,10 @@ switch ($function)
     
  
 include ('./Vue/header.php');
+if (!empty($_SESSION['id']) && $_SESSION['d'] != 1 && $vue != "catalogue")
+{
+	include ('./Vue/navigation.php');
+}
+
 include ('./Vue/'. $vue .'.php');
 include ('./Vue/footer.php');
