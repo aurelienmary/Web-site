@@ -32,7 +32,7 @@
 		        <a href="javascript:void(0);" data-title="Timeline">Historique</a>
 		      </li>
 		      <li>
-		        <a href="index.php?cible=utilisateurs&fonction=profil" data-title="Settings">Reglages</a>
+		        <a href="index.php?cible=utilisateurs&fonction=profil" data-title="Settings">Profil</a>
 		      </li>
 		      <li>
 		        <a href="javascript:void(0);" data-title="alert">Notifications</a>
