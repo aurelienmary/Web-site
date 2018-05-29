@@ -37,6 +37,15 @@
 		      <li>
 		        <a href="javascript:void(0);" data-title="alert">Notifications</a>
 		      </li>
+		      <?php 
+		      if ($_SESSION['admin'] == 1)
+		      {
+		      	?>
+		      	<li>
+		      	<a href="index.php?cible=admin&fonction=recherche" data-title="alert">Recherche</a>
+		      	</li>
+		      <?php }
+		      ?>
 		    </ul>
 		  </nav>
 		            </div>

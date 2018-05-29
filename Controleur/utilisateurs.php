@@ -64,6 +64,8 @@ switch ($function)
 	                $_SESSION['prenom'] = $_SESSION['id']['name'];
 	               	$_SESSION['nom'] = $_SESSION['id']['lastname'];
 	               	$_SESSION['email'] = $_SESSION['id']['email'];
+	               	$_SESSION['admin'] = $_SESSION['id']['admin'];
+	               	
 	                /*
 	                 * ce test verifie que les identifiant de l'utilisateur sont correcte
 	                 */

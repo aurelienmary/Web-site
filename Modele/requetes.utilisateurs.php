@@ -33,7 +33,7 @@ function login(PDO $bdd, array $user)
 
 {
    
-    $req = $bdd->prepare('SELECT id, name, lastname, email, password FROM users WHERE email= :email');
+    $req = $bdd->prepare('SELECT id, name, lastname, email, password, admin FROM users WHERE email= :email');
     $req->execute(array('email'=> $user['email']));
     
     return $donnees = $req->fetch();
