@@ -42,13 +42,7 @@ function login(PDO $bdd, array $user)
     
 }
 
-/*
- * r�cup�re les information de l'utilisateur dans la base de donn�es
- */
-function searchuser(PDO $bdd,array $user)
-{
-    
-}
+
 
 function chat(PDO $bdd, array $echange)
 {
