@@ -18,22 +18,22 @@
         
         if(empty($name)) 
         {
-            $nameError = 'Ce champ ne peut pas être vide';
+            $nameError = 'Ce champ ne peut pas Ãªtre vide';
             $isSuccess = false;
         }
         if(empty($description)) 
         {
-            $descriptionError = 'Ce champ ne peut pas être vide';
+            $descriptionError = 'Ce champ ne peut pas Ãªtre vide';
             $isSuccess = false;
         } 
         if(empty($price)) 
         {
-            $priceError = 'Ce champ ne peut pas être vide';
+            $priceError = 'Ce champ ne peut pas Ãªtre vide';
             $isSuccess = false;
         } 
         if(empty($category)) 
         {
-            $categoryError = 'Ce champ ne peut pas être vide';
+            $categoryError = 'Ce champ ne peut pas Ãªtre vide';
             $isSuccess = false;
         }
         if(empty($image)) 
@@ -98,7 +98,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/capteur.css">
     </head>
     
     <body>
@@ -138,7 +138,7 @@
                         <span class="help-inline"><?php echo $categoryError;?></span>
                     </div>
                     <div class="form-group">
-                        <label for="image">Sélectionner une image:</label>
+                        <label for="image">SÃ©lectionner une image:</label>
                         <input type="file" id="image" name="image"> 
                         <span class="help-inline"><?php echo $imageError;?></span>
                     </div>
