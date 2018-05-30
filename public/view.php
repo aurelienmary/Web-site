@@ -7,7 +7,7 @@
     }
      
     $db = Database::connect();
-    $statement = $db->prepare("SELECT items.id, items.name, items.description, items.logement, items.image, pieces.name AS piece FROM items LEFT JOIN pieces ON items.piece = pieces.id WHERE items.id = ?");
+    $statement = $db->prepare("SELECT capteurs.id, capteurs.name, capteurs.description, capteurs.logement, capteurs.image, pieces.name AS piece FROM capteurs LEFT JOIN pieces ON capteurs.piece = pieces.id WHERE capteurs.id = ?");
     $statement->execute(array($id));
     $item = $statement->fetch();
     Database::disconnect();
@@ -44,19 +44,19 @@
                     <br>
                     <form>
                       <div class="form-group">
-                        <label>Nom:</label><?php echo '  '.$item['name'];?>
+                        <label>Nom:</label><?php echo '  '.$capteur['name'];?>
                       </div>
                       <div class="form-group">
-                        <label>Description:</label><?php echo '  '.$item['description'];?>
+                        <label>Description:</label><?php echo '  '.$capteur['description'];?>
                       </div>
                       <div class="form-group">
-                        <label>Logement:</label><?php echo '  '.number_format((float)$item['logement'], 2, '.', ''). ' ';?>
+                        <label>Logement:</label><?php echo '  '.number_format((float)$capteur['logement'], 2, '.', ''). ' ';?>
                       </div>
                       <div class="form-group">
-                        <label>Piece:</label><?php echo '  '.$item['piece'];?>
+                        <label>Piece:</label><?php echo '  '.$capteur['piece'];?>
                       </div>
                       <div class="form-group">
-                        <label>Image:</label><?php echo '  '.$item['image'];?>
+                        <label>Image:</label><?php echo '  '.$capteur['image'];?>
                       </div>
                     </form>
                     <br>
@@ -66,10 +66,10 @@
                 </div> 
                 <div class="col-sm-6 site">
                     <div class="thumbnail">
-                        <img src="<?php echo '../images/'.$item['image'];?>" alt="...">
+                        <img src="<?php echo '../images/'.$capteur['image'];?>" alt="...">
                           <div class="caption">
-                            <h4><?php echo $item['name'];?></h4>
-                            <p><?php echo $item['description'];?></p>
+                            <h4><?php echo $capteur['name'];?></h4>
+                            <p><?php echo $capteur['description'];?></p>
                             <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon"></span> ...</a>
                           </div>
                     </div>
