@@ -37,12 +37,10 @@ CREATE TABLE IF NOT EXISTS `pieces` (
 --
 
 INSERT INTO `pieces` (`id`, `name`) VALUES
-(1, 'Menus'),
-(2, 'Burgers'),
-(3, 'Snacks'),
-(4, 'Salades'),
-(5, 'Boissons'),
-(6, 'Desserts');
+(1, 'chambre1'),
+(2, 'chambre 2'),
+(3, 'Salon'),
+(4, 'cuisine'),
 
 -- --------------------------------------------------------
 
