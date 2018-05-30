@@ -30,20 +30,20 @@
                       <?php
                         require 'database.php';
                         $db = Database::connect();
-                        $statement = $db->query('SELECT items.id, items.name, items.description, items.logement, piece.name AS piece FROM items LEFT JOIN pieces ON items.category = categories.id ORDER BY items.id DESC');
-                        while($item = $statement->fetch()) 
+                        $statement = $db->query('SELECT capteurs.id, capteurs.name, capteurs.description, capteurs.logement, piece.name AS piece FROM capteurs LEFT JOIN pieces ON capteurs.piece = pieces.id ORDER BY capteurs.id DESC');
+                        while($capteur = $statement->fetch()) 
                         {
                             echo '<tr>';
-                            echo '<td>'. $item['name'] . '</td>';
-                            echo '<td>'. $item['description'] . '</td>';
-                            echo '<td>'. number_format($item['logement'], 2, '.', '') . '</td>';
-                            echo '<td>'. $item['category'] . '</td>';
+                            echo '<td>'. $capteur['name'] . '</td>';
+                            echo '<td>'. $capteur['description'] . '</td>';
+                            echo '<td>'. number_format($capteur['logement'], 2, '.', '') . '</td>';
+                            echo '<td>'. $capteur['piece'] . '</td>';
                             echo '<td width=300>';
-                            echo '<a class="btn btn-default" href="view.php?id='.$item['id'].'"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
+                            echo '<a class="btn btn-default" href="view.php?id='.$capteur['id'].'"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
                             echo ' ';
-                            echo '<a class="btn btn-primary" href="update.php?id='.$item['id'].'"><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
+                            echo '<a class="btn btn-primary" href="update.php?id='.$capteur['id'].'"><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
                             echo ' ';
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$item['id'].'"><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
+                            echo '<a class="btn btn-danger" href="delete.php?id='.$capteur['id'].'"><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
                             echo '</td>';
                             echo '</tr>';
                         }
