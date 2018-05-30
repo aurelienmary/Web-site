@@ -6,7 +6,7 @@ body
 
 .site
 {
-    font-family: "Holtwood One SC", sans-serif;
+    font-family: sans-serif;
 }
 .text-logo
 {
@@ -27,15 +27,12 @@ body
     background: #ffd301;
 }
 
-.price
-{
-    
-}
+
 
 .caption > h4
 {
     color: #e7480f;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 
