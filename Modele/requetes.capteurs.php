@@ -40,7 +40,7 @@ function decoder(PDO $bdd, array $data)
 
 }
 
-function decouper(PDO $bdd, char $data_tab)
+function decouper(PDO $bdd, string $data_tab)
 {
 	list($t, $o, $r, $c,$n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) = sscanf($data_tab,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
 }
