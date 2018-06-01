@@ -32,7 +32,7 @@
 			    		
 			    		
 			    		<p><img src="public/images/man-user.png" alt='avatar'/><a href="index.php?cible=utilisateurs&fonction=deconnexion"> Deconnexion </a></p>
-			    		<p> <?php echo $_SESSION['prenom'] . '  ' . $_SESSION['nom']?> </p>
+			    		<p> <?php echo $_SESSION['name'] . '  ' . $_SESSION['lastname']?> </p>
 			    		
 			    		</div>
     		

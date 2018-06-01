@@ -57,7 +57,9 @@ switch ($function)
                     'password' => $_POST['password']
                 ];
                 
-                $user=login($bdd, $user);
+                
+                $utilisateur=login($bdd, $user);
+                print_r($utilisateur);
                 /*
                  * ce test verifie que les identifiant de l'utilisateur sont correcte
                  */
@@ -68,11 +70,14 @@ switch ($function)
                      * change le header pour afficher le bouton déconnexion
                      */
                     
-                    $_SESSION['id']=$user[0][0];
-                    $_SESSION['email']=$user[0][1];
-                    $_SESSION['lastname']=$user[0][2];
-                    $_SESSION['name']=$user[0][3];
+                    $_SESSION['id']=$utilisateur[0][0];
+                    $_SESSION['email']=$utilisateur[0][1];
+                    $_SESSION['lastname']=$utilisateur[0][2];
+                    $_SESSION['name']=$utilisateur[0][3];
+                    $_SESSION['admin']=$utilisateur[0][4];
 	                $vue="ajoutcapteur";
+	                $alerte="vous êtes connecté";
+	                echo($alerte);
 	                    
 	                    /*
 	                     * fonction qui rï¿½cupï¿½re la table de l'utilisateur dans la base de donnï¿½e
@@ -115,10 +120,9 @@ switch ($function)
             if (isset($_POST['nom']) and isset($_POST['prenom']) and isset($_POST['email']) and isset($_POST['passWord']) and isset($_POST['birthdate']) and isset($_POST['numTel']) and isset($_POST['adresse']) and isset($_POST['codepostal']))
             {
                 
-            	$hash_password = password_hash($_POST['passWord'], PASSWORD_DEFAULT);
             	$user =[
                         'email'=> $_POST['email'],
-            			'password'=>$hash_password,
+            	        'password'=>$_POST['passWord'],
                         'lastname' => $_POST['nom'],
                         'name'=> $_POST['prenom'],
                         'birthdate'=> $_POST['birthdate'],

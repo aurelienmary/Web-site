@@ -15,7 +15,7 @@
     
     <div class="card">
   <img src="./public/images/silhouettepng.png" alt="John" style="width:100%">
-  <h1><?php echo $_SESSION['prenom'] . ' ' . $_SESSION['nom']?></h1>
+  <h1><?php echo $_SESSION['name'] . ' ' . $_SESSION['lastname']?></h1>
   <p class="title"><?php echo $_SESSION['email']?></p>
   <p>ISEP</p>
   
