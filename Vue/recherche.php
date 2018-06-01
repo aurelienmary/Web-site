@@ -53,7 +53,7 @@
 		{
 		?> <div class="utilisateur"> <?php 
 			
-			echo ' <div> ' . $donnees['name']. '</div> <div>' . htmlspecialchars($donnees['lastname']) . '</div> <div> ' . htmlspecialchars($donnees['email']) . '<a href="#"><img src="public/images/crayon.png" /></a></div>';
+			echo ' <div> ' . $donnees['name']. '</div> <div>' . htmlspecialchars($donnees['lastname']) . '</div> <div> ' . htmlspecialchars($donnees['email']) . '  <a href="#"><img src="public/images/crayon.png" /></a></div>';
 		?> 
 		</div>
 		<?php }
