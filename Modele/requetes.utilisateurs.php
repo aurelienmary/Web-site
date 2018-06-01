@@ -13,10 +13,11 @@ $table='users';
  */
 function adduser(PDO $bdd, array $user)
 {
+    $password=cryptpassword($user['password']);
     $query= 'INSERT INTO users(email, password, lastname, name, birthdate, phonenumber, adress, postalcode) VALUES (:email, :password, :lastname, :name, :birthdate, :phonenumber, :adress, :postalcode)';
     $donnees= $bdd->prepare($query);
     $donnees->bindParam(":email", $user['email']);
-    $donnees->bindParam(":password", cryptpassword($user['password']));
+    $donnees->bindParam(":password", $password);
     $donnees->bindParam(":lastname", $user['lastname']);
     $donnees->bindParam(":name", $user['name']);
     $donnees->bindParam(":birthdate", $user['birthdate']);
@@ -39,7 +40,7 @@ function login(PDO $bdd, array $user)
     $password=$data->fetchAll();
     if (password_verify($user['password'], $password[0][0])==true)
     {
-        $query= 'SELECT id,nom,prenom,admin,gestionnaire FROM users WHERE email= :email';
+        $query= 'SELECT id,email,lastname,name FROM users WHERE email= :email';
         $data = $bdd->prepare($query);
         $data -> bindParam (":email",$user['email'],PDO::PARAM_STR);
         $data->execute();

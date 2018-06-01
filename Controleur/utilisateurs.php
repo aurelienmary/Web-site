@@ -69,8 +69,9 @@ switch ($function)
                      */
                     
                     $_SESSION['id']=$user[0][0];
-                    $_SESSION['nom']=$user[0][1];
-                    $_SESSION['prenom']=$user[0][2];
+                    $_SESSION['email']=$user[0][1];
+                    $_SESSION['lastname']=$user[0][2];
+                    $_SESSION['name']=$user[0][3];
 	                $vue="ajoutcapteur";
 	                    
 	                    /*
