@@ -53,7 +53,7 @@ switch ($function)
             
             {
                 $user=[
-                    'email'=> $_POST['email'],
+                    'email'=> $_POST['identifiant'],
                     'password' => $_POST['password']
                 ];
                 
