@@ -52,26 +52,26 @@ switch ($function)
             	
             
             {
-                $user=['email'=> $_POST['identifiant'],
-                        ];
+                $user=[
+                    'email'=> $_POST['email'],
+                    'password' => $_POST['password']
+                ];
                 
-                $_SESSION['id']=login($bdd, $user);
-               
-                $passwordBdd = $_SESSION['id']['password'];
-                
-                if (password_verify($_POST['password'], $passwordBdd ))
+                $user=login($bdd, $user);
+                /*
+                 * ce test verifie que les identifiant de l'utilisateur sont correcte
+                 */
+                if (!empty($user))
                 {
-	                $_SESSION['prenom'] = $_SESSION['id']['name'];
-	               	$_SESSION['nom'] = $_SESSION['id']['lastname'];
-	               	$_SESSION['email'] = $_SESSION['id']['email'];
-	               	$_SESSION['admin'] = $_SESSION['id']['admin'];
-	               	
-	                /*
-	                 * ce test verifie que les identifiant de l'utilisateur sont correcte
-	                 */
-	                
-	                    
-	                    $vue="ajoutcapteur";
+                    $vue="accueil";
+                    /*
+                     * change le header pour afficher le bouton déconnexion
+                     */
+                    
+                    $_SESSION['id']=$user[0][0];
+                    $_SESSION['nom']=$user[0][1];
+                    $_SESSION['prenom']=$user[0][2];
+	                $vue="ajoutcapteur";
 	                    
 	                    /*
 	                     * fonction qui rï¿½cupï¿½re la table de l'utilisateur dans la base de donnï¿½e
