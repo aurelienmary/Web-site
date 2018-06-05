@@ -27,6 +27,10 @@ switch ($function)
     	
     	break;
     	
+    case "edition":
+    	$vue="edition";
+    	$title="edition";
+    	
         
 }
 
