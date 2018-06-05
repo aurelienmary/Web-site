@@ -67,7 +67,7 @@ switch ($function)
                 {
                     $vue="accueil";
                     /*
-                     * change le header pour afficher le bouton déconnexion
+                     * change le header pour afficher le bouton dï¿½connexion
                      */
                     
                     $_SESSION['id']=$utilisateur[0][0];
@@ -76,7 +76,7 @@ switch ($function)
                     $_SESSION['name']=$utilisateur[0][3];
                     $_SESSION['admin']=$utilisateur[0][4];
 	                $vue="ajoutcapteur";
-	                $alerte="vous êtes connecté";
+	                $alerte="vous ï¿½tes connectï¿½";
 	                echo($alerte);
 	                    
 	                    /*
@@ -155,7 +155,7 @@ switch ($function)
         	if (isset($_POST['message'] ))
         	{
         		$echange =[
-        				'pseudo'=> $_SESSION['prenom'],
+        				'pseudo'=> $_SESSION['name'],
         				'message'=>$_POST['message'],
         				
         				
