@@ -44,6 +44,8 @@
     
     
     <?php 
+    include ('./Modele/requetes.capteurs.php');
+    
     if (isset($_POST['recherche']))
     {
     	$req = $bdd->prepare('SELECT name, lastname, email FROM users WHERE email= :email OR name= :name OR lastname= :lastname');
@@ -53,13 +55,29 @@
 		{
 		?> <div class="utilisateur"> <?php 
 			
-			echo ' <div> ' . $donnees['name']. '</div> <div>' . htmlspecialchars($donnees['lastname']) . '</div> <div> ' . htmlspecialchars($donnees['email']) . '  <a href="#"><img src="public/images/crayon.png" /></a></div>';
+			echo ' <div> ' . $donnees['name']. '</div> <div>' . htmlspecialchars($donnees['lastname']) . '</div> <div> ' . htmlspecialchars($donnees['email']) . ' </div>';
 		?> 
+		<form action ='index.php?cible=admin&fonction=edition' method="post" >
+		<input type="hidden" name="name" value="<?php echo $donnees['name'] ?>" />
+		<input type="hidden" name="lastname" value="<?php echo $donnees['lastname'] ?>" />
+		<input type="hidden" name="email" value="<?php echo $donnees['email'] ?>" />
+		<input type="image" name="profil" src="public/images/crayon.png"  required />
+		</form>
 		</div>
 		<?php }
 		
     }
+
+    
+    ?>
+
+
+</div>
+
+<div>
+<?php  
+	$lol = getusersensor();
+	echo $lol;
+	
 ?>
-
-
 </div>
