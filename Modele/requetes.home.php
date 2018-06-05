@@ -5,9 +5,10 @@ $table2='piece';
 
 function getuserhome (PDO $bdd, string $id)
 {
-    $query= "SELECT name FROM home WHERE owner_id = :id";
+    $query= "SELECT * FROM home WHERE owner_id = :id INNER JOIN home.id=piece.home_id";
     $data=$bdd->prepare($query);
     $data -> bindParam(":id", $id);
     $data->execute();
     return $data->fetchAll();
 }
+
