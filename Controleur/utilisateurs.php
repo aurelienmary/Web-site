@@ -177,7 +177,7 @@ switch ($function)
     
  
 include ('./Vue/header.php');
-if (!empty($_SESSION['id']) && $_SESSION['d'] != 1 && $vue != "catalogue")
+if (!empty($_SESSION['id']) && $_SESSION['d'] != 1 )
 {
 	include ('./Vue/navigation.php');
 }
