@@ -3,7 +3,7 @@
 include ('./Modele/requetes.utilisateurs.php');
 
 $h = 0;
-$_SESSION['d']=0;
+
 if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
     {
         $function ="accueil";
