@@ -176,11 +176,11 @@ switch ($function)
     	
     
  
-include ('./Vue/header.php');
-if (!empty($_SESSION['id']) && $_SESSION['d'] != 1 )
+
+if (!empty($_SESSION['id']) && $_SESSION['d'] != 1 && $vue != "catalogue")
 {
 	include ('./Vue/navigation.php');
 }
-
+include ('./Vue/header.php');
 include ('./Vue/'. $vue .'.php');
 include ('./Vue/footer.php');
