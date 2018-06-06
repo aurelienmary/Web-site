@@ -10,21 +10,22 @@
     </ul>
     <div id="myTabContent" class="tab-content">
       <div class="tab-pane active in" id="home">
-        <form id="tab">
+        <form id="tab" method="post" action="index.php?cible=admin&fonction=edition">
             <label>Username</label>
-            <input type="text" value="<?php echo $_POST['name']?>" class="input-xlarge">
+            <input type="text" name="name" value="<?php echo $_POST['name']?>" class="input-xlarge">
             
             <label>Last Name</label>
-            <input type="text" value="<?php echo $_POST['lastname']?>" class="input-xlarge">
+            <input type="text" name="lastname" value="<?php echo $_POST['lastname']?>" class="input-xlarge">
             <label>Email</label>
-            <input type="text" value="<?php echo $_POST['email']?>" class="input-xlarge">
+            <input type="text" name="email" value="<?php echo $_POST['email']?>" class="input-xlarge">
             <label>Address</label>
-            <textarea value="Smith" rows="3" class="input-xlarge">
+            <textarea name="adress" value="<?php echo $_POST['adress']?>" rows="3" class="input-xlarge">
             </textarea>
+            <input type="hidden" name="id" value="<?php echo $_POST['id'] ?>" />
             
             
           	<div>
-        	    <button class="btn btn-primary">Update</button>
+        	    <input type="submit" class="btn btn-primary" value="Modifier">
         	</div>
         </form>
       </div>

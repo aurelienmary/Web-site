@@ -48,7 +48,7 @@
     
     if (isset($_POST['recherche']))
     {
-    	$req = $bdd->prepare('SELECT name, lastname, email FROM users WHERE email= :email OR name= :name OR lastname= :lastname');
+    	$req = $bdd->prepare('SELECT name, lastname, email, adress, id FROM users WHERE email= :email OR name= :name OR lastname= :lastname');
     	$req->execute(array('email'=> $_POST['recherche'],'name'=> $_POST['recherche'], 'lastname'=> $_POST['recherche'] ));
 		
 		while ($donnees = $req->fetch())
@@ -61,6 +61,8 @@
 		<input type="hidden" name="name" value="<?php echo $donnees['name'] ?>" />
 		<input type="hidden" name="lastname" value="<?php echo $donnees['lastname'] ?>" />
 		<input type="hidden" name="email" value="<?php echo $donnees['email'] ?>" />
+		<input type="hidden" name="adress" value="<?php echo $donnees['adress'] ?>" />
+		<input type="hidden" name="id" value="<?php echo $donnees['id'] ?>" />
 		<input type="image" name="profil" src="public/images/crayon.png"  required />
 		</form>
 		</div>
