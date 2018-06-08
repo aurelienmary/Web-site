@@ -2,5 +2,5 @@
 session_start();
 $_SESSION=array();
 session_destroy;
-include ('formulaireinscription.php');
+include ('formulaireconnexion.php'); // met fin à la session de l'utilisateur 
 ?>
