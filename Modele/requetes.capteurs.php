@@ -7,7 +7,15 @@
 $table='sensors';
 $table2='users';
 
-function getusersensor()
+function getusersensor(PDO $bdd, $id)
+{
+    $query= "SELECT * FROM sensors WHERE user_id = :id LEFT JOIN piece ON sensors.piece_id=piece.id";
+    $data=$bdd->prepare($query);
+    $data -> bindParam(":id", $id);
+    $data->execute();
+    return $data->fetchAll();
+}
+function getlog()
 {
 	$ch = curl_init();
 	curl_setopt(
