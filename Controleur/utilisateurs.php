@@ -70,11 +70,11 @@ switch ($function)
                      * change le header pour afficher le bouton d�connexion
                      */
                     
-                    $_SESSION['id']=$utilisateur[0][0];
-                    $_SESSION['email']=$utilisateur[0][1];
-                    $_SESSION['lastname']=$utilisateur[0][2];
-                    $_SESSION['name']=$utilisateur[0][3];
-                    $_SESSION['admin']=$utilisateur[0][4];
+                    $_SESSION['id']=$utilisateur[0]['id'];
+                    $_SESSION['email']=$utilisateur[0]['email'];
+                    $_SESSION['lastname']=$utilisateur[0]['lastname'];
+                    $_SESSION['name']=$utilisateur[0]['name'];
+                    $_SESSION['admin']=$utilisateur[0]['admin'];
 	                $vue="ajoutcapteur";
 	                $alerte="vous �tes connect�";
 	                echo($alerte);
@@ -103,7 +103,6 @@ switch ($function)
         	$vue="deconnexion";
         	$alerte=false;
         	$title="deconnexion";
-        	$_SESSION['d'] = 1;
         	session_destroy();
         	
         	break;
@@ -179,7 +178,7 @@ switch ($function)
 
 
 include ('./Vue/header.php');
-if (!empty($_SESSION['id']) && $_SESSION['d'] != 1 && $vue != "catalogue")
+if (!empty($_SESSION['id']) && $vue != "catalogue")
 {
 	include ('./Vue/navigation.php');
 }
