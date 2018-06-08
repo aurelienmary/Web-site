@@ -30,7 +30,16 @@ switch ($function)
     case "edition":
     	$vue="edition";
     	$title="edition";
-    	
+    	$edit =[
+    			'email'=> $_POST['email'],
+    			
+    			'lastname' => $_POST['lastname'],
+    			'name'=> $_POST['name'],
+    			'adress'=>$_POST['adress'],
+    			'id'=>$_POST['id'],
+    			];
+    	edition($bdd,$edit);
+    	break;
         
 }
 
