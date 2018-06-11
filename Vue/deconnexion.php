@@ -14,7 +14,7 @@
     	
     	<div class= deconnexion>
     		
-    		<p>Vous vous êtes bien deconnecté !</br> A bientot </p>
+    		<p>Vous vous êtes bien déconnecté !</br> A bientôt </p>
     	
     
     	</div>
