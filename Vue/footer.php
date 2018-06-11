@@ -23,7 +23,7 @@
                     <img src='public/images/question.png' alt='img-question' />
                     <h3>AIDE & CONTACT</h3>
                     <p>Une question? Un renseignement? <br> 
-                    <p>Contacter-nous</p>
+                    <p>Contactez-nous</p>
                     <div class="ml">
                     	<p><a href="#">Mentions légales</a></p>
                 	</div>
