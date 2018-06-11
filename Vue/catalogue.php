@@ -28,7 +28,7 @@
                                 <div class="price">Prix</div>
                                 <div class="caption">
                                     <h4>Capteur de température</h4>
-                                    <p>Capteur detempérature ultras connecté</p>
+                                    <p>Capteur de température ultra connecté</p>
                                     <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>commander</a>
                                     
                         
@@ -44,8 +44,8 @@
                                 <img src="public/images/camera-surveillance.jpg" alt="...">
                                 <div class="price">Prix</div>
                                 <div class="caption">
-                                    <h4>Camera de surveillance interieur</h4>
-                                    <p>Camera de surveillance ultras connecté</p>
+                                    <h4>Caméra de surveillance intérieur</h4>
+                                    <p>Caméra de surveillance ultra connectée</p>
                                     <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>commander</a>
                                 
                                 </div>
@@ -59,7 +59,7 @@
                                 <img src="public/images/detecteur-fum.png" alt="...">
                                 <div class="price">Prix</div>
                                 <div class="caption">
-                                    <h4>Detecteur de fumée</h4>
+                                    <h4>Détecteur de fumée</h4>
                                     <p>.........</p>
                                     <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>commander</a>
                                 
@@ -89,7 +89,7 @@
                                 <img src="public/images/capteur-de-lumunosit%C3%A9.jpg" alt="...">
                                 <div class="price">Prix</div>
                                 <div class="caption">
-                                    <h4>Capteur de lumunosite</h4>
+                                    <h4>Capteur de luminosité</h4>
                                     <p>............</p>
                                     <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>commander</a>
                                 
@@ -104,7 +104,7 @@
                                 <img src="public/images/cam%C3%A9ra-surveillance2.jpg" alt="...">
                                 <div class="price">Prix</div>
                                 <div class="caption">
-                                    <h4>Camera de surveillance exterieur </h4>
+                                    <h4>Caméra de surveillance extérieure </h4>
                                     <p>..............</p>
                                     <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>commander</a>
                                 
