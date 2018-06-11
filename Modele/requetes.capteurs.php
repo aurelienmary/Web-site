@@ -1,9 +1,5 @@
 <?php
 
-
-//require('requetes.generiques.php');
-
-
 $table='sensors';
 $table2='users';
 
@@ -15,6 +11,12 @@ function getusersensor(PDO $bdd, $id)
     $data->execute();
     return $data->fetchAll();
 }
+
+function enregistrement(PDO $bdd, $id)
+{
+	$query= "INSERT INTO ";
+}
+
 function getlog()
 {
 	$ch = curl_init();
@@ -27,8 +29,6 @@ function getlog()
 	$data = curl_exec($ch);
 	curl_close($ch);
 	
-	//echo "Raw Data:</br>";
-	//echo ("$data");
 	$donnee = decoder($data); 
 	
 }
@@ -43,13 +43,11 @@ function decoder(string $data)
 	echo $data_tab[0] . "</br>";
 	echo count($data_tab);
 	for ($i=0, $size=count($data_tab)-1; $i<$size; $i++){
-		$tram [$i] = decouper($data_tab[$i]);
-		
-		
-		
+		$tram [$i] = decouper($data_tab[$i]);	
 	
 	}
 	print_r ($tram);
+	return $tram;
 	
 
 }
@@ -101,7 +99,7 @@ function decouper(string $data_tab)
 	}
 	echo "</br>$V $unité</br>";
 	echo ' le ' . $day . '/' . $month . '/' . $year ;
-	return array($type, $unité, $day, $month, $year);
+	return array($type, $V, $unité, $day, $month, $year);
 	
 	
 

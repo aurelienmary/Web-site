@@ -103,6 +103,7 @@ switch ($function)
         	$vue="deconnexion";
         	$alerte=false;
         	$title="deconnexion";
+        	$_SESSION['d'] = 1;
         	session_destroy();
         	
         	break;
@@ -178,7 +179,7 @@ switch ($function)
 
 
 include ('./Vue/header.php');
-if (!empty($_SESSION['id']) && $vue != "catalogue")
+if (!empty($_SESSION['id']) && $_SESSION['d'] != 1 && $vue != "catalogue")
 {
 	include ('./Vue/navigation.php');
 }
