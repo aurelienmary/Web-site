@@ -180,7 +180,7 @@
                 <div class="renseignements"> 
                     <img src='Vue/images/question.png' alt='img-question' />
                     <h3>AIDE & CONTACT</h3>
-                    <p>Une question? Un renseignement? <br> <p>Contacter-nous</p>
+                    <p>Une question? Un renseignement? <br> <p>Contactez-nous</p>
                 </div>
                 <div class="catalogues">  
                     <h3 class="gc"> <a href="#"> Les catalogues & Guides </a></h3>
