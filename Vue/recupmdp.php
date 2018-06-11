@@ -45,7 +45,7 @@
         
         
         <h2>Mot de passe oublié</h2><br><br>
-        <h3>Pour récupèrer votre mot de passe :</h3><br><br>
+        <h3>Pour récupérer votre mot de passe :</h3><br><br>
         <p>
             <span class="#">1</span> Saisissez votre email dans le champ ci-dessous:<br><br>
             <span class="#">2</span> Un lien vous sera envoyé par mail pour créer un nouveau mot de passe 
