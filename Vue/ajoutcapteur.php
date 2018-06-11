@@ -44,7 +44,7 @@
 			<div class='column-right'></div>
 		</a>
 		<a href='#' class='row'>
-			<div class='column-left'>lumunosité</div>
+			<div class='column-left'>luminosité</div>
 			<div class='column-right'></div>
 		</a>
 		<a href='#' class='row'>
