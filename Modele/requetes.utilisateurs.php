@@ -38,6 +38,7 @@ function login(PDO $bdd, array $user)
     $data -> bindParam (":email",$user['email'],PDO::PARAM_STR);
     $data->execute();
     $password=$data->fetchAll();
+    
     if (password_verify($user['password'], $password[0][0])==true)
     {
         $query= 'SELECT id,email,lastname,name,admin FROM users WHERE email= :email';

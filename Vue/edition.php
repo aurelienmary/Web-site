@@ -10,6 +10,7 @@
     </ul>
     <div id="myTabContent" class="tab-content">
       <div class="tab-pane active in" id="home">
+        
         <form id="tab" method="post" action="index.php?cible=admin&fonction=edition">
             <label>Username</label>
             <input type="text" name="name" value="<?php echo $_POST['name']?>" class="input-xlarge">

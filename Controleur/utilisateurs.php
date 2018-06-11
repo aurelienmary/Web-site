@@ -58,8 +58,8 @@ switch ($function)
                 ];
                 
                 
-                $utilisateur=login($bdd, $user);
-                print_r($utilisateur);
+                $utilisateur = login($bdd, $user);
+                
                 /*
                  * ce test verifie que les identifiant de l'utilisateur sont correcte
                  */
@@ -69,7 +69,7 @@ switch ($function)
                     /*
                      * change le header pour afficher le bouton d�connexion
                      */
-                    
+                    $_SESSION['d']= 0;
                     $_SESSION['id']=$utilisateur[0]['id'];
                     $_SESSION['email']=$utilisateur[0]['email'];
                     $_SESSION['lastname']=$utilisateur[0]['lastname'];

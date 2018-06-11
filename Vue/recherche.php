@@ -78,7 +78,7 @@
 
 <div>
 <?php  
-	$lol = getusersensor();
+	$lol = getlog();
 	echo $lol;
 	
 ?>
