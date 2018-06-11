@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `cgu` (
 --
 -- Structure de la table `chat`
 --
-
+DROP TABLE IF EXISTS `chat`;
 CREATE TABLE `chat` (
   `id` int(11) NOT NULL,
   `pseudo` varchar(100) NOT NULL,
