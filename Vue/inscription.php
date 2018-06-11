@@ -88,7 +88,7 @@
            </div>
            
            <div class="mat-div">
-                <label for="fullname" class="mat-label">Code postale</label>
+                <label for="fullname" class="mat-label">Code postal</label>
                 <input type="text" name="codepostal" class="mat-input">
            
            </div>
