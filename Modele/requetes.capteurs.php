@@ -154,5 +154,18 @@ function decouper(PDO $bdd, string $data_tab)
 
 
 }
+function adduser(PDO $bdd, array $sensor)
+{
+    $query= 'INSERT INTO users() VALUES ()';
+    $donnees= $bdd->prepare($query);
+    $donnees->bindParam(":email", $sensor['email']);
+    $donnees->bindParam(":lastname", $sensor['lastname']);
+    $donnees->bindParam(":name", $sensor['name']);
+    $donnees->bindParam(":birthdate", $sensor['birthdate']);
+    $donnees->bindParam(":phonenumber", $sensor['phonenumber']);
+    $donnees->bindParam(":adress", $sensor['adress']);
+    $donnees->bindParam(":postalcode", $sensor['postalcode']); 
+    return $donnees->execute();
+}
 
 
