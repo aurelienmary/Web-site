@@ -27,7 +27,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                      <?php
+                       <?php /*
                         require 'database.php';
                         $db = Database::connect();
                         $statement = $db->query('SELECT sensors.id, sensors.name, sensors.description, sensors.price, sensorstype.name AS category FROM sensors LEFT JOIN sensorstype ON sensors.category = sensorstype.id ORDER BY sensors.id DESC');
@@ -48,7 +48,8 @@
                             echo '</tr>';
                         }
                         Database::disconnect();
-                      ?>
+                      */?>
+                      
                   </tbody>
                 </table>
             </div>
