@@ -128,7 +128,10 @@ switch ($function)
         	
         	break;
         		
-       
+	case "contact":
+		$vue="contact";
+		$title="contact";
+		break;
         
         
         case "inscription":
