@@ -82,7 +82,8 @@ CREATE TABLE `chat` (
   `id` int(11) NOT NULL,
   `pseudo` varchar(100) NOT NULL,
   `message` text NOT NULL,
-  `date_message` datetime NOT NULL
+  `date_message` datetime NOT NULL,
+  `id_destinataire`int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -347,6 +348,12 @@ ALTER TABLE `building`
   ADD CONSTRAINT `building_ibfk_1` FOREIGN KEY (`gestionnaire_id`) REFERENCES `users` (`id`);
 
 --
+-- Contraintes pour la table `chat`
+--
+ALTER TABLE `chat`
+  ADD CONSTRAINT `chat_ibfk_1` FOREIGN KEY (`id_destinataire`) REFERENCES `users` (`id`);
+
+--
 -- Contraintes pour la table `home`
 --
 ALTER TABLE `home`
@@ -378,6 +385,7 @@ ALTER TABLE `repair`
 -- Contraintes pour la table `sensors`
 --
 ALTER TABLE `sensors`
+  ADD CONSTRAINT `sensors_ibfk_1` FOREIGN KEY (`sensortype_id`) REFERENCES `sensorstype` (`id`),
   ADD CONSTRAINT `sensors_ibfk_2` FOREIGN KEY (`piece_id`) REFERENCES `piece` (`id`),
   ADD CONSTRAINT `sensors_ibfk_3` FOREIGN KEY (`function_id`) REFERENCES `function` (`id`),
   ADD CONSTRAINT `sensors_ibfk_4` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`),
