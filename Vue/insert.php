@@ -121,11 +121,7 @@
                         <span class="help-inline"><?php echo $descriptionError;?></span>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="logement">Logement</label>
-                        <input type="number" step="1" class="form-control" id="logement" name="logement" placeholder="Logement" value="<?php echo $price;?>">
-                        <span class="help-inline"><?php echo $priceError;?></span>
-                    </div>
+                    
                     
                     <div class="form-group">
                         <label for="piece">Piece:</label>

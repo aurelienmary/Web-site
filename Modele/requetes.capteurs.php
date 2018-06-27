@@ -156,16 +156,13 @@ function decouper(PDO $bdd, string $data_tab)
 }
 function adduser(PDO $bdd, array $sensor)
 {
-    $query= 'INSERT INTO users() VALUES ()';
+    $query= 'INSERT INTO sensors(name, description, piece_id, users_id) VALUES (:name, :description, :piece, :users_id)';
     $donnees= $bdd->prepare($query);
-    $donnees->bindParam(":email", $sensor['email']);
-    $donnees->bindParam(":lastname", $sensor['lastname']);
     $donnees->bindParam(":name", $sensor['name']);
-    $donnees->bindParam(":birthdate", $sensor['birthdate']);
-    $donnees->bindParam(":phonenumber", $sensor['phonenumber']);
-    $donnees->bindParam(":adress", $sensor['adress']);
-    $donnees->bindParam(":postalcode", $sensor['postalcode']); 
-    return $donnees->execute();
+    $donnees->bindParam(":description", $sensor['description']);
+    $donnees->bindParam(":piece", $sensor['piece']);
+    $donnees->bindParam(":users_id", $_SESSION['id']);
+      return $donnees->execute();
 }
 
 
