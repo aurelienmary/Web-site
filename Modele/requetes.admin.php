@@ -28,7 +28,7 @@ function edition(PDO $bdd, $edit)
 	));
 }
 $table2='chat';
-function getchat (PDO $bdd;$table)
+function getchat (PDO $bdd, $table)
 {
 	$req='Select * FROM chat';
 	$donne= $bdd->prepare($req);

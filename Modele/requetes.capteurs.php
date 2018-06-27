@@ -144,7 +144,7 @@ function decouper(PDO $bdd, string $data_tab)
 	$req = $bdd->prepare('UPDATE sensors SET valeur = :nvvaleur, sensortype_id = :nv_sensortype_id WHERE id = :id');
 	$req->execute(array(
 			'nvvaleur' => $v,
-			'nv_sensortype_id' => $type,
+			'nv_sensortype_id' => $c,
 			'id' => $n2,
 	));
 	
