@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         
          
-        <link href="navigation.css" rel="stylesheet">
+        <link href="./public/css/navigation.css" rel="stylesheet">
         
         
     </head>
