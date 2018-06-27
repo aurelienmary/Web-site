@@ -20,7 +20,8 @@ switch ($function)
         $vue="capteurs";
         $title= "Les capteurs";
         
-        $liste = getusersensor($bdd, $user);
+        $liste = getusersensor($bdd, $_SESSION['id']);
+        print_r($liste);
         if (empty($liste))
         {
             $alerte="Aucun capteur n'est enregistré pour le moment";
