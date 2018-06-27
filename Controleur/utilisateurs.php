@@ -35,6 +35,20 @@ switch ($function)
         		$vue="accueil";
         	}
         	break;
+        
+        case "addSensor" :
+        	if (!empty($_SESSION['id']))
+        	{
+	        	$vue="addSensor";
+	        	$title="addSensor";
+	        	break;
+        	}
+        	
+        	else {
+        		$vue="accueil";
+        	}
+        	break;
+        
 	        
             
         
