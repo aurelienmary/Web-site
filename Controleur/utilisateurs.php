@@ -22,6 +22,12 @@ switch ($function)
             $vue="accueil";
             $title="Accueil";
             break;
+		
+	case "stat":
+		$vue="stat";
+		$title="stat";
+		break;
+		
             
         case "ajoutcapteur" :
         	if (!empty($_SESSION['id']))
