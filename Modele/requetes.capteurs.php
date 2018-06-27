@@ -5,7 +5,7 @@ $table2='users';
 
 function getusersensor(PDO $bdd, $id)
 {
-    $query= "SELECT * FROM sensors WHERE users_id = :id ";
+    $query= "SELECT * FROM sensors LEFT JOIN piece ON sensors.piece_id=piece.id WHERE users_id = :id ";
     $data=$bdd->prepare($query);
     $data -> bindParam(":id", $id);
     $data->execute();
