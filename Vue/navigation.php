@@ -19,25 +19,25 @@
 		<div class="dashboard">
 		  <h1>Tableau de bord</h1>
 		        
-		  <nav>
-		    <ul>
-		      <li>
-		        <a href="index.php?cible=utilisateurs&fonction=ajoutcapteur" data-title="Projects">Menu</a>
-		      </li>
-		      
-		      <li>
-		        <a href="index.php?cible=utilisateurs&fonction=chat" data-title="message">Messagerie</a>
-		      </li>
-		      <li>
-		        <a href="javascript:void(0);" data-title="Timeline">Historique</a>
-		      </li>
-		      <li>
-		        <a href="index.php?cible=utilisateurs&fonction=profil" data-title="Settings">Profil</a>
-		      </li>
-		      <li>
-		        <a href="javascript:void(0);" data-title="alert">Notifications</a>
-		      </li>
-		      <?php 
+		   <nav>
+    <ul>
+      <li>
+        <a href="admin/index.php" data-title="Projects">Gestion capteurs</a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0);" data-title="message">Messagerie</a>
+      </li>
+      <li>
+        <a href="addPiece/piece/index.php" data-title="Timeline">Gestion des pièces</a>
+      </li>
+      <li>
+        <a href="javascript:void(0);" data-title="Settings">Reglages</a>
+      </li>
+      <li>
+        <a href="javascript:void(0);" data-title="alert">Notifications</a>
+      </li>
+	 <?php 
 		      if ($_SESSION['admin'] == 1)
 		      {
 		      	?>
