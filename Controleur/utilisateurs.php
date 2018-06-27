@@ -181,6 +181,7 @@ switch ($function)
         		$echange =[
         				'pseudo'=> $_SESSION['name'],
         				'message'=>$_POST['message'],
+        				'destinataire'=>$_POST['destinataire']
         				
         				
         		];

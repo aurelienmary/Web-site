@@ -54,10 +54,11 @@ function login(PDO $bdd, array $user)
 
 function chat(PDO $bdd, array $echange)
 {
-	$req= $bdd->prepare( 'INSERT INTO chat(pseudo, message, date_message) VALUES (:pseudo, :message, NOW())');
+	$req= $bdd->prepare( 'INSERT INTO chat(pseudo, message, date_message, id_destinataire) VALUES (:pseudo, :message, NOW(), :id_destinataire)');
 	$req->execute(array(
 			"pseudo" =>$echange['pseudo'],
 			"message" => $echange['message'],
+			"id_destinataire"=>$echange['destinataire'],
 			));
 	//$bdd->exec('INSERT INTO chat (date-message) VALUES ( NOW() )');	
 }

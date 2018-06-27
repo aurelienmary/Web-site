@@ -32,7 +32,7 @@
                         <select class="form-control" id="type" name="type">
                         
                         <?php
-                           //$bdd = Database::connect();
+                           
                            foreach ($bdd->query('SELECT * FROM sensorstype ') as $row) 
                            {
                                 echo '<option value="'. $row['id'] .'">'. $row['name'] . '</option>';;

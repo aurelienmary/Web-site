@@ -15,6 +15,7 @@
    
  		
  		<form method="POST" id='chat' action="index.php?cible=utilisateurs&fonction=chat">
+ 			
  			<label for="pseudo">Votre nom: <?php echo $_SESSION['name']?></label>
  			
  			
@@ -22,41 +23,55 @@
  			
  			<label for="message">Votre message:</label> 
  			<textarea  name="message" id = "message" class="mat-input" required="required" data-error="message is required."></textarea>
- 			<input type="submit" value="Envoyer" />
-	    <?php if ($_SESSIONS['admin']==1)
-                               {
-                               <label for="destinaire" > Quelle est votre destinataire </label><br/>
+ 			
+	    
+	    <?php if ($_SESSION['admin']==1)
+              {?>
+                              <label for="destinaire" > Quelle est votre destinataire </label><br/>
                               <select name="destinataire" id="destinataire">
+     
      <?php
-try
-{
-        $bdd = new PDO('mysql:host=localhost;dbname=basedonnee', 'root', 'root');
-}
-catch(Exception $e)
-{
-            die('Erreur : '.$e->getMessage());
-}
- 
- 
-$reponse = $bdd->query('SELECT * FROM users');
- 
-while ($donnees = $reponse->fetch())
-{
-?>
-           <option value=" <?php echo $donnees['name']; ?>"> <?php echo $donnees['name']; ?></option>
-<?php
-}
- 
-$reponse->closeCursor();
- 
-?>}
+		try
+		{
+		        $bdd = new PDO('mysql:host=localhost;dbname=basedonnee', 'root', 'root');
+		}
+		catch(Exception $e)
+		{
+		            die('Erreur : '.$e->getMessage());
+		}
+		 
+		 
+		$reponse = $bdd->query('SELECT * FROM users');
+		 
+		while ($donnees = $reponse->fetch())
+		{
+	?>
+    <option value=" <?php echo $donnees['id']; ?>"> <?php echo $donnees['name']; ?></option>
 	
- 		
+	<?php
+		}
+		 
+		$reponse->closeCursor();
+		 
+	  }
+	  
+	  else 
+	  {
+	  	?>
+	  	<input type="hidden" name="destinataire" value="5">
+	  
+	 <?php  }?>
+	  
+	  
+	
+ 		<input type="submit" value="Envoyer" />
  		</form>
  		
  		<?php // Récupération des 10 derniers messages
 			$reponse = $bdd->query('SELECT pseudo, message, DATE_FORMAT(date_message, \'%d/%m/%Y à %Hh%imin%ss\') AS date_fr FROM chat WHERE pseudo= \'' . $_SESSION['name'] .'\'  OR id_destinataire= \''. $_SESSION['id'] . '\' ORDER BY date_message' );
-			?> <div class="conversation">
+			?> 
+			
+			<div class="conversation">
 			
 			<?php while ($donnees = $reponse->fetch())
 			{
