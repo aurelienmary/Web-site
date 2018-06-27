@@ -17,7 +17,7 @@ else
 switch ($function)
 {
     case 'capteurs':
-        $vue="addSensors";
+        $vue="addSensor";
         $title= "Les capteurs";
         
         $liste = getusersensor($bdd, $_SESSION['id']);
