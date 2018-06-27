@@ -194,6 +194,11 @@ switch ($function)
         	$alerte=false;
         	$title="profil";
         	break;
+		
+	case "faq":
+		$vue="faq";
+		$title="faq";
+		break;
 
 
     	}
