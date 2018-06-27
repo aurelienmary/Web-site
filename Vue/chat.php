@@ -23,11 +23,18 @@
  			
  			<label for="message">Votre message:</label> 
  			<textarea  name="message" id = "message" class="mat-input" required="required" data-error="message is required."></textarea>
+<<<<<<< HEAD
  			
 	    
 	    <?php if ($_SESSION['admin']==1)
               {?>
                               <label for="destinaire" > Quelle est votre destinataire </label><br/>
+=======
+ 			<input type="submit" value="Envoyer" />
+	    <?php if ($_SESSION['admin']==1)
+                               {
+                               <label for="destinaire" > Quelle est votre destinataire </label><br/>
+>>>>>>> b7d8a5adf11a83e8404ed25f82c6256feb307d11
                               <select name="destinataire" id="destinataire">
      
      <?php
