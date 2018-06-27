@@ -18,22 +18,22 @@
         
         if(empty($name)) 
         {
-            $nameError = 'Ce champ ne peut pas être vide';
+            $nameError = 'Ce champ ne peut pas ï¿½tre vide';
             $isSuccess = false;
         }
         if(empty($description)) 
         {
-            $descriptionError = 'Ce champ ne peut pas être vide';
+            $descriptionError = 'Ce champ ne peut pas ï¿½tre vide';
             $isSuccess = false;
         } 
         if(empty($price)) 
         {
-            $priceError = 'Ce champ ne peut pas être vide';
+            $priceError = 'Ce champ ne peut pas ï¿½tre vide';
             $isSuccess = false;
         } 
         if(empty($category)) 
         {
-            $categoryError = 'Ce champ ne peut pas être vide';
+            $categoryError = 'Ce champ ne peut pas ï¿½tre vide';
             $isSuccess = false;
         }
        if(empty($image)) 
@@ -107,7 +107,7 @@
             <div class="row">
                 <h1><strong>Ajouter un capteur</strong></h1>
                 <br>
-                <form class="form" action="insert.php" role="form" method="post" enctype="multipart/form-data">
+                <form class="form" action="index.php?cible=capteurs&fonction=ajout" role="form" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="name">Nom:</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Nom" value="<?php echo $name;?>">
@@ -138,7 +138,7 @@
                         <span class="help-inline"><?php echo $categoryError;?></span>
                     </div>
                     <div class="form-group">
-                        <label for="image">Sélectionner une image:</label>
+                        <label for="image">Sï¿½lectionner une image:</label>
                         <input type="file" id="image" name="image"> 
                         <span class="help-inline"><?php echo $imageError;?></span>
                     </div>
