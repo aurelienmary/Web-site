@@ -36,7 +36,7 @@ switch ($function)
                     if (isset($_POST['name']) and isset($_POST['description']) and isset($_POST['logement']) and isset($_POST['piece']))
             {
                 
-            	$user =[
+            	$sensor =[
                         'name'=> $_POST['name'],
             	        'description'=>$_POST['description'],
                         'logement' => $_POST['logement'],
