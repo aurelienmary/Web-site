@@ -1,3 +1,4 @@
+
 -- phpMyAdmin SQL Dump
 -- version 4.7.4
 -- https://www.phpmyadmin.net/
@@ -81,8 +82,7 @@ CREATE TABLE `chat` (
   `id` int(11) NOT NULL,
   `pseudo` varchar(100) NOT NULL,
   `message` text NOT NULL,
-  `date_message` datetime NOT NULL,
-  `id_destinataire`int(11) DEFAULT NULL
+  `date_message` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -267,11 +267,11 @@ CREATE TABLE IF NOT EXISTS `sensors` (
   `users_id` int(11) NOT NULL,
   `catalog_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `sensors_ibfk_1` (`sensortype_id`),
-  KEY `sensors_ibfk_2` (`piece_id`),
-  KEY `sensors_ibfk_3` (`function_id`),
-  KEY `sensors_ibfk_4` (`users_id`),
-  KEY `sensors_ibfk_5` (`catalog_id`)
+  KEY `sensortype_id` (`sensortype_id`),
+  KEY `piece_id` (`piece_id`),
+  KEY `function_id` (`function_id`),
+  KEY `users_id` (`users_id`),
+  KEY `catalog_id` (`catalog_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -345,12 +345,6 @@ INSERT INTO `users` (`id`, `email`, `password`, `lastname`, `name`, `birthdate`,
 --
 ALTER TABLE `building`
   ADD CONSTRAINT `building_ibfk_1` FOREIGN KEY (`gestionnaire_id`) REFERENCES `users` (`id`);
-
---
--- Contraintes pour la table `chat`
---
-ALTER TABLE `chat`
-  ADD CONSTRAINT `chat_ibfk_1` FOREIGN KEY (`id_destinataire`) REFERENCES `users` (`id`);
 
 --
 -- Contraintes pour la table `home`
