@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>Page d'accueil</title>
          
-        <link href="styles7.css" rel="stylesheet">
-         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+        <link href="./public/css/ajoutcapteur.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
         
     </head>
@@ -13,40 +13,10 @@
     
     <body>
         
-
-        
-        
-        
-        
-        
-        
-        
+ 
         
         <span class="bckg"></span>
-        <div class="dashboard">
-  <h1>Tableau de bord</h1>
-        
-  <nav>
-    <ul>
-      <li>
-        <a href="Vue/addSensor.php" data-title="Projects">Gestion capteurs</a>
-      </li>
-      
-      <li>
-        <a href="javascript:void(0);" data-title="message">Messagerie</a>
-      </li>
-      <li>
-        <a href="addPiece/piece/index.php" data-title="Timeline">Gestion des pièces</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Settings">Reglages</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="alert">Notifications</a>
-      </li>
-    </ul>
-  </nav>
-            </div>
+       
 
 <main>
   <div class="title">
@@ -64,11 +34,7 @@
 	</div>
 
 	<input type='checkbox' id='toggle'>
-         
-         
-        
-         
-
+     
 	<div class='menu-panel'>
 		<div class='arrow'></div>
 		<a href='#' class='row'>
@@ -94,11 +60,6 @@
 		</a>
 </div>
         </div>
-      
-      
-      
-      
-      
       
    
   </div>
@@ -142,19 +103,6 @@
       
         
         
-        
-        
-         
-        
-        
-        
-        
-        
     </body>
 </html>
-
-
-
-
-
 

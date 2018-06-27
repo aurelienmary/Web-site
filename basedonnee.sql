@@ -81,7 +81,8 @@ CREATE TABLE `chat` (
   `id` int(11) NOT NULL,
   `pseudo` varchar(100) NOT NULL,
   `message` text NOT NULL,
-  `date_message` datetime NOT NULL
+  `date_message` datetime NOT NULL,
+  `id_destinataire`int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -344,6 +345,12 @@ INSERT INTO `users` (`id`, `email`, `password`, `lastname`, `name`, `birthdate`,
 --
 ALTER TABLE `building`
   ADD CONSTRAINT `building_ibfk_1` FOREIGN KEY (`gestionnaire_id`) REFERENCES `users` (`id`);
+
+--
+-- Contraintes pour la table `chat`
+--
+ALTER TABLE `chat`
+  ADD CONSTRAINT `chat_ibfk_1` FOREIGN KEY (`id_destinataire`) REFERENCES `users` (`id`);
 
 --
 -- Contraintes pour la table `home`
