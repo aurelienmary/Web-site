@@ -37,6 +37,9 @@
      <li>
 		<a href="index.php?cible=utilisateurs&fonction=profil" data-title="Settings">Profil</a>
 	 </li>
+	    <li>
+		<a href="index.php?cible=utilisateurs&fonction=stat" data-title="Statistique">Profil</a>
+	 </li>
      
       <li>
         <a href="javascript:void(0);" data-title="Settings">Reglages</a>
