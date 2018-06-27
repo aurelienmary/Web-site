@@ -41,15 +41,14 @@ switch ($function)
             	        'sensortype'=>$_POST['type'],
                         
                         'piece'=> $_POST['piece'],
-            			
-                        
-                    
+            	
                         ];
-                print_r($sensor);
+                
+            	print_r($sensor);
                 addsensor($bdd,$sensor);
                 
             }
-            $title="Inscription";
+           
         
         break;
         

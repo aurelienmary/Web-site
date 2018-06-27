@@ -19,12 +19,12 @@ switch ($function)
     	$vue="ajouterPiece";
     	$title= "Les pieces";
     	
-    	/*$liste = getusersensor($bdd, $_SESSION['id']);
+    	$liste = getuserpiece($bdd, $_SESSION['id']);
     	print_r($liste);
     	if (empty($liste))
     	{
-    		$alerte="Aucun capteur n'est enregistré pour le moment";
-    	}*/
+    		$alerte="Aucune piece n'est enregistré pour le moment";
+    	}
     	break;
     	
     case "ajout":
@@ -34,18 +34,17 @@ switch ($function)
     	
     	if (isset($_POST['name']) and isset($_POST['type'])  and isset($_POST['superficie']))
     	{
-    		
+    		$name =  $_POST['name'] .' '. $_POST['type'];
     		$piece =[
-    				'name'=> $_POST['name'],
-    				'sensortype'=>$_POST['type'],
+    				'name'=> $name,
+    				'piecetype'=>$_POST['type'],
     				
     				'superficie'=> $_POST['superficie'],
     				
-    				
-    				
     		];
-    		print_r($sensor);
-    		addsensor($bdd,$sensor);
+    		
+    		print_r($piece);
+    		addpiece($bdd, $piece);
     		
     	}
     	

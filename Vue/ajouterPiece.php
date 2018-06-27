@@ -28,9 +28,9 @@
                   </thead>
                   <tbody>
                       <?php
-                        /*require 'database.php';
-                        $db = Database::connect();
-                        $statement = $db->query('SELECT pieces.id, .name, pieces.description, piece.price, categories.name AS category FROM pieces LEFT JOIN categories ON pieces.category = categories.id ORDER BY pieces.id DESC');
+                        
+                        
+                        $statement = $bdd->query('SELECT id, name, superficie FROM piece WHERE id= \'' . $_SESSION['id'] .'\'');
                         while($item = $statement->fetch()) 
                         {
                             echo '<tr>';
@@ -49,7 +49,7 @@
                             echo '</tr>';
                         }
                         Database::disconnect();
-                      */?>
+                      ?>
                   </tbody>
                 </table>
             </div>
