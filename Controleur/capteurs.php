@@ -33,19 +33,19 @@ switch ($function)
         $vue="insert";
         $title="Ajouter un capteur";
         $alerte=false;
-                    if (isset($_POST['name']) and isset($_POST['description'])  and isset($_POST['piece']))
+        if (isset($_POST['name']) and isset($_POST['type'])  and isset($_POST['piece']))
             {
                 
-            	$user =[
+            	$sensor =[
                         'name'=> $_POST['name'],
-            	        'description'=>$_POST['description'],
+            	        'sensortype'=>$_POST['type'],
                         
                         'piece'=> $_POST['piece'],
             			
                         
                     
                         ];
-                
+                print_r($sensor);
                 addsensor($bdd,$sensor);
                 
             }
