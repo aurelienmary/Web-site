@@ -23,6 +23,34 @@
  			<label for="message">Votre message:</label> 
  			<textarea  name="message" id = "message" class="mat-input" required="required" data-error="message is required."></textarea>
  			<input type="submit" value="Envoyer" />
+	    <?php if ($_SESSIONS['admin']==1)
+                               {
+                               <label for="destinaire" > Quelle est votre destinataire </label><br/>
+                              <select name="destinataire" id="destinataire">
+     <?php
+try
+{
+        $bdd = new PDO('mysql:host=localhost;dbname=basedonnee', 'root', 'root');
+}
+catch(Exception $e)
+{
+            die('Erreur : '.$e->getMessage());
+}
+ 
+ 
+$reponse = $bdd->query('SELECT * FROM users');
+ 
+while ($donnees = $reponse->fetch())
+{
+?>
+           <option value=" <?php echo $donnees['name']; ?>"> <?php echo $donnees['name']; ?></option>
+<?php
+}
+ 
+$reponse->closeCursor();
+ 
+?>}
+	
  		
  		</form>
  		
