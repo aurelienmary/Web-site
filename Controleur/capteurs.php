@@ -33,18 +33,15 @@ switch ($function)
         $vue="insert";
         $title="Ajouter un capteur";
         $alerte=false;
-                    if (isset($_POST['nom']) and isset($_POST['prenom']) and isset($_POST['email']) and isset($_POST['passWord']) and isset($_POST['birthdate']) and isset($_POST['numTel']) and isset($_POST['adresse']) and isset($_POST['codepostal']))
+                    if (isset($_POST['name']) and isset($_POST['description']) and isset($_POST['logement']) and isset($_POST['piece']))
             {
                 
             	$user =[
-                        'email'=> $_POST['email'],
-            	        'password'=>$_POST['passWord'],
-                        'lastname' => $_POST['nom'],
-                        'name'=> $_POST['prenom'],
-                        'birthdate'=> $_POST['birthdate'],
-                        'phonenumber'=>$_POST['numTel'],
-                        'adress'=>$_POST['adresse'],
-                        'postalcode'=>$_POST['codepostal'],
+                        'name'=> $_POST['name'],
+            	        'description'=>$_POST['description'],
+                        'logement' => $_POST['logement'],
+                        'piece'=> $_POST['piece'],
+                        
                     
                         ];
                 

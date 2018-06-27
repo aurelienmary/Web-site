@@ -108,24 +108,29 @@
                 <h1><strong>Ajouter un capteur</strong></h1>
                 <br>
                 <form class="form" action="index.php?cible=capteurs&fonction=ajout" role="form" method="post" enctype="multipart/form-data">
+                    
                     <div class="form-group">
                         <label for="name">Nom:</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Nom" value="<?php echo $name;?>">
                         <span class="help-inline"><?php echo $nameError;?></span>
                     </div>
+                    
                     <div class="form-group">
                         <label for="description">Description:</label>
                         <input type="text" class="form-control" id="description" name="description" placeholder="Description" value="<?php echo $description;?>">
                         <span class="help-inline"><?php echo $descriptionError;?></span>
                     </div>
+                    
                     <div class="form-group">
-                        <label for="price">Logement</label>
-                        <input type="number" step="1" class="form-control" id="price" name="price" placeholder="Logement" value="<?php echo $price;?>">
+                        <label for="logement">Logement</label>
+                        <input type="number" step="1" class="form-control" id="logement" name="logement" placeholder="Logement" value="<?php echo $price;?>">
                         <span class="help-inline"><?php echo $priceError;?></span>
                     </div>
+                    
                     <div class="form-group">
-                        <label for="category">Piece:</label>
-                        <select class="form-control" id="category" name="category">
+                        <label for="piece">Piece:</label>
+                        <select class="form-control" id="piece" name="piece">
+                        
                         <?php
                            $db = Database::connect();
                            foreach ($db->query('SELECT * FROM categories') as $row) 
@@ -134,15 +139,18 @@
                            }
                            Database::disconnect();
                         ?>
+                        
                         </select>
                         <span class="help-inline"><?php echo $categoryError;?></span>
                     </div>
+                   
                     <div class="form-group">
                         <label for="image">S�lectionner une image:</label>
                         <input type="file" id="image" name="image"> 
                         <span class="help-inline"><?php echo $imageError;?></span>
                     </div>
                     <br>
+                    
                     <div class="form-actions">
                         <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Ajouter</button>
                         <a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left"></span> Retour</a>
