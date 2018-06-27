@@ -1,5 +1,5 @@
 <?php
-
+include('./Modele/requetes.generiques.php')
 $table='sensors';
 $table2='users';
 
