@@ -30,7 +30,7 @@ switch ($function)
         
         
     case 'ajout':
-        $vue="ajout";
+        $vue="insert";
         $title="Ajouter un capteur";
         $alerte=false;
         
