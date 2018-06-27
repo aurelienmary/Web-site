@@ -112,39 +112,34 @@
                 <br>
                 <form class="form" action="insert.php" role="form" method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="name">Pièce:</label>
+                        <label for="name">Description:</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Pièce" value="<?php echo $name;?>">
                         <span class="help-inline"><?php echo $nameError;?></span>
                     </div>
-                    <div class="form-group">
-                        <label for="date">Date:</label>
-                        <input type="date" class="form-control" id="description" name="description" placeholder="Date" value="<?php echo $description;?>">
-                        <span class="help-inline"><?php echo $descriptionError;?></span>
-                    </div>
+                    
                     <div class="form-group">
                         <label for="price">Superficie(en m²)</label>
                         <input type="number" step="1" class="form-control" id="price" name="price" placeholder="Superficie" value="<?php echo $price;?>">
                         <span class="help-inline"><?php echo $priceError;?></span>
                     </div>
                     <div class="form-group">
-                        <label for="category">Logement:</label>
+                        <label for="category">Type de Piece:</label>
                         <select class="form-control" id="category" name="category">
-                        <?php
-                           $db = Database::connect();
-                           foreach ($db->query('SELECT * FROM categories') as $row) 
-                           {
-                                echo '<option value="'. $row['id'] .'">'. $row['name'] . '</option>';;
-                           }
-                           Database::disconnect();
-                        ?>
+                        
+	                        <option value="chambre">Chambre</option>
+	                        <option value="salle_de_bain"> salle de bain</option>
+	                        <option value="salon"> salon</option>
+	                        <option value="garage"> garage</option>
+	                        <option value="cuisine"> Cuisine</option>
+	                        <option value="sellier"> sellier</option>
+	                        <option value="couloir"> Couloir/option>
+	                        <option value="salle_a_manger"> salle à manger</option>
+	                        
                         </select>
+                        
                         <span class="help-inline"><?php echo $categoryError;?></span>
                     </div>
-                    <div class="form-group">
-                        <label for="image">Sélectionner une image:</label>
-                        <input type="file" id="image" name="image"> 
-                        <span class="help-inline"><?php echo $imageError;?></span>
-                    </div>
+                    
                     <br>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Ajouter</button>

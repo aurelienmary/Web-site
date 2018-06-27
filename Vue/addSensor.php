@@ -27,28 +27,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                       <?php /*
-                        require 'database.php';
-                        $db = Database::connect();
-                        $statement = $db->query('SELECT sensors.id, sensors.name, sensors.description, sensors.price, sensorstype.name AS category FROM sensors LEFT JOIN sensorstype ON sensors.category = sensorstype.id ORDER BY sensors.id DESC');
-                        while($item = $statement->fetch()) 
-                        {
-                            echo '<tr>';
-                            echo '<td>'. $item['name'] . '</td>';
-                            echo '<td>'. $item['description'] . '</td>';
-                            echo '<td>'. number_format($item['price'], 2, '.', '') . '</td>';
-                            echo '<td>'. $item['category'] . '</td>';
-                            echo '<td width=300>';
-                            echo '<a class="btn btn-default" href="view.php?id='.$item['id'].'"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
-                            echo ' ';
-                            echo '<a class="btn btn-primary" href="update.php?id='.$item['id'].'"><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
-                            echo ' ';
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$item['id'].'"><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
-                            echo '</td>';
-                            echo '</tr>';
-                        }
-                        Database::disconnect();
-                      */?>
+                       
                       
                   </tbody>
                 </table>

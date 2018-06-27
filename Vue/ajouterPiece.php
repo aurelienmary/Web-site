@@ -15,7 +15,7 @@
         <h1 class="text-logo"><span class=""></span> Gestion des pièces <span class=""></span></h1>
         <div class="container admin">
             <div class="row">
-                <h1><strong>Liste des pièces   </strong><a href="insert.php" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span> Ajouter</a></h1>
+                <h1><strong>Liste des pièces   </strong><a href="index.php?cible=building&fonction=ajout" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span> Ajouter</a></h1>
                 <table class="table table-dark">
                   <thead>
                     <tr>
@@ -28,7 +28,7 @@
                   </thead>
                   <tbody>
                       <?php
-                        require 'database.php';
+                        /*require 'database.php';
                         $db = Database::connect();
                         $statement = $db->query('SELECT pieces.id, .name, pieces.description, piece.price, categories.name AS category FROM pieces LEFT JOIN categories ON pieces.category = categories.id ORDER BY pieces.id DESC');
                         while($item = $statement->fetch()) 
@@ -49,7 +49,7 @@
                             echo '</tr>';
                         }
                         Database::disconnect();
-                      ?>
+                      */?>
                   </tbody>
                 </table>
             </div>

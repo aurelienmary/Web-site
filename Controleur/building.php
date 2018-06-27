@@ -1,7 +1,6 @@
 <?php
-session_start();
 
-include ("./Modele/requetes.building.php");
+include ("./Modele/requete.building.php");
 
 
 
@@ -11,11 +10,32 @@ if (!isset($_GET ['fonction']) || empty($_GET['fonction']))
 }
 else
 {
-    $function=$_GET['function'];
+    $function=$_GET['fonction'];
 }
 
 switch ($function)
 {
-    case "building":
+    case "piece":
+    	$vue="ajouterPiece";
+    	$title= "Les pieces";
+    	
+    	/*$liste = getusersensor($bdd, $_SESSION['id']);
+    	print_r($liste);
+    	if (empty($liste))
+    	{
+    		$alerte="Aucun capteur n'est enregistré pour le moment";
+    	}*/
+    	break;
+    	
+    case "ajout":
+    	$vue="insertPiece";
+    	$title= "Les pieces";
+    	break;
+    	
         
 }
+
+
+include ('./Vue/header.php');
+include ('./Vue/' . $vue . '.php');
+include ('./Vue/footer.php');
