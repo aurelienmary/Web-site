@@ -267,11 +267,11 @@ CREATE TABLE IF NOT EXISTS `sensors` (
   `users_id` int(11) NOT NULL,
   `catalog_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `sensortype_id` (`sensortype_id`),
-  KEY `piece_id` (`piece_id`),
-  KEY `function_id` (`function_id`),
-  KEY `users_id` (`users_id`),
-  KEY `catalog_id` (`catalog_id`)
+  KEY `sensors_ibfk_1` (`sensortype_id`),
+  KEY `sensors_ibfk_2` (`piece_id`),
+  KEY `sensors_ibfk_3` (`function_id`),
+  KEY `sensors_ibfk_4` (`users_id`),
+  KEY `sensors_ibfk_5` (`catalog_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
