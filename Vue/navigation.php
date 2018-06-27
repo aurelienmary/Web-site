@@ -38,7 +38,7 @@
 		<a href="index.php?cible=utilisateurs&fonction=profil" data-title="Settings">Profil</a>
 	 </li>
 	    <li>
-		<a href="index.php?cible=utilisateurs&fonction=stat" data-title="Statistique">Profil</a>
+		<a href="index.php?cible=utilisateurs&fonction=stat" data-title="Statistique">Statistiques</a>
 	 </li>
      
       <li>
