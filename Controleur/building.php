@@ -30,6 +30,25 @@ switch ($function)
     case "ajout":
     	$vue="insertPiece";
     	$title= "Les pieces";
+    	$alerte=false;
+    	
+    	if (isset($_POST['name']) and isset($_POST['type'])  and isset($_POST['superficie']))
+    	{
+    		
+    		$piece =[
+    				'name'=> $_POST['name'],
+    				'sensortype'=>$_POST['type'],
+    				
+    				'superficie'=> $_POST['superficie'],
+    				
+    				
+    				
+    		];
+    		print_r($sensor);
+    		addsensor($bdd,$sensor);
+    		
+    	}
+    	
     	break;
     	
         

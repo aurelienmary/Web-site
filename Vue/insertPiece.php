@@ -118,13 +118,13 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="price">Superficie(en m²)</label>
-                        <input type="number" step="1" class="form-control" id="price" name="price" placeholder="Superficie" value="<?php echo $price;?>">
+                        <label for="superficie">Superficie(en m²)</label>
+                        <input type="number" step="1" class="form-control" id="superficie" name="superficie" placeholder="Superficie" value="<?php echo $price;?>">
                         <span class="help-inline"><?php echo $priceError;?></span>
                     </div>
                     <div class="form-group">
-                        <label for="category">Type de Piece:</label>
-                        <select class="form-control" id="category" name="category">
+                        <label for="type">Type de Piece:</label>
+                        <select class="form-control" id="type" name="type">
                         
 	                        <option value="chambre">Chambre</option>
 	                        <option value="salle_de_bain"> salle de bain</option>

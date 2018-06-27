@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="faq.css" />
+        <link rel="stylesheet" href="public/css/faq.css" />
         <title> FAQ </title>
     </head>
 
