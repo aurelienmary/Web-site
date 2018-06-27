@@ -5,7 +5,7 @@ include ("./Modele/requetes.capteurs.php");
 
 
 
-if (!isset($_GET['fontion']) || empty([$_GET['fonction']]))
+if (!isset($_GET['fonction']) || empty([$_GET['fonction']]))
 {
     $function = "capteurs";
 }
