@@ -378,7 +378,6 @@ ALTER TABLE `repair`
 -- Contraintes pour la table `sensors`
 --
 ALTER TABLE `sensors`
-  ADD CONSTRAINT `sensors_ibfk_1` FOREIGN KEY (`sensortype_id`) REFERENCES `sensorstype` (`id`),
   ADD CONSTRAINT `sensors_ibfk_2` FOREIGN KEY (`piece_id`) REFERENCES `piece` (`id`),
   ADD CONSTRAINT `sensors_ibfk_3` FOREIGN KEY (`function_id`) REFERENCES `function` (`id`),
   ADD CONSTRAINT `sensors_ibfk_4` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`),
