@@ -21,16 +21,23 @@
 		        
 		   <nav>
     <ul>
+       <li>
+		 <a href="index.php?cible=utilisateurs&fonction=ajoutcapteur" data-title="Projects">Menu</a>
+	  </li>
       <li>
         <a href="admin/index.php" data-title="Projects">Gestion capteurs</a>
       </li>
       
       <li>
-        <a href="javascript:void(0);" data-title="message">Messagerie</a>
-      </li>
+		<a href="index.php?cible=utilisateurs&fonction=chat" data-title="message">Messagerie</a>
+	</li>
       <li>
         <a href="addPiece/piece/index.php" data-title="Timeline">Gestion des pièces</a>
       </li>
+     <li>
+		<a href="index.php?cible=utilisateurs&fonction=profil" data-title="Settings">Profil</a>
+	 </li>
+     
       <li>
         <a href="javascript:void(0);" data-title="Settings">Reglages</a>
       </li>
