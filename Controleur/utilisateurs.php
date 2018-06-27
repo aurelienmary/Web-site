@@ -133,7 +133,11 @@ switch ($function)
 		$vue="contact";
 		$title="contact";
 		break;
-        
+		
+	case "faq":
+		$vue="faq";
+		$title="FAQ";
+		break;
         
         case "inscription":
             /*
