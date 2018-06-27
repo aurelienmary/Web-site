@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="contact.css" />
+        <link rel="stylesheet" href="./public/css/contact.css" />
         <title> Contact </title>
     </head>
 
