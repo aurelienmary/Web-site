@@ -194,14 +194,20 @@ switch ($function)
         	$alerte=false;
         	$title="profil";
         	break;
+		
+	case "faq":
+		$vue="faq";
+		$title="faq";
+		break;
 
+	case "apropos":
+		$vue="apropos";
+		$title="apropos";
+		break;
 
-}
+    	}
     	
-    
- 
-
-
+   
 include ('./Vue/header.php');
 if (!empty($_SESSION['id']) && $_SESSION['d'] != 1 && $vue != "catalogue")
 {
