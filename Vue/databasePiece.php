@@ -7,7 +7,7 @@ class Database
 
 
     private static $dbHost = "localhost";
-    private static $dbName = "addpiece";
+    private static $dbName = "basedonnee";
     private static $dbUser = "root";
     private static $dbUserPassword = "";
 
