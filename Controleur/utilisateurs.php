@@ -200,6 +200,10 @@ switch ($function)
 		$title="faq";
 		break;
 
+	case "apropos":
+		$vue="apropos";
+		$title="apropos";
+		break;
 
     	}
     	
