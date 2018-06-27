@@ -196,7 +196,7 @@ switch ($function)
         	break;
 
 
-    	
+    	}
     	
    
 include ('./Vue/header.php');
