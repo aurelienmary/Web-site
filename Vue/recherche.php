@@ -78,7 +78,7 @@
 
 <div>
 <?php  
-	$lol = getlog();
+$lol = getlog($bdd);
 	echo $lol;
 	
 ?>

@@ -17,7 +17,7 @@ function enregistrement(PDO $bdd, $id)
 	$query= "INSERT INTO ";
 }
 
-function getlog()
+function getlog(PDO $bdd)
 {
 	$ch = curl_init();
 	curl_setopt(
@@ -29,13 +29,13 @@ function getlog()
 	$data = curl_exec($ch);
 	curl_close($ch);
 	
-	$donnee = decoder($data); 
+	$donnee = decoder($bdd ,$data); 
 	
 }
 
 
 
-function decoder(string $data)
+function decoder(PDO $bdd, string $data)
 {
 	$data_tab = str_split($data, 33);
 	$tram = array();
@@ -43,7 +43,7 @@ function decoder(string $data)
 	echo $data_tab[0] . "</br>";
 	echo count($data_tab);
 	for ($i=0, $size=count($data_tab)-1; $i<$size; $i++){
-		$tram [$i] = decouper($data_tab[$i]);	
+		$tram [$i] = decouper($bdd, $data_tab[$i]);	
 	
 	}
 	print_r ($tram);
@@ -52,11 +52,11 @@ function decoder(string $data)
 
 }
 
-function decouper(string $data_tab)
+function decouper(PDO $bdd, string $data_tab)
 {
 	list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) = sscanf($data_tab,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
-	echo "</br>$c</br>";
-	echo "</br>$v</br>";
+	//echo "</br>$c</br>";
+	//echo "</br>$v</br>";
 	
 	if ($c == 1)
 	{
@@ -137,7 +137,17 @@ function decouper(string $data_tab)
 				
 	}
 	echo "</br>$V $unité</br>";
-	echo ' le ' . $day . '/' . $month . '/' . $year ;
+	echo ' le ' . $day . '/' . $month . '/' . $year . '</br>' ;
+	
+	list($n1, $n2) = sscanf($data_tab,"%1s%1s");
+	echo "$n1</br>";
+	$req = $bdd->prepare('UPDATE sensors SET valeur = :nvvaleur, sensortype_id = :nv_sensortype_id WHERE id = :id');
+	$req->execute(array(
+			'nvvaleur' => $v,
+			'nv_sensortype_id' => $type,
+			'id' => $n1,
+	));
+	
 	return array($type, $V, $unité, $day, $month, $year);
 	
 	

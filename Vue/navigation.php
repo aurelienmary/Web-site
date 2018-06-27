@@ -25,7 +25,7 @@
 		 <a href="index.php?cible=utilisateurs&fonction=ajoutcapteur" data-title="Projects">Menu</a>
 	  </li>
       <li>
-        <a href="admin/index.php" data-title="Projects">Gestion capteurs</a>
+        <a href="index.php?cible=utilisateurs&fonction=addSensor" data-title="Projects">Gestion capteurs</a>
       </li>
       
       <li>
