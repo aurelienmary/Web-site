@@ -1,16 +1,13 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 17b5744563b218f48a21c65ed003117abb7653fb
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
-<<<<<<< HEAD
+
         <link rel="stylesheet" href="./public/css/stat.css" />
-=======
+
         <link rel="stylesheet" href="./public/css/contact.css" />
->>>>>>> 17b5744563b218f48a21c65ed003117abb7653fb
+
         <title> Contact </title>
     </head>
 
