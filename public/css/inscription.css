@@ -9,7 +9,9 @@
 
 body
 {
-    background-color: #33FF3C;
+    background-color: #92dd5a;
+
+
     
 }
 
@@ -62,7 +64,7 @@ h2
     left: 50%;
     width: 1000px;
     height: 890px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.2);
      box-sizing: border-box;
     transform: translate(-50%,-30%);
     opacity: 5%;
