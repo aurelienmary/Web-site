@@ -20,9 +20,9 @@
                   <thead>
                     <tr>
                       <th>Pièces</th>
-                      <th>Date</th>
+                      
                       <th>Superficie(en m²)</th>
-                      <th>Logement</th>
+                      
                       <th>Actions</th>
                     </tr>
                   </thead>
@@ -30,14 +30,14 @@
                       <?php
                         
                         
-                        $statement = $bdd->query('SELECT id, name, superficie FROM piece WHERE id= \'' . $_SESSION['id'] .'\'');
+                        $statement = $bdd->query('SELECT id, name, superficie FROM piece WHERE users_id= \'' . $_SESSION['id'] .'\'');
                         while($item = $statement->fetch()) 
                         {
                             echo '<tr>';
                             echo '<td>'. $item['name'] . '</td>';
-                            echo '<td>'. $item['description'] . '</td>';
-                            echo '<td>'. number_format($item['price'], 2, '.', '') . '</td>';
-                            echo '<td>'. $item['category'] . '</td>';
+                            
+                           
+                            echo '<td>'. $item['superficie'] . '</td>';
                             echo '<td width=300>';
                             echo '<a class="btn btn-default" href="view.php?id='.$item['id'].'"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
                             echo ' ';
@@ -48,7 +48,7 @@
 
                             echo '</tr>';
                         }
-                        Database::disconnect();
+                        
                       ?>
                   </tbody>
                 </table>

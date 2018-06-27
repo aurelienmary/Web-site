@@ -20,14 +20,38 @@
                   <thead>
                     <tr>
                       <th>Nom du capteur</th>
-                      <th>Description</th>
-                      <th>Logement</th>
+                      <th>Valeur</th>
+                      
                       <th>Piece</th>
                       <th>Actions</th>
                     </tr>
                   </thead>
                   <tbody>
-                       
+                     <?php
+                        
+                        
+                        $statement = $bdd->query('SELECT id, name, valeur, piece_id FROM sensors WHERE users_id= \'' . $_SESSION['id'] .'\'');
+                        while($item = $statement->fetch()) 
+                        {
+                            echo '<tr>';
+                            echo '<td>'. $item['name'] . '</td>';
+                            
+                           
+                            echo '<td>'. $item['valeur'] . '</td>';
+                            echo '<td>'. $item['piece_id'] . '</td>';
+                            
+                            echo '<td width=300>';
+                            echo '<a class="btn btn-default" href="view.php?id='.$item['id'].'"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
+                            echo ' ';
+                            echo '<a class="btn btn-primary" href="update.php?id='.$item['id'].'"><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
+                            echo ' ';
+                            echo '<a class="btn btn-danger" href="delete.php?id='.$item['id'].'"><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
+                            echo '</td>';
+
+                            echo '</tr>';
+                        }
+                        
+                      ?>  
                       
                   </tbody>
                 </table>
