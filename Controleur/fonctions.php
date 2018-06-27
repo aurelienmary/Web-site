@@ -1,12 +1,12 @@
 <?php
 
-function isINTEGER($int): bool
+function isINTEGER($int)
 {
     return is_numeric($int);
 }
 
 
-function isSTRING($chaine): bool
+function isSTRING($chaine)
 {
     if (empty($chaine)) {
         return false;
@@ -16,7 +16,7 @@ function isSTRING($chaine): bool
     }
 }
 
-function isPASSWORD($chaine): bool
+function isPASSWORD($chaine)
 {
     if (empty($chaine) || strlen($chaine) < 8) {
         return false;
