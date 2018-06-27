@@ -198,6 +198,15 @@ switch ($function)
 
 }
     	
+         case "apropos":
+        	$vue="apropos";
+        	$alerte=false;
+        	$title="apropos";
+        	break;
+
+
+}
+    	
     
  
 
