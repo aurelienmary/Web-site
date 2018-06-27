@@ -40,6 +40,6 @@ switch ($function)
 }
 
 
-include ('C:/wamp64/www/APP-INFO/Vue/header.php');
-include ('C:/wamp64/www/APP-INFO/Vue/' . $vue . '.php');
-include ('C:/wamp64/www/APP-INFO/Vue/footer.php');
+include ('./Vue/header.php');
+include ('./Vue/' . $vue . '.php');
+include ('./Vue/footer.php');
