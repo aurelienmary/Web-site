@@ -61,7 +61,7 @@
 		                <nav>
 		                    <ul>
 		                        <li><a href="index.php?cible=utilisateurs&fonction=accueil">Accueil</a></li>
-		                        <li><a href="#">A propos</a></li>
+		                        <li><a href="index.php?cible=utilisateurs&fonction=apropos">A propos</a></li>
 		                        <li><a href="index.php?cible=utilisateurs&fonction=catalogue">Produits</a></li>
 		                        <li><a href="index.php?cible=utilisateurs&fonction=contact">Contact</a></li>
 					 <li><a href="index.php?cible=utilisateurs&fonction=faq">FAQ</a></li>
