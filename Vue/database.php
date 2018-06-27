@@ -3,7 +3,7 @@
 class Database
 {
     private static $dbHost = "localhost";
-    private static $dbName = "interface_siteWeb";
+    private static $dbName = "basedonnee";
     private static $dbUsername = "root";
     private static $dbUserpassword = "root";
     

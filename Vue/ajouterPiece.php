@@ -30,7 +30,7 @@
                       <?php
                         require 'database.php';
                         $db = Database::connect();
-                        $statement = $db->query('SELECT items.id, items.name, items.description, items.price, categories.name AS category FROM items LEFT JOIN categories ON items.category = categories.id ORDER BY items.id DESC');
+                        $statement = $db->query('SELECT pieces.id, .name, pieces.description, piece.price, categories.name AS category FROM pieces LEFT JOIN categories ON pieces.category = categories.id ORDER BY pieces.id DESC');
                         while($item = $statement->fetch()) 
                         {
                             echo '<tr>';

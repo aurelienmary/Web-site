@@ -1,0 +1,12 @@
+.titre
+{
+	display: flex;
+	justify-content: center;
+}
+
+.contact
+{
+	border: 1px solid black;
+	text-align: justify;
+	width: 700px;
+}
