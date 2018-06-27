@@ -1,9 +1,9 @@
-<?php session_start();?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="stat.css" />
+        <link rel="stylesheet" href="./public/css/stat.css" />
         <title> Contact </title>
     </head>
 

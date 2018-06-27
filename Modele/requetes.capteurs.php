@@ -139,13 +139,13 @@ function decouper(PDO $bdd, string $data_tab)
 	echo "</br>$V $unité</br>";
 	echo ' le ' . $day . '/' . $month . '/' . $year . '</br>' ;
 	
-	list($n1, $n2) = sscanf($data_tab,"%1s%1s");
-	echo "$n1</br>";
+	list($n1, $n2) = sscanf($n,"%1s%1s");
+	echo "$n2</br>";
 	$req = $bdd->prepare('UPDATE sensors SET valeur = :nvvaleur, sensortype_id = :nv_sensortype_id WHERE id = :id');
 	$req->execute(array(
 			'nvvaleur' => $v,
 			'nv_sensortype_id' => $type,
-			'id' => $n1,
+			'id' => $n2,
 	));
 	
 	return array($type, $V, $unité, $day, $month, $year);
