@@ -27,7 +27,7 @@
  		</form>
  		
  		<?php // Récupération des 10 derniers messages
-			$reponse = $bdd->query('SELECT pseudo, message, DATE_FORMAT(date_message, \'%d/%m/%Y à %Hh%imin%ss\') AS date_fr FROM chat WHERE pseudo= \'' . $_SESSION['name'] . '\' ORDER BY date_message ');
+			$reponse = $bdd->query("SELECT pseudo, message, DATE_FORMAT(date_message, \'%d/%m/%Y à %Hh%imin%ss\') AS date_fr FROM chat WHERE pseudo= \" . $_SESSION['name'] . '\  OR id_destinataire=\''.$_SESSION['id].'\' ORDER BY date_message );
 			?> <div class="conversation">
 			
 			<?php while ($donnees = $reponse->fetch())
