@@ -57,6 +57,17 @@ function decouper(string $data_tab)
 	list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) = sscanf($data_tab,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
 	echo "</br>$c</br>";
 	echo "</br>$v</br>";
+	
+	if ($c == 1)
+	{
+		echo $type = 'Distance 1';
+	}
+	
+	if ($c == 2)
+	{
+		echo $type = 'Distance 2';
+	}
+	
 	if ( $c == 3)
 	{
 		echo $type =  'temperature';
@@ -71,12 +82,40 @@ function decouper(string $data_tab)
 	{
 		echo $type = 'Lumiere';
 	}
-	 $V = floatval($v);
-	//$V = explode ( " " , $v );
 	
-	//echo $V[1]; //. $V[2] . ',' . $V[3];
+	if ($c == 6)
+	{
+		echo $type = 'Couleur';
+	}
+	
+	if ($c == 7)
+	{
+		echo $type = 'Presence';
+	}
+	
+	 //$V = floatval($v);
+	 $V = number_format($v, 2, ',', ' '); 
+	 //$V = explode( " " , $v);
+	
+	
 	switch ($type)
 	{
+		case 'Distance 1':
+			$unité = "m";
+			break;
+		
+		case 'Distance 2':
+			$unité = "m";
+			break;
+			
+		case 'Couleur':
+			$unité = "";
+			break;
+		
+		case 'Presence':
+			$unité = "";
+			break;
+		
 		case 'temperature':
 			$unité = "C°";
 			break;

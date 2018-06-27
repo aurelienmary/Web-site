@@ -76,7 +76,7 @@ switch ($function)
                     $_SESSION['name']=$utilisateur[0]['name'];
                     $_SESSION['admin']=$utilisateur[0]['admin'];
 	                $vue="ajoutcapteur";
-	                $alerte="vous �tes connect�";
+	                $alerte="vous êtes connecté";
 	                echo($alerte);
 	                    
 	                    /*

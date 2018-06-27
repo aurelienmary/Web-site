@@ -5,7 +5,7 @@ class Database
     private static $dbHost = "localhost";
     private static $dbName = "interface_siteWeb";
     private static $dbUsername = "root";
-    private static $dbUserpassword = "";
+    private static $dbUserpassword = "root";
     
     private static $connection = null;
     
