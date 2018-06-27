@@ -79,6 +79,7 @@ switch ($function)
                 
                 
                 $utilisateur = login($bdd, $user);
+                print_r($utilisateur);
                 
                 /*
                  * ce test verifie que les identifiant de l'utilisateur sont correcte
