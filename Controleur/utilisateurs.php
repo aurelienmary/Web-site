@@ -133,11 +133,7 @@ switch ($function)
 		$vue="contact";
 		$title="contact";
 		break;
-		
-	case "faq":
-		$vue="faq";
-		$title="FAQ";
-		break;
+        
         
         case "inscription":
             /*
@@ -202,19 +198,8 @@ switch ($function)
 
 }
     	
-         case "apropos":
-        	$vue="apropos";
-        	$alerte=false;
-        	$title="apropos";
-        	break;
-
-
-}
     	
-    
- 
-
-
+   
 include ('./Vue/header.php');
 if (!empty($_SESSION['id']) && $_SESSION['d'] != 1 && $vue != "catalogue")
 {
