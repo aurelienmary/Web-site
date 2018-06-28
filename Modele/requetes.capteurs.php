@@ -170,3 +170,8 @@ function addsensor(PDO $bdd, array $sensor)
 }
 
 
+function deletesensor(PDO $bdd, $id_capteur)
+{
+	$req = $bdd->prepare('DELETE from sensors WHERE id= :id_capteur');
+	$req->execute(array('id_capteur'=> $id_capteur));
+}

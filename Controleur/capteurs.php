@@ -53,6 +53,9 @@ switch ($function)
         break;
         
     case 'supprimer':
+    	$vue="addSensor";
+    	$title= "Les capteurs";
+    	
     	deletesensor($bdd, $_POST['supr']);
     	break;
         
