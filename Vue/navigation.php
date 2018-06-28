@@ -46,6 +46,17 @@
 		    </ul>
 		  </nav>
 		            </div>
+ if ($_SESSION['admin'] == 1)
+			      {
+			      	?>
+			      	<li>
+			      	<a href="index.php?cible=admin&fonction=recherche" data-title="alert">Recherche</a>
+			      	</li>
+			      <?php }
+			      ?>
+			    </ul>
+			  </nav>
+			            </div>
 </body>
 
 </html>
