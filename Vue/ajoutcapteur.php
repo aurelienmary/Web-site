@@ -15,91 +15,11 @@
         
  
         
-        <span class="bckg"></span>
-       
-
-<main>
-  <div class="title">
-    <h2></h2>
-      
-      
-      
-      
-     <div class='panel noselect'>
-	<div class='admin-panel'>
-		<label class='text' for='toggle'>Ajouter un capteur</label>
-		<label class='fas fa-plus' for='toggle'></label>
-        
-        
-	</div>
-
-	<input type='checkbox' id='toggle'>
-     
-	<div class='menu-panel'>
-		<div class='arrow'></div>
-		<a href='#' class='row'>
-			<div class='column-left'>température</div>
-			<div class='column-right'></div>
-		</a>
-		<a href='#' class='row'>
-			<div class='column-left'>lumunosité</div>
-			<div class='column-right'></div>
-		</a>
-		<a href='#' class='row'>
-			<div class='column-left'>humidité</div>
-			<div class='column-right'></div>
-		</a>
-		<a href='#' class='row'>
-			<div class='column-left'>présence</div>
-			<div class='column-right'></div>
-		</a>
-        
-        <a href='#' class='row'>
-			<div class='column-left'>fumée</div>
-			<div class='column-right'><i class="fas fa-fire-extinguisher"></i></div>
-		</a>
-</div>
-        </div>
-      
-   
-  </div>
-     <article class="larg">
-
- 
-   <div>
-        <div class='sensor'>
-		<label class='text' for='toggle'>Capteur de température</label>
-		<label class='fas fa-trash-alt' for='toggle'></label>
-        
-        
-	</div>
-       
-       
-       <div>
-        <div class='sensor'>
-		<label class='text' for='toggle'>Capteur de luminosité</label>
-		<label class='fas fa-trash-alt' for='toggle'></label>
-        
-        
-	</div>
-       </div>
-       
-         
-       <div>
-        <div class='sensor'>
-		<label class='text' for='toggle'>Capteur de fumée</label>
-		<label class='fas fa-trash-alt' for='toggle'></label>
-            
-        
-        
-	</div>
-       </div>
-       
-       
-        
-    </div>
-    </article>
-</main>
+  <img
+    src="./public/images/domotique.jpeg" 
+    height="300px" 
+    width="300px" 
+/>
       
         
         
