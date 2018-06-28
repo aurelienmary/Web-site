@@ -32,7 +32,7 @@ switch ($function)
         case "ajoutcapteur" :
         	if (!empty($_SESSION['id']))
         	{
-	        	$vue="fonction";
+	        	$vue="ajoutcapteur";
 	        	$title="ajoutcapteur";
 	        	break;
         	}

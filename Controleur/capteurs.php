@@ -52,7 +52,9 @@ switch ($function)
         
         break;
         
-        
+    case 'supprimer':
+    	deletesensor($bdd, $_POST['supr']);
+    	break;
         
     
 }
