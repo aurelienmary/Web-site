@@ -12,3 +12,19 @@ function getuserhome (PDO $bdd, string $id)
     return $data->fetchAll();
 }
 
+
+function addhome(PDO $bdd, array $home)
+{
+	$i=0;
+	$query= 'INSERT INTO home(name,valeur,sensortype,function_id, piece_id, users_id,catalog_id) VALUES (:name,:valeur,:sensortype,:function_id, :piece_id, :users_id, :catalog_id)';
+	$donnees= $bdd->prepare($query);
+	$donnees->bindParam(":name", $sensor['name']);
+	$donnees->bindParam(":valeur", $i);
+	$donnees->bindParam(":sensortype", $sensor['sensortype']);
+	$donnees->bindParam(":function_id", $i);
+	$donnees->bindParam(":piece_id", $sensor['piece']);
+	$donnees->bindParam(":users_id", $_SESSION['id']);
+	$donnees->bindParam(":catalog_id", $i);
+	return $donnees->execute();
+}
+

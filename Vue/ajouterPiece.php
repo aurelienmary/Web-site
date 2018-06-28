@@ -39,11 +39,11 @@
                            
                             echo '<td>'. $item['superficie'] . '</td>';
                             echo '<td width=300>';
-                            echo '<a class="btn btn-default" href="view.php?id='.$item['id'].'"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
+                            //echo '<a class="btn btn-default" href="view.php?id='.$item['id'].'"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
                             echo ' ';
-                            echo '<a class="btn btn-primary" href="update.php?id='.$item['id'].'"><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
+                            //echo '<a class="btn btn-primary" href="update.php?id='.$item['id'].'"><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
                             echo ' ';
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$item['id'].'"><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
+                            echo '<form method="POST" id="suprimmer" action="index.php?cible=building&fonction=supprimer"><button value="'.$item['id'].'" class="btn btn-danger" name="supr" id="supr"><span class="glyphicon glyphicon-remove"></span> Supprimer /></form>';
                             echo '</td>';
 
                             echo '</tr>';

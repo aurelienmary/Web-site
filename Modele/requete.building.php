@@ -29,3 +29,8 @@ function addpiece(PDO $bdd, array $piece)
 	return $donnees->execute();
 }
 
+function deletepiece(PDO $bdd, $id_piece)
+{
+	$req = $bdd->prepare('DELETE from piece WHERE id= :id_piece');
+	$req->execute(array('id_piece'=> $id_piece));
+}

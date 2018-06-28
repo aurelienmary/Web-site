@@ -50,6 +50,14 @@ switch ($function)
     	
     	break;
     	
+    	
+    case 'supprimer':
+    	$vue="ajouterPiece";
+    	$title= "Les pieces";
+    	
+    	deletepiece($bdd, $_POST['supr']);
+    	break;
+    	
         
 }
 
