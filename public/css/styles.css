@@ -33,7 +33,7 @@ a
 {
     height: 500px;
 
-    background: url('public/images/domotique.jpeg') ;
+    background-image : url('public/images/domotique.jpeg') ;
 
 
 }
