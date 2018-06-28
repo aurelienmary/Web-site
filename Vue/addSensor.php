@@ -34,7 +34,7 @@
                         $query='SELECT name FROM piece WHERE id=
                         while($item = $statement->fetch()) 
                         { 
-                            $query='SELECT name FROM piece WHERE id= \''.$item['piece_id'].'\'';
+                            $query=''SELECT name FROM piece WHERE id= \''.$item['piece_id'].'\'';
                                $data= $bdd->prepare($query);
                                $data->execute;
                                $piece = $data->fetchall;
