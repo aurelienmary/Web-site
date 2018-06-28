@@ -43,8 +43,10 @@
                             
                            
                             echo '<td>'. $item['valeur'] . '</td>';
+                            if(!empty($piece))
+                            {
                             echo '<td>'. $piece[0]['name'] . '</td>';
-                            
+                            }
                             echo '<td width=300>';
                             
                             echo ' ';
