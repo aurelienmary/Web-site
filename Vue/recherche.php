@@ -43,8 +43,8 @@
     
     
     
-    <?php 
-    //include ('./Modele/requetes.capteurs.php');
+    <?php /*
+    include ('./Modele/requetes.capteurs.php');
     
     if (isset($_POST['recherche']))
     {
@@ -71,15 +71,15 @@
     }
 
     
-    ?>
+   */ ?>
 
 
 </div>
 
 <div>
-<?php  
+<?php /* 
 $lol = getlog($bdd);
-	echo $lol;
+	echo $lol;*/
 	
 ?>
 </div>

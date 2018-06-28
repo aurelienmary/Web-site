@@ -44,7 +44,7 @@ switch ($function)
             	
                         ];
                 
-            	print_r($sensor);
+            	
                 addsensor($bdd,$sensor);
                 
             }

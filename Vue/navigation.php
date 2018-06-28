@@ -40,7 +40,7 @@
 			   <nav>
 	    <ul>
 	       <li>
-			 <a href="index.php?cible=utilisateurs&fonction=ajoutcapteur" data-title="Projects">Menu</a>
+			 <a href="index.php?cible=utilisateurs&fonction=accueil" data-title="Projects">Menu</a>
 		  </li>
 	      <li>
 	        <a href="index.php?cible=utilisateurs&fonction=addSensor" data-title="Projects">Gestion capteurs</a>

@@ -20,7 +20,7 @@ switch ($function)
     	$title= "Les pieces";
     	
     	$liste = getuserpiece($bdd, $_SESSION['id']);
-    	print_r($liste);
+    	//print_r($liste);
     	if (empty($liste))
     	{
     		$alerte="Aucune piece n'est enregistré pour le moment";
@@ -43,7 +43,7 @@ switch ($function)
     				
     		];
     		
-    		print_r($piece);
+    		
     		addpiece($bdd, $piece);
     		
     	}

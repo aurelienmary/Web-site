@@ -19,12 +19,12 @@ function search(PDO $bdd, $mot)
 
 function edition(PDO $bdd, $edit)
 {
-	$req= $bdd->prepare( 'UPDATE users SET name = :name, lastname = :lastname, email = :email, adress = :adress WHERE id = :id');
+	$req= $bdd->prepare( 'UPDATE users SET name = :name, lastname = :lastname, email = :email WHERE id = :id');
 	$req->execute(array(
 			"name" =>$edit['name'],
 			"lastname" => $edit['lastname'],
 			"email"=> $edit['email'],
-			"adress"=>$edit['adress'],
+			//"adress"=>$edit['adress'],
 			"id"=>$edit['id'],
 			
 	));

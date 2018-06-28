@@ -27,7 +27,7 @@
 	<input type="hidden" name="name" value="<?php echo $_SESSION['name'] ?>" />
 		<input type="hidden" name="lastname" value="<?php echo $_SESSION['lastname'] ?>" />
 		<input type="hidden" name="email" value="<?php echo $_SESSION['email'] ?>" />
-		<input type="hidden" name="adress" value="<?php echo $_SESSION['adress'] ?>" />
+		
 		<input type="hidden" name="id" value="<?php echo $_SESSION['id'] ?>" />
 	<input type="image" name="profil" src="public/images/crayon.png"  required />
 	</form>

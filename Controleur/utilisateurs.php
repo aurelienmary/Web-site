@@ -79,7 +79,7 @@ switch ($function)
                 
                 
                 $utilisateur = login($bdd, $user);
-                print_r($utilisateur);
+                //print_r($utilisateur);
                 
                 /*
                  * ce test verifie que les identifiant de l'utilisateur sont correcte
@@ -96,7 +96,8 @@ switch ($function)
                     $_SESSION['lastname']=$utilisateur[0]['lastname'];
                     $_SESSION['name']=$utilisateur[0]['name'];
                     $_SESSION['admin']=$utilisateur[0]['admin'];
-	                $vue="ajoutcapteur";
+                    
+	                $vue="accueil";
 	                $alerte="vous êtes connecté";
 	                echo($alerte);
 	                    

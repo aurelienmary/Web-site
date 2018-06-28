@@ -35,9 +35,10 @@ switch ($function)
     			
     			'lastname' => $_POST['lastname'],
     			'name'=> $_POST['name'],
-    			'adress'=>$_POST['adress'],
+    			//'adress'=>$_POST['adress'],
     			'id'=>$_POST['id'],
     			];
+    	
     	edition($bdd,$edit);
     	break;
         

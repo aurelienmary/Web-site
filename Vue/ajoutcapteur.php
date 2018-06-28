@@ -15,12 +15,7 @@
         
  
         
-  <img
-    src="./public/images/domotique.jpeg" 
-    height="300px" 
-    width="300px" 
-/>
-      
+  
         
         
     </body>

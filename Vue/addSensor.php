@@ -31,20 +31,19 @@
                         
                         
                         $statement = $bdd->query('SELECT id, name, valeur, piece_id FROM sensors WHERE users_id= \'' . $_SESSION['id'] .'\'');
-                        $query='SELECT name FROM piece WHERE id=
                         while($item = $statement->fetch()) 
                         { 
-                            $query=''SELECT name FROM piece WHERE id= \''.$item['piece_id'].'\'';
+                            	$query='SELECT name FROM piece WHERE id= \''.$item['piece_id'].'\'';
                                $data= $bdd->prepare($query);
-                               $data->execute;
-                               $piece = $data->fetchall;
+                               $data->execute();
+                               $piece = $data->fetchall();
                                 
                             echo '<tr>';
                             echo '<td>'. $item['name'] . '</td>';
                             
                            
                             echo '<td>'. $item['valeur'] . '</td>';
-                            echo '<td>'. $piece['name'] . '</td>';
+                            echo '<td>'. $piece[0]['name'] . '</td>';
                             
                             echo '<td width=300>';
                             
