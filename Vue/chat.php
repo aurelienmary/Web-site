@@ -21,8 +21,8 @@
  			
  			<!--  <input type="text" name="pseudo" id = "pseudo" class="mat-input" required="required" value="<?php echo $_SESSION['name']?>" data-error="pseudo is required.">--></br>
  			
- 			<label for="message">Votre message:</label> 
- 			<textarea  name="message" id = "message" class="mat-input" required="required" data-error="message is required."></textarea>
+ 			<label for="message">Votre message:</label></br> 
+ 			<textarea  name="message" id = "message" class="decal" required="required" data-error="message is required."></textarea></br>
 
  			
 	    
@@ -33,7 +33,7 @@
            {?>
         	<label for="destinaire" > Quelle est votre destinataire </label><br/>
 
-            <select name="destinataire" id="destinataire"/>
+            <select name="destinataire" id="destinataire" />
      
      <?php
 		try
