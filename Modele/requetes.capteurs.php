@@ -167,6 +167,8 @@ function addsensor(PDO $bdd, array $sensor)
     $donnees->bindParam(":users_id", $_SESSION['id']);
     $donnees->bindParam(":catalog_id", $i);
     return $donnees->execute();
+    
+    //echo $lol;
 }
 
 

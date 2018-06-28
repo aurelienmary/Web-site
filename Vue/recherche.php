@@ -43,8 +43,8 @@
     
     
     
-    <?php /*
-    include ('./Modele/requetes.capteurs.php');
+    <?php 
+   // include ('./Modele/requetes.capteurs.php');
     
     if (isset($_POST['recherche']))
     {
@@ -71,7 +71,7 @@
     }
 
     
-   */ ?>
+    ?>
 
 
 </div>

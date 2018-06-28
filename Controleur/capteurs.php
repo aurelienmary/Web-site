@@ -19,6 +19,7 @@ switch ($function)
     case 'capteurs':
         $vue="addSensor";
         $title= "Les capteurs";
+        $lol = getlog($bdd);
         
         $liste = getusersensor($bdd, $_SESSION['id']);
         print_r($liste);
