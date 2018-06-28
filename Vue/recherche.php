@@ -44,7 +44,7 @@
     
     
     <?php 
-    include ('./Modele/requetes.capteurs.php');
+    //include ('./Modele/requetes.capteurs.php');
     
     if (isset($_POST['recherche']))
     {

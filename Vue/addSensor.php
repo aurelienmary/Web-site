@@ -41,7 +41,7 @@
                             echo '<td>'. $item['piece_id'] . '</td>';
                             
                             echo '<td width=300>';
-                            echo '<a class="btn btn-default" href="view.php?id='.$item['id'].'"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
+                            
                             echo ' ';
                             echo '<a class="btn btn-primary" href="update.php?id='.$item['id'].'"><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
                             echo ' ';

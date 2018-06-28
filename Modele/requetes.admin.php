@@ -1,8 +1,10 @@
 <?php
-//session_start();
 
+//require('./Modele/requetes.generiques.php');
+include('./Modele/requetes.generiques.php');
 //require('requetes.generiques.php');
-include('requetes.utilisateurs.php');
+//include('requetes.utilisateurs.php');
+
 
 
 $table='users';
@@ -28,6 +30,8 @@ function edition(PDO $bdd, $edit)
 	));
 }
 $table2='chat';
+
+
 function getchat (PDO $bdd, $table)
 {
 	$req='Select * FROM chat';

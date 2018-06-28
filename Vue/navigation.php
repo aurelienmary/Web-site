@@ -43,10 +43,10 @@
      
 	
 		   
-		    </ul>
-		  </nav>
-		            </div>
- if ($_SESSION['admin'] == 1)
+		    
+		  
+		            
+ <?php if ($_SESSION['admin'] == 1)
 			      {
 			      	?>
 			      	<li>
