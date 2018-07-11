@@ -41,7 +41,7 @@
                
             <div class="mat-div">
                 <label for="fullname" class="mat-label">Nom</label>
-                <input type="text" name="nom" class="mat-input" required="required" data-error="Firstname is required.">
+                <input type="text" name="nom" class="mat-input" ="" data-error="Firstname is .">
            
            </div>
             
@@ -52,19 +52,19 @@
      
      <div class="mat-div">
                 <label for="fullname" class="mat-label">Prénom</label>
-                <input type="text" name="prenom" class="mat-input" required="required" data-error="Firstname is required." >
+                <input type="text" name="prenom" class="mat-input" ="" data-error="Firstname is ." >
            
            </div>
            
            <div class="mat-div">
                 <label for="email" class="mat-label">E-mail</label>
-                <input type="email" name="email" class="mat-input" required="required" data-error="Valid email is required.">
+                <input required type="text" name="email" class="mat-input" ="" data-error="Valid email is .">
            
            </div>
            
            <div class="mat-div">
                 <label for="fullname" class="mat-label">Mot de passe</label>
-                <input type="password" name="passWord" class="mat-input" required="required" data-error="password is required" >
+                <input type="text" name="passWord" class="mat-input" ="" data-error="password is " >
            
            </div>
                
@@ -76,7 +76,7 @@
                
                <div class="mat-div">
                 <label for="fullname" class="mat-label">Numéro de téléphone</label>
-                <input type="tel" name="numTel" class="mat-input" required="required" data-error="Valid tel is required">
+                <input type="text" name="numTel" class="mat-input" ="" data-error="Valid tel is ">
            
            </div>
         

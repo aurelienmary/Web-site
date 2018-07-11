@@ -141,7 +141,7 @@ function decouper(PDO $bdd, string $data_tab)
 	
 	list($n1, $n2) = sscanf($n,"%1s%1s");
 	echo "$n2</br>";
-	$req = $bdd->prepare('UPDATE sensors SET valeur = :nvvaleur, sensortype_id = :nv_sensortype_id WHERE id = :id');
+	$req = $bdd->prepare('UPDATE sensors SET valeur = :nvvaleur, sensortype = :nv_sensortype_id WHERE id = :id');
 	$req->execute(array(
 			'nvvaleur' => $v,
 			'nv_sensortype_id' => $c,
@@ -168,7 +168,7 @@ function addsensor(PDO $bdd, array $sensor)
     $donnees->bindParam(":catalog_id", $i);
     return $donnees->execute();
     
-    //echo $lol;
+    
 }
 
 

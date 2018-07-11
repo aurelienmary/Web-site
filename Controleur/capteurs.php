@@ -20,6 +20,7 @@ switch ($function)
         $vue="addSensor";
         $title= "Les capteurs";
         $lol = getlog($bdd);
+        print_r($lol);
         
         $liste = getusersensor($bdd, $_SESSION['id']);
         print_r($liste);

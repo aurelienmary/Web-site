@@ -77,9 +77,10 @@
 </div>
 
 <div>
-<?php /* 
+<?php  /*
+include ('./Modele/requetes.capteurs.php');
 $lol = getlog($bdd);
-	echo $lol;*/
-	
+echo $lol;
+	*/
 ?>
 </div>
