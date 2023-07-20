@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "073c546f-098f-4c60-b2a3-26beb0b0788f",
+		"name": "WebApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"_postman_id": "6de3f7cd-66c9-4310-8413-de2f64b82d1c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "apply discord",
+			"_postman_id": "be15c6cd-8527-4f4e-82b4-7e88f68d5fa4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"_postman_id": "12142ce2-ce16-4978-a614-9575041f7867",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
